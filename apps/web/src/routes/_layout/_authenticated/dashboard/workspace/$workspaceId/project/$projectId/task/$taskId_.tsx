@@ -134,10 +134,7 @@ function RouteComponent() {
             {t("tasks:common.taskNotFound")}
           </h1>
           <p className="text-muted-foreground max-w-md">
-            {t("tasks:common.taskNotFoundDescription", {
-              defaultValue:
-                "The task you are looking for does not exist or has been deleted.",
-            })}
+            {t("tasks:common.taskNotFoundDescription")}
           </p>
           <Button
             variant="outline"
@@ -148,9 +145,7 @@ function RouteComponent() {
               })
             }
           >
-            {t("navigation:sidebar.backToBoard", {
-              defaultValue: "Back to board",
-            })}
+            {t("navigation:sidebar.backToBoard")}
           </Button>
         </div>
       ) : (

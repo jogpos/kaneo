@@ -1,6 +1,10 @@
 {
 	"common": {
 		"appName": "Kaneo",
+		"demoAlert": {
+			"message": "Ovo je demo okruženje. Svi će se podaci automatski izbrisati svakog sata.",
+			"deployButton": "Pokreni vlastitu instancu"
+		},
 		"actions": {
 			"cancel": "Odustani",
 			"close": "Zatvori",
@@ -13,7 +17,12 @@
 			"filter": "Filtriraj"
 		},
 		"a11y": {
-			"toggleSidebar": "Prebaci bočnu traku"
+			"toggleSidebar": "Prebaci bočnu traku",
+			"loading": "Učitavanje"
+		},
+		"errorTest": {
+			"title": "Test rukovanja greškama",
+			"testErrorTitle": "Testna greška"
 		},
 		"sidebar": {
 			"title": "Bočna traka",
@@ -3596,6 +3605,7 @@
 		"pageTitle": "Javni pregled",
 		"badge": "Javno",
 		"readOnly": "Samo za čitanje",
+		"emptyColumn": "Nema zadataka u {{column}}",
 		"error": {
 			"title": "Projekt nije pronađen",
 			"description": "Ovaj projekt ne postoji ili nije javno dostupan."

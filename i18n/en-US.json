@@ -1,6 +1,10 @@
 {
 	"common": {
 		"appName": "Kaneo",
+		"demoAlert": {
+			"message": "This is a demo environment. All data will be automatically purged every hour.",
+			"deployButton": "Deploy your own"
+		},
 		"actions": {
 			"cancel": "Cancel",
 			"close": "Close",
@@ -13,7 +17,12 @@
 			"filter": "Filter"
 		},
 		"a11y": {
-			"toggleSidebar": "Toggle sidebar"
+			"toggleSidebar": "Toggle sidebar",
+			"loading": "Loading"
+		},
+		"errorTest": {
+			"title": "Error handling test",
+			"testErrorTitle": "Test error"
 		},
 		"sidebar": {
 			"title": "Sidebar",
@@ -3534,6 +3543,7 @@
 		"pageTitle": "Public View",
 		"badge": "Public",
 		"readOnly": "Read-only",
+		"emptyColumn": "No tasks in {{column}}",
 		"error": {
 			"title": "Project Not Found",
 			"description": "This project doesn't exist or is not publicly accessible."
