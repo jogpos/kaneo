@@ -72,7 +72,7 @@ describe("TaskPullRequests", () => {
       />,
     );
 
-    const trigger = screen.getByRole("button", { name: "2 PRs" });
+    const trigger = screen.getByRole("button", { name: /^2 PR/ });
     fireEvent.click(trigger);
     expect(onParentClick).not.toHaveBeenCalled();
 

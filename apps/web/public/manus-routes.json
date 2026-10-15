@@ -1,208 +1,208 @@
 {
-  "routes": [
-    {
-      "path": "/:workspaceSlug/task/:ticketId/:title?",
-      "title": "Title"
-    },
-    {
-      "path": "/dashboard",
-      "title": "Dashboard"
-    },
-    {
-      "path": "/dashboard/invitations",
-      "title": "Invitations"
-    },
-    {
-      "path": "/dashboard/settings/account/developer",
-      "title": "Developer"
-    },
-    {
-      "path": "/dashboard/settings/account/information",
-      "title": "Information"
-    },
-    {
-      "path": "/dashboard/settings/account/notifications",
-      "title": "Notifications"
-    },
-    {
-      "path": "/dashboard/settings/account/preferences",
-      "title": "Preferences"
-    },
-    {
-      "path": "/dashboard/settings/account/security",
-      "title": "Security"
-    },
-    {
-      "path": "/dashboard/settings/admin/users",
-      "title": "Users"
-    },
-    {
-      "path": "/dashboard/settings/admin/workspaces",
-      "title": "Workspaces"
-    },
-    {
-      "path": "/dashboard/settings/projects/:projectId/calendar",
-      "title": "Calendar"
-    },
-    {
-      "path": "/dashboard/settings/projects/:projectId/custom-fields",
-      "title": "Custom fields"
-    },
-    {
-      "path": "/dashboard/settings/projects/:projectId/general",
-      "title": "General"
-    },
-    {
-      "path": "/dashboard/settings/projects/:projectId/integrations",
-      "title": "Integrations"
-    },
-    {
-      "path": "/dashboard/settings/projects/:projectId/visibility",
-      "title": "Visibility"
-    },
-    {
-      "path": "/dashboard/settings/projects/:projectId/workflow",
-      "title": "Workflow"
-    },
-    {
-      "path": "/dashboard/settings/workspace/billing",
-      "title": "Billing"
-    },
-    {
-      "path": "/dashboard/settings/workspace/general",
-      "title": "General"
-    },
-    {
-      "path": "/dashboard/settings/workspace/import",
-      "title": "Import"
-    },
-    {
-      "path": "/dashboard/settings/workspace/labels",
-      "title": "Labels"
-    },
-    {
-      "path": "/dashboard/settings/workspace/roles",
-      "title": "Roles"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/inbox",
-      "title": "Inbox"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId",
-      "title": "WorkspaceId"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/members",
-      "title": "Members"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/my-tasks",
-      "title": "My tasks"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/project/:projectId/backlog",
-      "title": "Backlog"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/project/:projectId/board",
-      "title": "Board"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/project/:projectId/calendar",
-      "title": "Calendar"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/project/:projectId/gantt",
-      "title": "Gantt"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/project/:projectId",
-      "title": "ProjectId"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/project/:projectId/task/:taskId_",
-      "title": "TaskId_"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/projects",
-      "title": "Projects"
-    },
-    {
-      "path": "/dashboard/workspace/:workspaceId/search",
-      "title": "Search"
-    },
-    {
-      "path": "/dashboard/workspace/create",
-      "title": "Create"
-    },
-    {
-      "path": "/invitations",
-      "title": "Invitations"
-    },
-    {
-      "path": "/onboarding",
-      "title": "Onboarding"
-    },
-    {
-      "path": "/profile-setup",
-      "title": "Profile setup"
-    },
-    {
-      "path": "/auth/check-email",
-      "title": "Provjera e-pošte"
-    },
-    {
-      "path": "/auth/forgot-password",
-      "title": "Zaboravljena lozinka"
-    },
-    {
-      "path": "/auth/reset-password",
-      "title": "Nova lozinka"
-    },
-    {
-      "path": "/auth/sign-in",
-      "title": "Prijava"
-    },
-    {
-      "path": "/auth/sign-up",
-      "title": "Registracija"
-    },
-    {
-      "path": "/auth/verify-otp",
-      "title": "Potvrda koda"
-    },
-    {
-      "path": "/auth",
-      "title": "Auth"
-    },
-    {
-      "path": "/device/approve",
-      "title": "Odobravanje uređaja"
-    },
-    {
-      "path": "/device",
-      "title": "Uređaj"
-    },
-    {
-      "path": "/",
-      "title": "Početna"
-    },
-    {
-      "path": "/invitation/accept/:inviteId",
-      "title": "Prihvat pozivnice"
-    },
-    {
-      "path": "/mcp/authorize",
-      "title": "MCP autorizacija"
-    },
-    {
-      "path": "/public-project/:projectId",
-      "title": "Javni projekt"
-    },
-    {
-      "path": "/test-error",
-      "title": "Test greška"
-    }
-  ]
+	"routes": [
+		{
+			"path": "/:workspaceSlug/task/:ticketId/:title?",
+			"title": "Title"
+		},
+		{
+			"path": "/dashboard",
+			"title": "Dashboard"
+		},
+		{
+			"path": "/dashboard/invitations",
+			"title": "Invitations"
+		},
+		{
+			"path": "/dashboard/settings/account/developer",
+			"title": "Developer"
+		},
+		{
+			"path": "/dashboard/settings/account/information",
+			"title": "Information"
+		},
+		{
+			"path": "/dashboard/settings/account/notifications",
+			"title": "Notifications"
+		},
+		{
+			"path": "/dashboard/settings/account/preferences",
+			"title": "Preferences"
+		},
+		{
+			"path": "/dashboard/settings/account/security",
+			"title": "Security"
+		},
+		{
+			"path": "/dashboard/settings/admin/users",
+			"title": "Users"
+		},
+		{
+			"path": "/dashboard/settings/admin/workspaces",
+			"title": "Workspaces"
+		},
+		{
+			"path": "/dashboard/settings/projects/:projectId/calendar",
+			"title": "Calendar"
+		},
+		{
+			"path": "/dashboard/settings/projects/:projectId/custom-fields",
+			"title": "Custom fields"
+		},
+		{
+			"path": "/dashboard/settings/projects/:projectId/general",
+			"title": "General"
+		},
+		{
+			"path": "/dashboard/settings/projects/:projectId/integrations",
+			"title": "Integrations"
+		},
+		{
+			"path": "/dashboard/settings/projects/:projectId/visibility",
+			"title": "Visibility"
+		},
+		{
+			"path": "/dashboard/settings/projects/:projectId/workflow",
+			"title": "Workflow"
+		},
+		{
+			"path": "/dashboard/settings/workspace/billing",
+			"title": "Billing"
+		},
+		{
+			"path": "/dashboard/settings/workspace/general",
+			"title": "General"
+		},
+		{
+			"path": "/dashboard/settings/workspace/import",
+			"title": "Import"
+		},
+		{
+			"path": "/dashboard/settings/workspace/labels",
+			"title": "Labels"
+		},
+		{
+			"path": "/dashboard/settings/workspace/roles",
+			"title": "Roles"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/inbox",
+			"title": "Inbox"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId",
+			"title": "WorkspaceId"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/members",
+			"title": "Members"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/my-tasks",
+			"title": "My tasks"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/project/:projectId/backlog",
+			"title": "Backlog"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/project/:projectId/board",
+			"title": "Board"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/project/:projectId/calendar",
+			"title": "Calendar"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/project/:projectId/gantt",
+			"title": "Gantt"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/project/:projectId",
+			"title": "ProjectId"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/project/:projectId/task/:taskId_",
+			"title": "TaskId_"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/projects",
+			"title": "Projects"
+		},
+		{
+			"path": "/dashboard/workspace/:workspaceId/search",
+			"title": "Search"
+		},
+		{
+			"path": "/dashboard/workspace/create",
+			"title": "Create"
+		},
+		{
+			"path": "/invitations",
+			"title": "Invitations"
+		},
+		{
+			"path": "/onboarding",
+			"title": "Onboarding"
+		},
+		{
+			"path": "/profile-setup",
+			"title": "Profile setup"
+		},
+		{
+			"path": "/auth/check-email",
+			"title": "Provjera e-pošte"
+		},
+		{
+			"path": "/auth/forgot-password",
+			"title": "Zaboravljena lozinka"
+		},
+		{
+			"path": "/auth/reset-password",
+			"title": "Nova lozinka"
+		},
+		{
+			"path": "/auth/sign-in",
+			"title": "Prijava"
+		},
+		{
+			"path": "/auth/sign-up",
+			"title": "Registracija"
+		},
+		{
+			"path": "/auth/verify-otp",
+			"title": "Potvrda koda"
+		},
+		{
+			"path": "/auth",
+			"title": "Auth"
+		},
+		{
+			"path": "/device/approve",
+			"title": "Odobravanje uređaja"
+		},
+		{
+			"path": "/device",
+			"title": "Uređaj"
+		},
+		{
+			"path": "/",
+			"title": "Početna"
+		},
+		{
+			"path": "/invitation/accept/:inviteId",
+			"title": "Prihvat pozivnice"
+		},
+		{
+			"path": "/mcp/authorize",
+			"title": "MCP autorizacija"
+		},
+		{
+			"path": "/public-project/:projectId",
+			"title": "Javni projekt"
+		},
+		{
+			"path": "/test-error",
+			"title": "Test greška"
+		}
+	]
 }
