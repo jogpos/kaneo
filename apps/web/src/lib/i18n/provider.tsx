@@ -12,7 +12,7 @@ export function AppI18nProvider({ children }: PropsWithChildren) {
   const { user } = useAuth();
 
   const resolvedLocale = useMemo(
-    () => resolveLocale(user?.locale, getBrowserLocale()),
+    () => resolveLocale(user?.locale ?? "hr-HR", getBrowserLocale()),
     [user?.locale],
   );
 

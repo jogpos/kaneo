@@ -1,0 +1,3843 @@
+{
+	"common": {
+		"appName": "Kaneo",
+		"actions": {
+			"cancel": "Odustani",
+			"close": "Zatvori",
+			"clearAll": "Obriši sve",
+			"delete": "Izbriši",
+			"deleting": "Brisanje...",
+			"markAllRead": "Označi sve kao pročitano",
+			"remove": "Ukloni",
+			"reset": "Poništi",
+			"filter": "Filtriraj"
+		},
+		"a11y": {
+			"toggleSidebar": "Prebaci bočnu traku"
+		},
+		"sidebar": {
+			"title": "Bočna traka",
+			"mobileDescription": "Prikazuje mobilnu bočnu traku."
+		},
+		"empty": {
+			"loading": "Učitavanje..."
+		},
+		"pagination": {
+			"label": "Straničenje",
+			"previous": "Prethodno",
+			"next": "Sljedeće",
+			"previousPage": "Idi na prethodnu stranicu",
+			"nextPage": "Idi na sljedeću stranicu",
+			"morePages": "Više stranica"
+		},
+		"breadcrumb": {
+			"label": "Putanja",
+			"more": "Više"
+		},
+		"language": {
+			"english": "English",
+			"german": "German",
+			"greek": "Greek",
+			"macedonian": "Macedonian",
+			"french": "French",
+			"spanish": "Spanish",
+			"dutch": "Dutch",
+			"korean": "Korean",
+			"chinese": "Chinese",
+			"italian": "Italian"
+		},
+		"people": {
+			"someone": "Netko",
+			"unknown": "Nepoznato"
+		},
+		"error": {
+			"title": "Nešto je pošlo po zlu",
+			"description": "Stranica je neočekivano srušena. Osvježavanje obično riješi problem.",
+			"troubleshooting": "Koraci za rješavanje problema:",
+			"tryAgain": "Pokušaj ponovo",
+			"viewDeploymentGuide": "Pogledaj Deployment Guide",
+			"refreshPage": "Osvježi stranicu",
+			"messages": {
+				"cors": "Ne mogu se povezati sa serverom. To može biti zbog CORS postavki.",
+				"network": "Greška mreže. Provjerite internetsku vezu i pokušajte ponovno.",
+				"auth": "Autentifikacija nije uspjela. Prijavite se ponovno.",
+				"server": "Greška servera. Molimo pokušajte kasnije.",
+				"unknown": "Dogodila se neočekivana greška."
+			},
+			"troubleshootingSteps": {
+				"cors": {
+					"checkApiRunning": "Provjerite radi li vaš API server",
+					"checkApiUrl": "Provjerite odgovara li VITE_API_URL u frontend .env URL-u vašeg API servera",
+					"verifyCorsOrigins": "Potvrdite da CORS_ORIGINS u vašem API .env uključuje URL frontenda",
+					"checkProtocol": "Provjerite koriste li frontend i API isti protokol (http/https)",
+					"checkAccessibility": "Provjerite je li vaš API server dostupan iz preglednika"
+				},
+				"network": {
+					"checkConnection": "Provjerite internetsku vezu",
+					"verifyApiRunning": "Provjerite radi li API server i je li dostupan",
+					"tryRefresh": "Pokušajte osvježiti stranicu",
+					"checkFirewall": "Provjerite postoje li problemi s vatrozidom ili proxyjem"
+				}
+			}
+		},
+		"modals": {
+			"createProject": {
+				"title": "Stvori novi projekt",
+				"breadcrumbNew": "Stvori novi projekt",
+				"workspaceFallback": "WORKSPACE",
+				"description": "Stvorite novi projekt u svom workspaceu unosom imena, ključa i odabirom ikone.",
+				"pickIcon": "Odaberi ikonu",
+				"searchIcons": "Pretraži ikone...",
+				"projectName": "Naziv projekta",
+				"keyLabel": "Ključ:",
+				"keyHint": "Koristi se za ID-ove zadataka (npr., {{example}}-123)",
+				"createButton": "Stvori projekt",
+				"successToast": "Projekt je uspješno stvoren",
+				"errorToast": "Neuspjelo stvaranje projekta"
+			},
+			"createWorkspace": {
+				"breadcrumbKaneo": "KANEO",
+				"title": "Stvori novi workspace",
+				"description": "Stvorite novi workspace unosom imena za vaš workspace.",
+				"namePlaceholder": "Naziv workspacea",
+				"descriptionPlaceholder": "Dodajte opis...",
+				"createButton": "Stvori workspace",
+				"successToast": "Workspace je uspješno stvoren",
+				"errorToast": "Neuspjelo stvaranje workspacea"
+			},
+			"createTask": {
+				"breadcrumbTask": "TASK",
+				"selectProject": "Odaberi projekt",
+				"title": "Novi zadatak",
+				"description": "Stvorite novi zadatak unosom naslova, opisa i ostalih detalja.",
+				"statusLoadError": "Statusi projekta nisu se mogli učitati.",
+				"taskTitlePlaceholder": "Naslov zadatka",
+				"descriptionPlaceholder": "Dodajte opis za zadatak...",
+				"chooseProjectForImages": "Prije učitavanja slika odaberite projekt.",
+				"prepareTaskError": "Neuspjelo pripremanje zadatka",
+				"successCreated": "Zadatak je uspješno stvoren",
+				"successUpdated": "Zadatak je uspješno ažuriran",
+				"createError": "Neuspjelo stvaranje zadatka",
+				"priority": "Prioritet",
+				"statusFallback": "U tijeku",
+				"startDate": "Datum početka",
+				"dueDate": "Rok",
+				"clearStartDate": "Očisti datum početka",
+				"clearDueDate": "Očisti rok",
+				"assign": "Dodijeli",
+				"assignUnassigned": "Nedodijeljeno",
+				"assignUnassignedTitle": "Nedodijeljeno",
+				"labels": "Oznake",
+				"searchLabels": "Pretraži oznake...",
+				"noLabelsFound": "Nema pronađenih oznaka",
+				"createLabel": "Stvori \"{{name}}\"",
+				"chooseColor": "Odaberi boju",
+				"labelCreated": "Oznaka stvorena",
+				"labelCreateError": "Neuspjelo stvaranje oznake",
+				"createMore": "Stvori još",
+				"createButton": "Stvori zadatak",
+				"discardTitle": "Odbaciti zadatak?",
+				"discardDescription": "Vaši nespremljeni podaci zadatka bit će izgubljeni.",
+				"discardButton": "Odbaci zadatak",
+				"untitledTask": "Zadatak bez naslova",
+				"labelColors": {
+					"stone": "Stone",
+					"slate": "Slate",
+					"lavender": "Lavender",
+					"sage": "Sage",
+					"forest": "Forest",
+					"amber": "Amber",
+					"terracotta": "Terracotta",
+					"rose": "Rose",
+					"crimson": "Crimson"
+				}
+			}
+		},
+		"editor": {
+			"link": {
+				"label": "URL poveznice",
+				"placeholder": "Zalijepite ili upišite poveznicu…",
+				"apply": "Primijeni vezu",
+				"remove": "Ukloni vezu"
+			}
+		}
+	},
+	"auth": {
+		"signIn": {
+			"pageTitle": "Prijava",
+			"subtitle": {
+				"emailOrProvider": "Koristite svoju adresu e-pošte ili povezani račun.",
+				"email": "Unesite svoju e-poštu i poslat ćemo vam kod za prijavu.",
+				"password": "Koristite svoju e-poštu i lozinku.",
+				"passwordOrProvider": "Koristite lozinku ili povezani račun.",
+				"providers": "Odaberite način prijave.",
+				"sso": "Vaša organizacija upravlja prijavom ovdje."
+			},
+			"lastUsed": "Zadnje korišteno",
+			"guestError": "Prijava kao gost nije uspjela",
+			"errors": {
+				"account_not_linked": "Ovaj identitet nije se mogao povezati s postojećim računom. Prijavite se e-poštom da potvrdite račun, pa pokušajte ponovno s SSO. Ako prijava e-poštom nije dostupna, obratite se administratoru.",
+				"oauth_code_verification_failed": "OAuth provjera nije uspjela. Pokušajte ponovno.",
+				"registration_is_currently_disabled_you_need_a_valid_invitation_to_create_an_account_": "Registracija je trenutno onemogućena. Trebate valjanu pozivnicu za izradu računa.",
+				"use_a_permanent_email_address_disposable_addresses_cannot_create_accounts_": "Upotrijebite trajnu adresu e-pošte. Privremene adrese ne mogu stvarati račune."
+			},
+			"instanceStatusError": "Nije moguće povezati se sa serverom. Pokušajte ponovno za trenutak.",
+			"heading": "Prijavite se na Kaneo",
+			"submitPassword": "Prijava",
+			"invitation": {
+				"title": "{{inviterName}} vas je pozvao u {{workspaceName}}",
+				"fallbackTitle": "Pozvani ste",
+				"description": "Prijavite se onom e-poštom koja je primila pozivnicu. Odmah ćete se pridružiti radnom prostoru."
+			},
+			"footer": {
+				"newHere": "Novi u Kaneu?",
+				"createAccount": "Stvorite račun",
+				"inviteOnly": "Računi su ovdje samo po pozivu. Zatražite pozivnicu od administratora.",
+				"providerSignUp": "Novi ovdje? Prijavite se preko ponuđača iznad da biste stvorili račun.",
+				"anyProvider": "Novi ovdje? Bilo koja opcija iznad stvorit će vam račun.",
+				"contactAdmin": "Problemi s prijavom? Obratite se administratoru.",
+				"justLooking": "Samo gledate?"
+			},
+			"autoLogin": {
+				"title": "Prijavljujemo vas",
+				"subtitle": "Preusmjeravamo vas na stranicu za prijavu vaše organizacije.",
+				"opening": "Otvaranje {{provider}}…",
+				"stuck": "Ne događa se ništa?",
+				"continue": "Nastavi na {{provider}}"
+			}
+		},
+		"providers": {
+			"google": "Google",
+			"discord": "Discord",
+			"github": "GitHub",
+			"sso": "SSO",
+			"continueWith": "Nastavi s {{provider}}",
+			"error": "Nije bilo moguće prijaviti se preko {{provider}}. Pokušajte ponovno."
+		},
+		"forms": {
+			"or": "ili",
+			"email": "E-pošta",
+			"password": "Lozinka",
+			"emailPlaceholder": "ja@primjer.com",
+			"passwordPlaceholder": "••••••••",
+			"showPassword": "Prikaži lozinku",
+			"hidePassword": "Sakrij lozinku",
+			"name": "Ime",
+			"namePlaceholder": "Jane Doe",
+			"invalidEmail": "Unesite punu adresu e-pošte, npr. ime@firma.com.",
+			"nameRequired": "Unesite svoje ime.",
+			"passwordRequired": "Unesite lozinku.",
+			"passwordTooShort": "Koristite barem 8 znakova.",
+			"disposableEmail": "Upotrijebite trajnu adresu e-pošte. Privremene adrese ne mogu stvarati račune.",
+			"continueWithEmail": "Nastavi s e-poštom"
+		},
+		"checkEmail": {
+			"pageTitle": "Provjerite svoju e-poštu",
+			"title": "Provjerite e-poštu",
+			"inboxMessage": "Poslali smo vam privremenu vezu za prijavu. Provjerite pristiglu poštu na <email>{{email}}</email>.",
+			"emailFallback": "vaša adresa e-pošte",
+			"backToLogin": "Natrag na prijavu"
+		},
+		"signUp": {
+			"pageTitle": "Stvori račun",
+			"registrationDisabledAlert": "Registracija je trenutno onemogućena. Ako ste pozvani, unesite adresu e-pošte koja je primila pozivnicu da biste stvorili račun.",
+			"continueAsGuest": "Nastavi kao gost",
+			"toggleMessage": "Već imate račun?",
+			"toggleLink": "Prijavite se",
+			"instanceStatusError": "Nije moguće povezati se sa serverom. Pokušajte ponovno za trenutak.",
+			"instanceAdminTitle": "Postavite svoju Kaneo instancu",
+			"instanceAdminSubtitle": "Ovaj račun postaje administrator instance s punim pristupom.",
+			"heading": "Stvorite svoj račun",
+			"submitPassword": "Stvori račun",
+			"failed": "Nije bilo moguće stvoriti vaš račun. Pokušajte ponovno.",
+			"subtitle": {
+				"email": "Započnite s e-poštom. Poslat ćemo vam kod, lozinka nije potrebna.",
+				"password": "Dodajte ime, e-poštu i lozinku za početak.",
+				"providers": "Upotrijebite povezani račun za stvaranje."
+			},
+			"invitation": {
+				"description": "Koristite adresu e-pošte koja je primila pozivnicu. Odmah ćete se pridružiti radnom prostoru."
+			}
+		},
+		"verifyOtp": {
+			"pageTitle": "Potvrdite kod",
+			"validation": {
+				"codeLength": "Kod mora imati 6 znamenki"
+			},
+			"toast": {
+				"invalidCode": "Neispravan verifikacijski kod",
+				"verifyFailed": "Provjera koda nije uspjela",
+				"resendFailed": "Slanje koda nije uspjelo",
+				"resendSuccess": "Poslan je novi verifikacijski kod!"
+			},
+			"heading": "Provjerite svoju e-poštu",
+			"description": "Poslali smo 6-znamenkasti kod na {{email}}. Istječe za {{minutes}} minuta.",
+			"label": "Verifikacijski kod",
+			"submit": "Potvrdi i nastavi",
+			"didntGetIt": "Niste primili?",
+			"resendCode": "Pošalji kod ponovno",
+			"useDifferentEmail": "Upotrijebite drugu e-poštu",
+			"expired": "Ovaj kod je istekao. Pošaljite novi.",
+			"tooManyAttempts": "Previše pokušaja. Pošaljite novi kod."
+		},
+		"otpSignIn": {
+			"sendFailed": "Slanje verifikacijskog koda nije uspjelo"
+		},
+		"signInForm": {
+			"failedSignIn": "Prijava nije uspjela"
+		},
+		"invitation": {
+			"pageTitleAccept": "Prihvati pozivnicu",
+			"pageTitleError": "Pogreška s pozivnicom",
+			"pageTitleInvalid": "Nevažeća pozivnica",
+			"joinWorkspace": "Pridruži se {{workspaceName}}",
+			"createAccount": "Stvori račun",
+			"signIn": "Prijavi se",
+			"toast": {
+				"acceptFailed": "Prihvaćanje pozivnice nije uspjelo",
+				"acceptSuccess": "Pozivnica prihvaćena! Dobrodošli u tim."
+			},
+			"description": "{{inviterName}} vas je pozvao u ovaj radni prostor na Kaneu.",
+			"invitedBy": "Pozvao",
+			"sentTo": "Poslano na",
+			"signedInAs": "Prijavljeni kao",
+			"expires": "Istječe",
+			"notNow": "Ne sada",
+			"join": "Pridruži se radnom prostoru",
+			"switchAccount": "Promijeni račun",
+			"goToKaneo": "Idi na Kaneo",
+			"mismatch": {
+				"title": "Prijavljeni s drugom e-poštom",
+				"description": "Ova pozivnica je poslana na {{invitedEmail}}. Prijavljeni ste kao {{email}}."
+			},
+			"expired": {
+				"title": "Ova pozivnica je istekla",
+				"description": "Zatražite od {{inviterName}} da vam pošalje novu za {{workspaceName}}."
+			},
+			"invalid": {
+				"title": "Ova pozivnica više nije valjana",
+				"description": "Mogla je biti prihvaćena ili otkazana. Zatražite novu od administratora radnog prostora."
+			},
+			"loadFailed": {
+				"title": "Nije moguće učitati ovu pozivnicu",
+				"description": "Provjerite vezu i ponovno učitajte stranicu."
+			}
+		},
+		"onboarding": {
+			"pageTitle": "Dobrodošli u Kaneo",
+			"workspaceName": "Naziv radnog prostora",
+			"workspaceNamePlaceholder": "npr. Acme Inc, Moj Tim",
+			"restrictedTitle": "Trebate pozivnicu",
+			"restrictedSubtitle": "Samo administrator instance može stvarati radne prostore ovdje. Zatražite pozivnicu od njega, zatim ponovno učitajte ovu stranicu.",
+			"restrictedCheckInvitations": "Provjeri pozivnice",
+			"toast": {
+				"createFailed": "Neuspjelo stvaranje radnog prostora"
+			},
+			"validation": {
+				"workspaceNameRequired": "Naziv radnog prostora je obavezan",
+				"projectNameRequired": "Dajte ime svom prvom projektu"
+			},
+			"cloud": {
+				"usageLabel": "Tko će koristiti ovaj radni prostor?",
+				"usageSolo": "Samo ja",
+				"usageSoloDescription": "Prati vlastiti rad",
+				"usageTeam": "Moj tim",
+				"usageTeamDescription": "Planirajte i isporučujte rad zajedno",
+				"invite": {
+					"emailLabel": "E-mail suradnika {{index}}",
+					"emailPlaceholder": "teammate@company.com",
+					"addAnother": "Dodaj još",
+					"remove": "Ukloni e-mail {{index}}",
+					"skip": "Preskoči za sada",
+					"invalidEmail": "Unesite valjanu e-mail adresu",
+					"sent_one": "Pozivnica poslana",
+					"sent_other": "Poslano je {{count}} pozivnica",
+					"failed": "Nije moguće pozvati {{email}}: {{message}}",
+					"sent_few": "Poslano je {{count}} pozivnica"
+				},
+				"plan": {
+					"trialUsed": "Već ste iskoristili besplatni probni period. Odaberite plan da počnete stvarati projekte i zadatke.",
+					"recommended": "Preporučeno",
+					"continueTrial": "Započni besplatni probni period"
+				}
+			},
+			"projectNameDefault": "Moj prvi projekt",
+			"starterTasks": {
+				"drag": {
+					"title": "Povucite ovu karticu u sljedeću kolonu",
+					"description": "Kartice se pomiču iz kolone u kolonu kako rad napreduje. Povucite ovu u sljedeću kolonu ili je otvorite i promijenite status."
+				},
+				"details": {
+					"title": "Otvorite ovaj zadatak i dodajte podzadatak",
+					"description": "Zadatak može sadržavati opis, podzadatke, oznake, zaduženu osobu i rok. Dodajte podzadatak ovom zadatku da isprobate."
+				},
+				"invite": {
+					"title": "Pozovite svoj tim",
+					"description": "Kaneo najbolje radi ako su svi u njemu. Otvorite **Members** u bočnoj traci da pozovete ljude putem e-maila."
+				},
+				"integrations": {
+					"title": "Povežite GitHub, GitLab ili Gitea",
+					"description": "Sinkronizirajte issueve i automatski premještajte zadatke kad se otvore ili spoje pull requestovi. Postavite u **Project settings**."
+				},
+				"create": {
+					"title": "Stvorite vlastiti zadatak",
+					"description": "Koristite **+** pored naziva kolone ili pritisnite **T** zatim **C**. Izbrišite ove početne zadatke kad budete spremni."
+				}
+			},
+			"progress": "Korak {{current}} od {{total}}",
+			"welcome": "Dobrodošli, {{name}}",
+			"settingUp": "Postavljanje {{name}}",
+			"continue": "Nastavi",
+			"signedInAs": "Prijavljeni kao {{email}}",
+			"signOut": "Odjavi se",
+			"workspace": {
+				"title": "Nazovite svoj radni prostor",
+				"description": "Ovdje žive vaši projekti. Koristite ime tima ili tvrtke, možete ga kasnije promijeniti."
+			},
+			"usage": {
+				"title": "Za koga je?",
+				"description": "Postavit ćemo {{name}} prema tome. Uvijek možete kasnije pozvati ljude."
+			},
+			"project": {
+				"title": "Započnite svoj prvi projekt",
+				"description": "Dodati ćemo nekoliko početnih zadataka da vam pokažemo. Preimenujte ili obrišite kad želite.",
+				"label": "Naziv projekta",
+				"numbered": "Zadaci će biti numerirani"
+			},
+			"invite": {
+				"title": "Dovedite svoj tim",
+				"description": "Dobiti će e-mail za pridruživanje {{name}}. Preskočite ovo ako prvo želite razgledati.",
+				"label": "E-mailovi suradnika",
+				"send_one": "Pošalji {{count}} pozivnicu",
+				"send_other": "Pošalji {{count}} pozivnica",
+				"sendNone": "Pošalji pozivnice",
+				"send_few": "Pošalji {{count}} pozivnica"
+			},
+			"plan": {
+				"title": "Kako želite početi?",
+				"descriptionTrial_one": "Svaki plan uključuje neograničene projekte i zadatke. Isprobajte {{name}} besplatno {{count}} dan, ili se pretplatite odmah.",
+				"descriptionTrial_other": "Svaki plan uključuje neograničene projekte i zadatke. Isprobajte {{name}} besplatno {{count}} dana, ili se pretplatite odmah.",
+				"choose": "Odaberite plan",
+				"description": {
+					"team": "Neograničeno članova, uloga i dozvola",
+					"personal": "Za jednu osobu"
+				},
+				"perUserMonth": "po korisniku / mjesečno",
+				"perMonth": "mjesečno",
+				"subscribe": "Pretplati se na {{plan}}",
+				"checkout": "Nastavi na naplatu",
+				"trialNote": "Za probu nije potrebna kartica. Plaćanja obrađuje Creem.",
+				"paymentNote": "Plaćanja obrađuje Creem.",
+				"descriptionTrial_few": "Svaki plan uključuje neograničene projekte i zadatke. Isprobajte {{name}} besplatno {{count}} dana, ili se pretplatite odmah."
+			},
+			"ready": {
+				"eyebrow": "Sve spremno",
+				"title": "{{name}} je spreman",
+				"description": "Evo što smo postavili. Sve to možete promijeniti kasnije.",
+				"workspace": "Radni prostor",
+				"project": "Prvi projekt",
+				"projectValue_one": "{{name}}, s {{count}} početnim zadatkom",
+				"projectValue_other": "{{name}}, s {{count}} početnih zadataka",
+				"invitations": "Pozivnice",
+				"invitationsValue_one": "Poslano {{count}} osobi",
+				"invitationsValue_other": "Poslano {{count}} osobama",
+				"open": "Otvori {{name}}",
+				"invitationsValue_few": "Poslano {{count}} osobama",
+				"projectValue_few": "{{name}}, s {{count}} početnih zadataka"
+			},
+			"preview": {
+				"live": "Uživo pregled za {{name}}",
+				"liveNoName": "Uživo pregled",
+				"ready": "{{name}} je spreman",
+				"untitled": "Vaš radni prostor"
+			}
+		},
+		"profileSetup": {
+			"pageTitle": "Dovršite profil",
+			"completeTitle": "Dovršite svoj profil",
+			"subtitle": "Unesite svoje ime da započnete",
+			"yourName": "Vaše ime",
+			"namePlaceholder": "npr. John Doe",
+			"saving": "Spremanje...",
+			"continue": "Nastavi",
+			"welcome": "Dobrodošli, {{name}}!",
+			"redirecting": "Preusmjeravamo vas na nadzornu ploču...",
+			"toast": {
+				"updateSuccess": "Profil je uspješno ažuriran",
+				"updateFailed": "Ažuriranje profila nije uspjelo"
+			},
+			"validation": {
+				"nameRequired": "Ime je obavezno",
+				"nameShort": "Ime mora imati najmanje 2 znaka"
+			}
+		},
+		"passwordReset": {
+			"forgotPassword": "Zaboravili ste lozinku?",
+			"requestTitle": "Resetirajte lozinku",
+			"requestSubtitle": "Unesite svoj e-mail i poslat ćemo vam poveznicu za reset lozinke.",
+			"sendLink": "Pošalji poveznicu za reset",
+			"requestError": "Nije moguće zatražiti poveznicu za reset. Pokušajte ponovno.",
+			"unavailable": "Reset lozinke nije dostupan. Kontaktirajte administratora instance.",
+			"configError": "Nije moguće dohvatiti poslužitelj. Osvježite stranicu i pokušajte ponovno.",
+			"resetTitle": "Odaberite novu lozinku",
+			"newPassword": "Nova lozinka",
+			"confirmPassword": "Potvrdi novu lozinku",
+			"passwordMismatch": "Lozinke se ne podudaraju.",
+			"passwordLength": "Koristite između 8 i 128 znakova.",
+			"invalidLink": "Ova poveznica za reset je neispravna ili je istekla. Zatražite novu poveznicu za nastavak.",
+			"requestNewLink": "Zatraži novu poveznicu",
+			"resetError": "Nije moguće resetirati lozinku. Pokušajte ponovno.",
+			"success": "Vaša lozinka je resetirana. Prijavite se s novom lozinkom.",
+			"backToSignIn": "Natrag na prijavu",
+			"sentTitle": "Provjerite pristiglu poštu",
+			"sentDescription": "Ako za {{email}} postoji račun, poveznica za reset lozinke stiže uskoro. Istječe za 1 sat.",
+			"sentHelpTitle": "Niste primili?",
+			"sentHelpDescription": "Provjerite mapu neželjene pošte ili zatražite novu poveznicu za minutu.",
+			"rememberedIt": "Sjetili ste se?",
+			"resetDescription": "Koristite 8 do 128 znakova. Ostali uređaji bit će odjavljeni.",
+			"updatePassword": "Ažuriraj lozinku",
+			"changedMind": "Promijenili ste mišljenje?",
+			"invalidLinkTitle": "Ova poveznica je istekla",
+			"successTitle": "Lozinka ažurirana"
+		},
+		"page": {
+			"terms": "Uvjeti",
+			"privacy": "Privatnost"
+		},
+		"device": {
+			"connect": {
+				"title": "Poveži uređaj",
+				"description": "Unesite kod prikazan u terminalu ili aplikaciji da biste ga povezali s vašim Kaneo računom.",
+				"label": "Kod uređaja",
+				"submit": "Nastavi",
+				"noCode": "Još nema koda? Prvo započnite prijavu iz svoje aplikacije.",
+				"codeRequired": "Unesite kod prikazan na vašem uređaju.",
+				"invalidCode": "Taj kod nije valjan ili je istekao."
+			},
+			"approve": {
+				"pageTitle": "Odobri uređaj",
+				"title": "Povezati ovaj uređaj?",
+				"description": "Uređaj se želi prijaviti kao {{email}}. Odobrite samo ako ste vi započeli ovo.",
+				"matchCode": "Provjerite da se podudara s vašim uređajem",
+				"deny": "Odbij",
+				"approve": "Odobri",
+				"failed": "Nije moguće ažurirati zahtjev. Pokušajte ponovno."
+			},
+			"approved": {
+				"title": "Uređaj povezan",
+				"description": "Vratite se u terminal ili aplikaciju. Možete zatvoriti ovu karticu."
+			},
+			"denied": {
+				"title": "Zahtjev odbijen",
+				"description": "Ništa nije povezano. Možete zatvoriti ovu karticu."
+			},
+			"missing": {
+				"title": "Nema koda uređaja",
+				"description": "Otvorite ovu stranicu sa svog uređaja ili unesite kod ručno.",
+				"enterCode": "Unesite kod"
+			},
+			"signIn": {
+				"title": "Prijavite se da povežete uređaj",
+				"description": "Vrlo brzo ćete se vratiti ovdje da ga odobrite.",
+				"submit": "Prijava"
+			}
+		},
+		"mcp": {
+			"authorize": {
+				"title": "Ovlastite MCP klijenta",
+				"description": "Može djelovati u vaše ime u svim radnim prostorima kojima pristupate. Nastavite samo ako ste vi započeli ovu vezu.",
+				"client": "Klijent",
+				"unknownClient": "MCP klijent",
+				"selfReported": "Samoprijavljeno",
+				"redirect": "Vraća vas na",
+				"signedInAs": "Prijavljeni kao",
+				"deny": "Odbij",
+				"allow": "Dopusti pristup"
+			},
+			"expired": {
+				"title": "Ovaj zahtjev je istekao",
+				"description": "Vratite se u svoj MCP klijent i povežite ponovo."
+			},
+			"signIn": {
+				"title": "Prijavite se da odobrite ovog klijenta",
+				"description": "Vrlo brzo ćete se vratiti ovdje da ga pregledate.",
+				"submit": "Prijava"
+			}
+		}
+	},
+	"settings": {
+		"advancedSettings": "Napredne postavke",
+		"advancedSettingsDescription": "Prikazuje dodatne kontrole, poput pravila sinkronizacije integracija. Samo u ovom pregledniku.",
+		"syncRules": {
+			"title": "Što se sinkronizira",
+			"sharedHint": "Ta pravila vrijede za sve koji koriste ovaj projekt. Sakrivanje naprednih postavki ih ne onemogućava.",
+			"outgoing": "Kaneo → spremište",
+			"incoming": "Spremište → Kaneo",
+			"outgoingHint": "Odaberite koje Kaneo zadatke mogu sinkronizirati. Gubitak odgovarajuće oznake pauzira obje strane za postojeći zadatak.",
+			"incomingHint": "Odaberite koje se probleme može uvesti ili pretvoriti u zadatke. Koristite točna imena oznaka iz spremišta. Postojeće poveznice slijede pravilo za Kaneo zadatak.",
+			"all": "Svi zadaci i problemi",
+			"filtered": "Samo podudarne oznake",
+			"any": "Bilo koja od odabranih oznaka",
+			"every": "Sve odabrane oznake",
+			"matchLabels": "Podudaranje oznaka",
+			"repositoryLabel": "Naziv oznake u spremištu",
+			"addLabel": "Dodaj oznaku",
+			"removeLabel": "Ukloni {{name}}",
+			"noLabels": "Prvo stvorite oznake radnog prostora prije nego konfigurirate filter zadatka.",
+			"selectLabel": "Odaberite najmanje jednu oznaku za pregled pravila.",
+			"unavailableLabel": "Nedostupna oznaka",
+			"impactTitle": "Što će se promijeniti",
+			"impact": "Podudarni zadaci: {{matching}} / {{total}} · Novi izvozi: {{create}} · Poveznice za pauziranje: {{pause}} · Poveznice za pregled: {{review}}",
+			"preserveHint": "Pauziranje zadržava oba zapisa i njihovu poveznicu. Nastavak zahtijeva usporedbu; povijesni komentari se nikada ne reproduciraju.",
+			"previewing": "Provjeravam utjecaj sinkronizacije…",
+			"saveError": "Nije moguće primijeniti ova pravila. Integracija ili opseg zadatka mogao je promijeniti. Osvježite pregled i pokušajte ponovno.",
+			"refreshPreview": "Osvježi pregled",
+			"rulesChanged": "Spremljena pravila su se promijenila dok ste uređivali. Vaš će nacrt biti sačuvan. Pregledajte trenutna pravila iznad prije primjene ili učitajte spremljena pravila.",
+			"loadSavedRules": "Učitaj spremljena pravila",
+			"missingLabels": "Odabrana oznaka radnog prostora nije dostupna. Sinkronizacija ostaje pauzirana dok se pravilo ne popravi.",
+			"removeMissingLabels": "Ukloni nedostupne oznake",
+			"apply": "Primijeni pravila sinkronizacije",
+			"saved": "Pravila sinkronizacije su spremljena",
+			"loading": "Učitavanje pravila sinkronizacije…",
+			"loadError": "Pravila sinkronizacije se ne mogu učitati.",
+			"advancedHint": "Omogućite Napredne postavke u Postavkama da biste uređivali ova pravila.",
+			"paused": "Sinkronizacija pauzirana",
+			"pausedHint": "Zapisi i poveznice su sačuvani. Zadaci koji se ponovno podudaraju trebaju pregled prije nego se sinkronizacija nastavi.",
+			"reviewRequired": "Podudara pravilo · potreban pregled",
+			"excluded": "Izvan trenutnog pravila",
+			"review": "Pregledaj i nastavi",
+			"previous": "Prethodno",
+			"next": "Sljedeće",
+			"reviewTitle": "Pregled prije nastavka sinkronizacije",
+			"reviewHint": "Usporedite trenutni naslov, opis i stanje otvoreno/zatvoreno. Odaberite koju stranu zadržati za ta polja. Oznake i povijesni komentari ostaju nepromijenjeni.",
+			"resumeError": "Nije moguće nastaviti. Zadatak, problem ili pravilo mogli su se promijeniti, ili davatelj usluge nije dostupan. Sinkronizacija ostaje pauzirana; osvježite usporedbu.",
+			"refreshComparison": "Osvježi usporedbu",
+			"repository": "Spremište",
+			"open": "Otvoreno",
+			"closed": "Zatvoreno",
+			"noDescription": "Nema opisa",
+			"useRepository": "Zadrži vrijednosti iz spremišta",
+			"useKaneo": "Zadrži Kaneo vrijednosti",
+			"exportPending": "Izvezi podudarne zadatke",
+			"inactiveHint": "Ova je integracija pauzirana. Nijedan zadatak se neće izvoziti dok se ne reaktivira.",
+			"allIssues": "Svi problemi",
+			"allTasks": "Svi zadaci",
+			"edit": "Uredi",
+			"hidePaused": "Sakrij",
+			"issuesLabelled": "Označeni problemi",
+			"joinAnd": "i",
+			"joinOr": "ili",
+			"kaneoToProvider": "Kaneo prema {{provider}}",
+			"pausedSummary_one": "{{count}} zadatak je prestao sinkronizirati jer se više ne podudara s pravilima sinkronizacije.",
+			"pausedSummary_other": "{{count}} zadataka je prestalo sinkronizirati jer se više ne podudaraju s pravilima sinkronizacije.",
+			"providerToKaneo": "{{provider}} prema Kaneo",
+			"reviewPaused": "Pregledaj",
+			"tasksLabelled": "Označeni zadaci",
+			"pausedSummary_few": "{{count}} zadataka je prestalo sinkronizirati jer se više ne podudaraju s pravilima sinkronizacije."
+		},
+		"account": "Račun",
+		"administration": "Administracija",
+		"developer": "Razvojni programer",
+		"information": "Profil",
+		"notifications": "Obavijesti",
+		"preferences": "Postavke",
+		"apiKeys": "API ključevi",
+		"adminUsers": {
+			"title": "Korisnici",
+			"subtitle": "Svi s računom na ovoj Kaneo instanci.",
+			"directoryTitle": "Svi korisnici",
+			"searchCount_one": "{{count}} korisnik odgovara pretrazi",
+			"searchCount_other": "{{count}} korisnika odgovara pretrazi",
+			"refreshing": "Osvježavanje korisnika",
+			"searchPlaceholder": "Pretraži po imenu ili e-pošti",
+			"searchLabel": "Pretraži korisnike",
+			"loadError": "Korisnike nije moguće učitati.",
+			"retry": "Pokušaj ponovno",
+			"emptyTitle": "Nema pronađenih korisnika",
+			"emptyDescription": "Pokušajte drugo ime ili adresu e-pošte.",
+			"clearSearch": "Očisti pretraživanje",
+			"you": "Vi",
+			"previous": "Prethodno",
+			"next": "Sljedeće",
+			"pagination": "Stranica {{current}} od {{total}}",
+			"columns": {
+				"user": "Korisnik",
+				"role": "Uloga",
+				"status": "Status",
+				"joined": "Pridružen",
+				"actions": "Radnje"
+			},
+			"roles": {
+				"admin": "Administrator",
+				"user": "Korisnik"
+			},
+			"status": {
+				"active": "Aktivan",
+				"deactivated": "Deaktiviran"
+			},
+			"actions": {
+				"open": "Radnje za {{name}}",
+				"edit": "Uredi",
+				"deactivate": "Deaktiviraj",
+				"reactivate": "Reaktiviraj"
+			},
+			"edit": {
+				"title": "Uredi korisnika",
+				"description": "Ažurirajte identitet ovog računa i pristup na razini instance.",
+				"name": "Puno ime",
+				"email": "Adresa e-pošte",
+				"role": "Globalna uloga",
+				"selfRoleHint": "Ne možete promijeniti vlastitu globalnu ulogu.",
+				"save": "Spremi promjene",
+				"saving": "Spremanje…"
+			},
+			"confirm": {
+				"working": "Rad…",
+				"deactivate": {
+					"title": "Deaktivirati ovaj račun?",
+					"description": "{{name}} će biti odjavljen i neće moći pristupiti dok administrator ponovno ne aktivira račun.",
+					"action": "Deaktiviraj račun"
+				},
+				"reactivate": {
+					"title": "Reaktivirati ovaj račun?",
+					"description": "{{name}} će moći ponovno prijaviti se i pristupiti svojim radnim prostorima.",
+					"action": "Reaktiviraj račun"
+				},
+				"delete": {
+					"title": "Trajno izbrisati ovaj račun?",
+					"description": "Ovo trajno briše {{name}}, njihove sesije, članstva i povezane podatke. Ne može se poništiti.",
+					"action": "Izbriši trajno"
+				}
+			},
+			"toast": {
+				"updated": "Korisnik ažuriran",
+				"updateError": "Nije uspjelo ažuriranje korisnika",
+				"deactivated": "Korisnik deaktiviran",
+				"reactivated": "Korisnik reaktiviran",
+				"deleted": "Korisnik izbrisan",
+				"actionError": "Nije uspjelo ažuriranje statusa korisnika"
+			},
+			"searchCount_few": "{{count}} korisnika odgovara pretrazi"
+		},
+		"adminWorkspaces": {
+			"title": "Radni prostori",
+			"subtitle": "Svi radni prostori na ovoj Kaneo instanci, uključujući one kojima ne pripadate.",
+			"directoryTitle": "Svi radni prostori",
+			"searchCount_one": "{{count}} podudaran radni prostor",
+			"searchCount_other": "{{count}} podudarajuća radna prostora",
+			"refreshing": "Osvježavanje radnih prostora",
+			"searchPlaceholder": "Pretraži po imenu ili slug-u",
+			"searchLabel": "Pretraži radne prostore",
+			"loadError": "Radne prostore nije moguće učitati.",
+			"retry": "Pokušaj ponovno",
+			"emptyTitle": "Nema pronađenih radnih prostora",
+			"emptyDescription": "Pokušajte drugo ime ili slug.",
+			"clearSearch": "Očisti pretraživanje",
+			"previous": "Prethodno",
+			"next": "Sljedeće",
+			"pagination": "Stranica {{current}} od {{total}}",
+			"noOwner": "Nema vlasnika",
+			"manage": "Upravljaj",
+			"manageLabel": "Upravljaj {{name}}",
+			"columns": {
+				"workspace": "Radni prostor",
+				"owners": "Vlasnici",
+				"members": "Članovi",
+				"projects": "Projekti",
+				"created": "Kreirano",
+				"actions": "Radnje"
+			},
+			"members": {
+				"title": "Članovi {{name}}",
+				"description": "Promijenite uloge, pristup projektima i vlasništvo, čak i ako niste član ovog radnog prostora.",
+				"count_one": "{{count}} član",
+				"count_other": "{{count}} članova",
+				"add": "Dodaj člana",
+				"loadError": "Korisnike nije moguće učitati.",
+				"empty": "Ovaj radni prostor nema članova.",
+				"roleLabel": "Uloga za {{name}}",
+				"editAccess": "Promijeni pristup projektima za {{name}} ({{access}})",
+				"actions": "Radnje za {{name}}",
+				"makeOwner": "Postavi za vlasnika",
+				"remove": "Ukloni iz radnog prostora",
+				"count_few": "{{count}} članova"
+			},
+			"addMember": {
+				"title": "Dodaj člana",
+				"description": "Dodajte postojećeg korisnika u {{name}}. Može pristupiti svim projektima dok to ne ograničite.",
+				"user": "Korisnik",
+				"userPlaceholder": "Pretraži ime ili e-poštu…",
+				"searching": "Pretraživanje korisnika…",
+				"usersError": "Korisnike nije moguće učitati.",
+				"noUsers": "Nema pronađenih korisnika",
+				"alreadyMember": "Već član",
+				"role": "Uloga",
+				"submit": "Dodaj člana",
+				"adding": "Dodavanje…"
+			},
+			"confirm": {
+				"working": "Rad…",
+				"transfer": {
+					"title": "Postaviti {{name}} za vlasnika?",
+					"description": "{{name}} postaje jedini vlasnik {{workspace}}. Svi koji su sada vlasnici postaju administratori.",
+					"action": "Postavi za vlasnika"
+				},
+				"remove": {
+					"title": "Ukloniti {{name}}?",
+					"description": "{{name}} gubi pristup {{workspace}} i njegovim projektima. Njegov račun ostaje na ovoj instanci.",
+					"action": "Ukloni člana"
+				}
+			},
+			"toast": {
+				"added": "Član dodan",
+				"addError": "Nije uspjelo dodavanje člana",
+				"roleUpdated": "Uloga ažurirana",
+				"roleError": "Nije uspjelo ažuriranje uloge",
+				"removed": "Član uklonjen",
+				"removeError": "Nije uspjelo uklanjanje člana",
+				"ownershipTransferred": "Vlasništvo preneseno",
+				"transferError": "Nije uspjelo prenošenje vlasništva"
+			},
+			"searchCount_few": "{{count}} podudarajuća radna prostora"
+		},
+		"informationPage": {
+			"pageTitle": "Profil",
+			"title": "Profil",
+			"subtitle": "Kako se prikazujete svojim suradnicima.",
+			"sectionTitle": "Podaci",
+			"profilePicture": "Slika profila",
+			"fullName": "Ime",
+			"fullNamePlaceholder": "Unesite svoje ime",
+			"email": "E-pošta",
+			"updateError": "Nije uspjelo ažuriranje profila",
+			"validation": {
+				"nameRequired": "Ime je obavezno",
+				"nameShort": "Ime mora imati najmanje 2 znaka"
+			},
+			"avatar": {
+				"hint": "Najbolje izgledaju kvadratne slike.",
+				"remove": "Ukloni",
+				"updateSuccess": "Profilna slika ažurirana",
+				"updateError": "Neuspjelo ažuriranje profilne slike",
+				"removeSuccess": "Profilna slika uklonjena",
+				"removeError": "Neuspjelo uklanjanje profilne slike",
+				"upload": "Učitaj"
+			},
+			"deleteAccount": {
+				"sectionTitle": "Zona opasnosti",
+				"title": "Izbriši račun",
+				"description": "Radni prostori kojima pripadate samo vi brišu se zajedno s vašim računom. Drugdje vaše zadatke ostaju i postaju neodređeni, a vaši komentari se uklanjaju.",
+				"modalTitle": "Izbrisati vaš račun?",
+				"modalDescription": "Ovo trajno briše vaš račun i ne može se vratiti.",
+				"confirmLabel": "Upišite {{email}} za potvrdu",
+				"confirm": "Izbriši račun",
+				"success": "Vaš račun je izbrisan",
+				"error": "Neuspjelo brisanje računa",
+				"sessionTooOld": "Radi sigurnosti odjavite se i ponovno prijavite prije brisanja računa."
+			},
+			"emailHint": "S ovom adresom se prijavljujete."
+		},
+		"notificationsPage": {
+			"pageTitle": "Obavijesti",
+			"title": "Obavijesti",
+			"subtitle": "O čemu vas Kaneo obavještava i kamo stižu obavijesti.",
+			"statusConnected": "Povezano",
+			"statusPaused": "Pauzirano",
+			"emailTitle": "E-pošta",
+			"accountEmailNoAddress": "Nema dostupne adrese računa",
+			"saveChanges": "Spremi promjene",
+			"disconnect": "Prekini vezu",
+			"ntfyTitle": "ntfy",
+			"ntfyDescription": "Objavljujte na ntfy temu na telefonu ili računalu.",
+			"serverUrl": "URL poslužitelja",
+			"topic": "Tema",
+			"token": "Token",
+			"ntfyServerPlaceholder": "https://ntfy.example.com",
+			"ntfyTopicPlaceholder": "team-alerts",
+			"ntfyTokenPlaceholder": "Samo ako vaš poslužitelj zahtijeva jedan",
+			"ntfyTokenHintConfigured": "Token je već konfiguriran ({{masked}}). Unesite novi token za zamjenu.",
+			"ntfyTokenHintOptional": "Koristite ga ako vaš ntfy poslužitelj zahtijeva autentikaciju.",
+			"connectNtfy": "Poveži ntfy",
+			"gotifyTitle": "Gotify",
+			"gotifyDescription": "Šaljite obavijesti na svoj Gotify poslužitelj.",
+			"gotifyTokenLabel": "App token",
+			"gotifyServerPlaceholder": "https://gotify.example.com",
+			"gotifyTokenPlaceholder": "Gotify app token",
+			"gotifyTokenHintConfigured": "App token je već konfiguriran ({{masked}}). Unesite novi token za zamjenu.",
+			"gotifyTokenHintRequired": "Obvezno. Koristite aplikacijski token sa svog Gotify poslužitelja.",
+			"connectGotify": "Poveži Gotify",
+			"webhookTitle": "Prilagođeni webhook",
+			"webhookDescription": "Pošaljite svaku obavijest svom endpointu kao JSON.",
+			"endpointUrl": "URL endpointa",
+			"signingSecret": "Potpisni ključ",
+			"webhookUrlPlaceholder": "https://example.com/webhooks/kaneo",
+			"webhookSecretPlaceholder": "Neobavezni zajednički ključ",
+			"webhookSecretHintConfigured": "Potpisni ključ je već konfiguriran ({{masked}}). Unesite novi za zamjenu.",
+			"webhookSecretHintOptional": "Kaneo potpisuje tijelo zahtjeva kad je postavljen ključ.",
+			"connectWebhook": "Poveži webhook",
+			"eventPreferencesTitle": "Obavijesti me o",
+			"eventPreferencesDescription": "Vaši komentari, spominjanja i promjene statusa nikada vas ne obavještavaju.",
+			"eventTaskAssignments": "Dodjele zadataka",
+			"eventComments": "Komentari i spominjanja",
+			"eventCommentsHint": "Novi komentari na vašim zadacima i svatko tko vas @spomene.",
+			"eventStatusChanges": "Promjene statusa",
+			"eventDueDateReminders": "Podsjetnici za rok",
+			"reminderLeadTimeLabel": "Podsjeti me prije roka",
+			"reminderLeadTimeInvalid": "Unesite cijeli broj između 1 i {{max}}.",
+			"saveEventPreferences": "Spremi vrste obavijesti",
+			"allProjects": "Svi projekti",
+			"noProjectsInWorkspace": "Još nema dostupnih projekata u ovom radnom prostoru.",
+			"toastEmailSaved": "Postavke obavijesti e-poštom spremljene",
+			"toastEmailSaveFailed": "Neuspjelo spremanje postavki e-pošte",
+			"toastNtfySaved": "Postavke ntfy spremljene",
+			"toastNtfySaveFailed": "Neuspjelo spremanje ntfy postavki",
+			"toastNtfyDisconnected": "ntfy prekinut",
+			"toastNtfyDisconnectFailed": "Neuspjelo prekidanje veze s ntfy",
+			"toastGotifySaved": "Postavke Gotify spremljene",
+			"toastGotifySaveFailed": "Neuspjelo spremanje Gotify postavki",
+			"toastGotifyDisconnected": "Gotify prekinut",
+			"toastGotifyDisconnectFailed": "Neuspjelo prekidanje veze s Gotify",
+			"toastWebhookSaved": "Postavke webhooka spremljene",
+			"toastWebhookSaveFailed": "Neuspjelo spremanje postavki webhooka",
+			"toastWebhookDisconnected": "Webhook prekinut",
+			"toastWebhookDisconnectFailed": "Neuspjelo prekidanje veze s webhookom",
+			"toastRuleSaved": "Spremljeno pravilo obavijesti za {{workspaceName}}",
+			"toastRuleSaveFailed": "Neuspjelo spremanje pravila obavijesti radnog prostora",
+			"toastRuleRemoved": "Uklonjeno pravilo obavijesti za {{workspaceName}}",
+			"toastRuleRemoveFailed": "Neuspjelo uklanjanje pravila obavijesti radnog prostora",
+			"toastPreferencesSaved": "Postavke obavijesti spremljene",
+			"toastPreferencesSaveFailed": "Neuspjelo spremanje postavki obavijesti",
+			"toastRuleSavedGeneric": "Pravilo obavijesti radnog prostora spremljeno",
+			"toastRuleRemovedGeneric": "Pravilo obavijesti radnog prostora uklonjeno",
+			"loadFailed": "Postavke obavijesti nije bilo moguće učitati.",
+			"eventTaskAssignmentsHint": "Kad vam netko dodijeli zadatak.",
+			"eventStatusChangesHint": "Kad se neki od vaših zadataka premjesti u drugi stupac.",
+			"eventDueDateRemindersHint": "Prije nego što neki od vaših zadataka dospije. Prekoračeni rokovi vas obavještavaju zasebno.",
+			"reminderLeadTimeUnitLabel": "Jedinica podsjetnika",
+			"reminderLeadTimeUnitHoursBefore_one": "sat prije",
+			"reminderLeadTimeUnitHoursBefore_other": "sata prije",
+			"reminderLeadTimeUnitDaysBefore_one": "dan prije",
+			"reminderLeadTimeUnitDaysBefore_other": "dana prije",
+			"channelsTitle": "Kanali",
+			"channelsDescription": "Obavijesti se uvijek prikazuju u Kaneu. Povežite kanal da biste ih dobivali i negdje drugdje.",
+			"statusOn": "Uključeno",
+			"emailToggleLabel": "Šalji obavijesti e-poštom",
+			"connect": "Poveži",
+			"configure": "Konfiguriraj",
+			"done": "Gotovo",
+			"connectChannel": "Poveži {{channel}}",
+			"configureChannel": "Konfiguriraj {{channel}}",
+			"optional": "Neobavezno",
+			"sendingLabel": "Slanje",
+			"sendingDescription": "Isključite da pauzirate ovaj kanal i sačuvate njegove postavke.",
+			"disconnectTitle": "Prekinuti vezu s {{channel}}?",
+			"disconnectDescription": "Obavijesti više neće ići na {{channel}}, a spremljene postavke će biti uklonjene.",
+			"disconnecting": "Prekidanje veze...",
+			"workspacesTitle": "Radni prostori",
+			"workspacesDescription": "Odaberite koji radni prostori i projekti mogu koristiti vaše kanale.",
+			"statusSending": "Šalje se",
+			"onlyInKaneo": "Samo u Kaneu",
+			"projectCount_one": "{{count}} projekt",
+			"projectCount_other": "{{count}} projekata",
+			"ruleSummary": "{{channels}} · {{projects}}",
+			"setUp": "Postavi",
+			"configureWorkspace": "Konfiguriraj obavijesti za {{workspaceName}}",
+			"setUpWorkspace": "Postavi obavijesti za {{workspaceName}}",
+			"ruleDialogTitle": "Obavijesti za {{workspaceName}}",
+			"ruleDialogDescription": "Gdje mogu stići obavijesti iz ovog radnog prostora.",
+			"ruleActiveLabel": "Slanje",
+			"ruleActiveDescription": "Isključi za pauzu ovog radnog prostora, ali zadrži postavke.",
+			"ruleChannels": "Kanali",
+			"channelNotConnected": "Nije povezano",
+			"channelOff": "Isključeno",
+			"ruleProjects": "Projekti",
+			"someProjects": "Samo neki",
+			"save": "Spremi",
+			"stopSending": "Prekini slanje",
+			"stopSendingTitle": "Prekinuti slanje iz {{workspaceName}}?",
+			"stopSendingDescription": "Obavijesti iz ovog radnog prostora prikazivat će se samo u Kaneo.",
+			"stopping": "Prekidam...",
+			"projectCount_few": "{{count}} projekata",
+			"reminderLeadTimeUnitDaysBefore_few": "dana prije",
+			"reminderLeadTimeUnitHoursBefore_few": "sata prije"
+		},
+		"preferencesPage": {
+			"title": "Postavke",
+			"subtitle": "Kako Kaneo izgleda i radi za vas.",
+			"appearanceTitle": "Općenito",
+			"theme": "Tema",
+			"selectTheme": "Odaberi temu",
+			"themeLight": "Svijetla",
+			"themeDark": "Tamna",
+			"themeSystem": "Prati sustav",
+			"language": "Jezik",
+			"selectLanguage": "Odaberi jezik",
+			"firstDayOfWeek": "Prvi dan u tjednu",
+			"firstDayOfWeekDescription": "Koristi se u kalendarima i odabiru datuma.",
+			"selectFirstDayOfWeek": "Odaberi prvi dan",
+			"weekStartsOnSunday": "Nedjelja",
+			"weekStartsOnMonday": "Ponedjeljak",
+			"weekStartsOnSaturday": "Subota",
+			"defaultView": "Zadani prikaz",
+			"defaultViewDescription": "Prikaz u kojem se otvaraju projekti.",
+			"selectViewMode": "Odaberi način prikaza",
+			"board": "Tablica",
+			"list": "Lista",
+			"gantt": "Gantt",
+			"sidebarDefault": "Drži bočnu traku otvorenom",
+			"sidebarDefaultDescription": "Započni s proširenom bočnom trakom.",
+			"displayOptions": "Detalji zadatka",
+			"displayOptionsDescription": "Što se prikazuje na karticama i redovima u vašim tablicama i listama.",
+			"taskNumbers": "Brojevi zadataka",
+			"assignees": "Dodijeljeni",
+			"dueDates": "Rokovi",
+			"labels": "Oznake",
+			"priority": "Prioritet",
+			"projectBackgrounds": "Pozadine projekata",
+			"projectBackgroundsDescription": "Prikaži sliku koju projekt postavi iza svoje ploče.",
+			"advancedTitle": "Napredno"
+		},
+		"developerPage": {
+			"pageTitle": "API ključevi",
+			"title": "API ključevi",
+			"subtitle": "Dopusti skriptama, CLI‑ju i MCP klijentima da koriste Kaneo u tvoje ime.",
+			"unnamedKey": "Nepoimenovano",
+			"newKey": "Novi ključ",
+			"keysTitle": "Ključevi",
+			"keysNote": "Ključ može raditi sve što i ti. Izbriši ključeve koje više ne koristiš.",
+			"emptyTitle": "Još nema API ključeva",
+			"emptyDescription": "Stvori ključ za korištenje CLI‑ja, MCP klijenta ili vlastitih skripti.",
+			"loadError": "Nije bilo moguće učitati API ključeve. Pokušaj ponovno."
+		},
+		"apiKey": {
+			"createdModal": {
+				"title": "Kopiraj svoj ključ",
+				"description": "Nakon zatvaranja više ga nećeš vidjeti.",
+				"copy": "Kopiraj",
+				"copied": "Kopirano",
+				"done": "Gotovo",
+				"copyError": "Nije bilo moguće kopirati ključ. Označi ga i kopiraj ručno."
+			},
+			"table": {
+				"deleteConfirmTitle": "Izbrisati „{{name}}”?",
+				"deleteConfirmDescription": "Sve što koristi ovaj ključ prestat će raditi. Ovo se ne može poništiti.",
+				"delete": "Izbriši ključ",
+				"deleting": "Brišem…",
+				"toastDeleted": "API ključ izbrisan",
+				"toastDeleteError": "Nije bilo moguće izbrisati API ključ"
+			},
+			"createDialog": {
+				"title": "Novi API ključ",
+				"description": "Ključ može raditi sve što i ti.",
+				"nameLabel": "Naziv",
+				"namePlaceholder": "Moj API ključ",
+				"nameDescription": "Da zapamtiš gdje se koristi.",
+				"expirationLabel": "Istječe",
+				"expiration1d": "1 dan",
+				"expiration7d": "7 dana",
+				"expiration30d": "30 dana",
+				"expiration90d": "90 dana",
+				"expirationNever": "Nikad",
+				"create": "Stvori ključ",
+				"creating": "Stvaram…",
+				"failedCreate": "Nije bilo moguće stvoriti API ključ",
+				"validation": {
+					"nameRequired": "Unesi naziv",
+					"nameShort": "Koristi najmanje 3 znaka"
+				}
+			},
+			"row": {
+				"created": "Stvoreno {{date}}",
+				"expires": "Istječe {{date}}",
+				"expired": "Isteklo {{date}}",
+				"neverExpires": "Ne istječe",
+				"expiredBadge": "Isteklo",
+				"actions": "Radnje za {{name}}"
+			}
+		},
+		"workspaceGeneral": {
+			"pageTitle": "Opće postavke",
+			"title": "Općenito",
+			"subtitle": "Naziv {{name}} i tko je vlasnik.",
+			"workspaceInfoTitle": "Radni prostor",
+			"nameLabel": "Naziv",
+			"namePlaceholder": "Unesi naziv radnog prostora",
+			"descriptionLabel": "Opis",
+			"descriptionPlaceholder": "Na čemu vaš tim radi?",
+			"dangerZone": "Zona opasnosti",
+			"deleteWorkspace": "Izbriši radni prostor",
+			"deleteWorkspaceDescription": "Trajno briše {{name}}, njegove projekte i zadatke.",
+			"deleteModalTitle": "Izbrisati radni prostor?",
+			"deleteModalDescription": "Ovo trajno briše {{name}} i sve njegove projekte i zadatke. Ne može se poništiti.",
+			"deleteModalConfirm": "Izbriši radni prostor",
+			"toastUpdateError": "Ažuriranje radnog prostora nije uspjelo",
+			"toastDeleted": "Radni prostor uspješno izbrisan",
+			"toastDeleteError": "Brisanje radnog prostora nije uspjelo",
+			"validation": {
+				"nameRequired": "Naziv radnog prostora je obavezan",
+				"nameShort": "Naziv radnog prostora mora imati najmanje 2 znaka"
+			},
+			"transferOwnership": {
+				"toastSuccess": "Vlasništvo preneseno",
+				"toastError": "Prijenos vlasništva nije uspio",
+				"title": "Prenesi vlasništvo",
+				"pickerLabel": "Novi vlasnik",
+				"noEligibleMembers": "Pozovi barem još jednog člana prije nego što možeš prenijeti vlasništvo.",
+				"pickerHint": "Novi vlasnik preuzima. Ti ostaješ kao administrator.",
+				"pickerPlaceholder": "Odaberite člana",
+				"button": "Prenesi",
+				"dialogTitle": "Prenijeti vlasništvo?",
+				"dialogDescription": "{{name}} će postati jedini vlasnik prostora {{workspace}}. Zadržat ćete administratorski pristup, ali izgubiti mogućnosti koje su isključivo za vlasnika, poput brisanja prostora ili ponovnog prijenosa vlasništva.",
+				"transferring": "Prenošenje…",
+				"confirm": "Prenesi vlasništvo"
+			},
+			"ownershipTitle": "Vlasništvo",
+			"ownershipSubtitle": "Samo vlasnik vidi ovo."
+		},
+		"workspaceRoles": {
+			"pageTitle": "Uloge",
+			"title": "Uloge",
+			"subtitle": "Odredite koje radnje članovi mogu izvoditi u {{workspaceName}}.",
+			"thisWorkspace": "ovaj prostor",
+			"noAccess": "Za upravljanje ulogama prostora potrebne su vam administratorske ili vlasničke ovlasti.",
+			"sectionTitle": "Uloge u prostoru",
+			"sectionSubtitle": "Uredite zadane uloge ili dodajte prilagođenu. Članovi zadržavaju naziv svoje dodijeljene uloge i nakon uređivanja.",
+			"newRole": "Nova uloga",
+			"loading": "Učitavanje…",
+			"loadError": "Neuspjelo učitavanje uloga.",
+			"emptyTitle": "Još nema uloga",
+			"emptyDescription": "Zadane uloge pojavit će se ovdje čim budu stvorene za ovaj prostor.",
+			"defaultBadge": "Zadano",
+			"permissionCount_one": "{{count}} dopuštenje",
+			"permissionCount_other": "{{count}} dopuštenja",
+			"nameLabel": "Naziv",
+			"nameHint": "Malo slovo. Ne može se kasnije promijeniti.",
+			"namePlaceholder": "npr. recenzent",
+			"discard": "Odbaci",
+			"createRole": "Stvori ulogu",
+			"deleteRole": "Izbriši ulogu",
+			"defaultRoleHelp": "Zadana uloga: naziv je rezerviran i red se ne može izbrisati.",
+			"unsavedChanges": "Imate nespremljene promjene",
+			"allChangesSaved": "Sve promjene spremljene",
+			"saveChanges": "Spremi promjene",
+			"defaultRoleDescriptions": {
+				"viewer": "Može pregledavati i komentirati zadatke.",
+				"member": "Može stvarati i upravljati zadacima i projektima.",
+				"admin": "Ima pun pristup prostoru."
+			},
+			"resources": {
+				"project": "Projekti",
+				"task": "Zadaci",
+				"label": "Oznake",
+				"workspace": "Prostor",
+				"organization": "Administracija prostora",
+				"member": "Članovi",
+				"invitation": "Pozivnice",
+				"team": "Timovi",
+				"ac": "Uloge i dozvole"
+			},
+			"permissions": {
+				"project": {
+					"create": {
+						"label": "Stvori",
+						"description": "Može stvarati nove projekte"
+					},
+					"read": {
+						"label": "Pregled",
+						"description": "Može pregledavati projekte"
+					},
+					"update": {
+						"label": "Uredi",
+						"description": "Može uređivati postavke projekta"
+					},
+					"delete": {
+						"label": "Izbriši",
+						"description": "Može brisati projekte"
+					},
+					"share": {
+						"label": "Dijeli",
+						"description": "Može dijeliti projekte"
+					}
+				},
+				"task": {
+					"create": {
+						"label": "Stvori",
+						"description": "Može stvarati zadatke"
+					},
+					"read": {
+						"label": "Pregled",
+						"description": "Može pregledavati zadatke"
+					},
+					"update": {
+						"label": "Uredi",
+						"description": "Može uređivati zadatke"
+					},
+					"delete": {
+						"label": "Izbriši",
+						"description": "Može brisati zadatke"
+					},
+					"assign": {
+						"label": "Dodijeli",
+						"description": "Može dodjeljivati zadatke članovima"
+					}
+				},
+				"label": {
+					"create": {
+						"label": "Stvori",
+						"description": "Može stvarati oznake"
+					},
+					"read": {
+						"label": "Pregled",
+						"description": "Može pregledavati oznake"
+					},
+					"update": {
+						"label": "Uredi",
+						"description": "Može uređivati oznake"
+					},
+					"delete": {
+						"label": "Izbriši",
+						"description": "Može brisati oznake"
+					}
+				},
+				"workspace": {
+					"read": {
+						"label": "Pregled",
+						"description": "Može pregledavati postavke prostora"
+					},
+					"update": {
+						"label": "Uredi",
+						"description": "Može ažurirati postavke prostora"
+					},
+					"delete": {
+						"label": "Izbriši",
+						"description": "Može izbrisati prostor"
+					},
+					"manage_settings": {
+						"label": "Upravljanje postavkama",
+						"description": "Može upravljati postavkama prostora"
+					}
+				},
+				"organization": {
+					"update": {
+						"label": "Uredi administraciju prostora",
+						"description": "Mijenja postavke prostora putem usluge računa."
+					},
+					"delete": {
+						"label": "Izbriši prostor",
+						"description": "Trajno briše prostor putem usluge računa."
+					}
+				},
+				"member": {
+					"create": {
+						"label": "Dodaj članove",
+						"description": "Dodaje korisnike u ovaj prostor."
+					},
+					"update": {
+						"label": "Promijeni uloge članova",
+						"description": "Mijenja uloge dodijeljene članovima prostora."
+					},
+					"delete": {
+						"label": "Ukloni članove",
+						"description": "Uklanja korisnike iz ovog prostora."
+					}
+				},
+				"invitation": {
+					"create": {
+						"label": "Pozovi članove",
+						"description": "Šalje pozivnice za prostor."
+					},
+					"cancel": {
+						"label": "Poništi pozivnice",
+						"description": "Poništava neobrađene pozivnice za prostor."
+					}
+				},
+				"team": {
+					"create": {
+						"label": "Stvori timove",
+						"description": "Stvara timove u ovom prostoru."
+					},
+					"update": {
+						"label": "Uredi timove",
+						"description": "Mijenja timove i članstvo u timovima."
+					},
+					"delete": {
+						"label": "Izbriši timove",
+						"description": "Briše timove u ovom prostoru."
+					}
+				},
+				"ac": {
+					"create": {
+						"label": "Stvori uloge",
+						"description": "Stvara uloge prostora i dodjeljuje im dozvole."
+					},
+					"read": {
+						"label": "Pogledaj uloge",
+						"description": "Pregledava uloge prostora i njihove dozvole."
+					},
+					"update": {
+						"label": "Promijeni dozvole uloga",
+						"description": "Mijenja dozvole uloga, uključujući administratorski pristup."
+					},
+					"delete": {
+						"label": "Izbriši uloge",
+						"description": "Briše prilagođene uloge prostora."
+					}
+				}
+			},
+			"validation": {
+				"nameRequired": "Naziv uloge je obavezno polje",
+				"nameExists": "Uloga s ovim nazivom već postoji",
+				"permissionRequired": "Morate odabrati barem jednu dozvolu"
+			},
+			"toast": {
+				"created": "Uloga stvorena",
+				"createError": "Neuspjelo stvaranje uloge",
+				"updated": "Uloga ažurirana",
+				"updateError": "Neuspjelo ažuriranje uloge",
+				"deleted": "Uloga izbrisana",
+				"deleteError": "Neuspjelo brisanje uloge"
+			},
+			"deleteDialog": {
+				"title": "Izbriši ulogu",
+				"description": "Ovo će trajno izbrisati ulogu \"{{role}}\". Članovi kojima je dodijeljena ova uloga izgubit će njene dozvole."
+			},
+			"permissionCount_few": "{{count}} dopuštenja"
+		},
+		"workspaceLabels": {
+			"pageTitle": "Oznake",
+			"title": "Oznake",
+			"subtitle": "Oznake se dijele među svim projektima u ovom radnom prostoru.",
+			"createLabel": "Stvori oznaku",
+			"editLabel": "Uredi oznaku",
+			"deleteLabel": "Izbriši oznaku",
+			"saveLabel": "Spremi",
+			"nameLabel": "Naziv",
+			"namePlaceholder": "Naziv oznake",
+			"colorLabel": "Boja",
+			"createDescription": "Projekti u ovom radnom prostoru mogu je dodati svojim zadacima.",
+			"editDescription": "Promjene se prikazuju na svakom zadatku koji koristi ovu oznaku.",
+			"deleteConfirmTitle": "Izbrisati „{{name}}\"?",
+			"deleteConfirmDescription": "Oznaka će biti uklonjena sa svih zadataka koji je koriste. To se ne može poništiti.",
+			"createSuccess": "Oznaka je stvorena",
+			"updateSuccess": "Oznaka je ažurirana",
+			"deleteSuccess": "Oznaka je izbrisana",
+			"createError": "Neuspjelo stvaranje oznake",
+			"updateError": "Neuspjelo ažuriranje oznake",
+			"deleteError": "Neuspjelo brisanje oznake",
+			"nameRequired": "Naziv oznake je obavezan",
+			"deletionPending": "Uklanja se s zadataka…",
+			"resumeDeletion": "Nastavi brisanje",
+			"subtitleWithWorkspace": "Oznake se dijele među svim projektima u {{workspaceName}}.",
+			"newLabel": "Nova oznaka",
+			"sectionTitle": "Oznake radnog prostora",
+			"sectionDescription": "Promjena naziva oznake ili boje ažurira svaki zadatak koji je koristi.",
+			"editNamed": "Uredi {{name}}",
+			"rowActions": "Radnje za {{name}}",
+			"preview": "Na zadatku",
+			"previewPlaceholder": "Oznaka",
+			"resume": "Nastavi",
+			"emptyTitle": "Još nema oznaka",
+			"emptyDescription": "Dodajte oznake za sortiranje i filtriranje zadataka preko projekata.",
+			"loadError": "Nije moguće učitati oznake. Pokušajte ponovno."
+		},
+		"workspaceImport": {
+			"pageTitle": "Uvoz",
+			"title": "Uvoz",
+			"subtitle": "Prenesite svoje projekte iz drugog alata u {{workspace}}. Kaneo samo čita iz izvora.",
+			"opensInNewTab": "(otvara se u novoj kartici)",
+			"retry": "Pokušaj ponovno",
+			"notAllowed": {
+				"title": "Samo admini radnog prostora mogu uvoziti",
+				"description": "Uvoz stvara projekte, pa je potrebna dozvola za upravljanje postavkama radnog prostora i stvaranje projekata. Zamolite admina radnog prostora da ga pokrene."
+			},
+			"sources": {
+				"title": "Odaberite izvor",
+				"description": "Odaberite alat iz kojeg prelazite. Svaki projekt koji odaberete postaje novi projekt ovdje.",
+				"connect": "Poveži",
+				"connectTo": "Poveži s {{source}}",
+				"linear": {
+					"description": "Timovi, zadaci, oznake, pod-zadaci i komentari. Zalijepite osobni API ključ.",
+					"intro": "Svaki Linear tim postaje projekt, s njegovim tijekovima rada kao stupcima."
+				},
+				"jira": {
+					"description": "Projekti, zadaci, pod-zadaci, poveznice i komentari. Cloud ili Data Center.",
+					"intro": "Svaki Jira projekt postaje projekt ovdje, s tijekovima rada kao stupcima."
+				},
+				"trello": {
+					"description": "Table, liste, kartice, liste zadataka i komentari. Autorizirajte jednim klikom.",
+					"intro": "Svaka Trello tabla postaje projekt, s njenim listama kao stupcima."
+				},
+				"plane": {
+					"description": "Projekti, stavke posla, pod-zadaci i komentari. Cloud ili self-hosted.",
+					"intro": "Svaki Plane projekt postaje projekt ovdje, sa svojim stanjima kao stupcima."
+				},
+				"planka": {
+					"description": "Table, liste, kartice, liste zadataka i komentari iz vaše PLANKA instance.",
+					"intro": "Svaka PLANKA tabla postaje projekt, s njenim listama kao stupcima."
+				},
+				"kaneo": {
+					"pickerName": "Drugi Kaneo",
+					"description": "Premještanje projekata između Kaneo Clouda i self-hosted instance.",
+					"intro": "Projekti iz svakog radnog prostora koje ključ može vidjeti. Svaki koji odaberete kopira se ovdje."
+				}
+			},
+			"history": {
+				"title": "Nedavni uvozi",
+				"description": "Uvozi nastavljaju raditi na poslužitelju ako napustite ovu stranicu.",
+				"started": "Pokrenuto {{time}}",
+				"empty": "Još nema uvoza. Uvozi koje pokrenete prikazat će se ovdje.",
+				"loadError": "Nedavni uvozi se nisu mogli učitati."
+			},
+			"status": {
+				"importing": "Uvozi se {{current}} od {{total}}",
+				"warnings_one": "Gotovo s {{count}} upozorenjem",
+				"warnings_other": "Gotovo s {{count}} upozorenja",
+				"partial": "Uvezeno {{done}} od {{total}}",
+				"failed": "Neuspjelo",
+				"imported": "Uvezeno",
+				"warnings_few": "Gotovo s {{count}} upozorenja"
+			},
+			"steps": {
+				"label": "Koraci uvoza",
+				"connect": "Poveži",
+				"import": "Uvezi",
+				"done": "(dovršeno)"
+			},
+			"back": {
+				"allSources": "Svi izvori",
+				"changeKey": "Promijeni ključ",
+				"overview": "Pregled uvoza"
+			},
+			"connect": {
+				"title": "Uvezi iz {{source}}",
+				"sectionTitle": "Poveži",
+				"sectionDescription": "Kaneo samo čita iz {{source}}. Ključ se koristi za ovaj uvoz i nikad se ne pohranjuje.",
+				"cancel": "Otkaži",
+				"continue": "Nastavi",
+				"whereToFind": "Gdje ga pronaći",
+				"showSecret": "Prikaži {{field}}",
+				"hideSecret": "Sakrij {{field}}"
+			},
+			"linear": {
+				"apiKeyLabel": "Osobni API ključ",
+				"apiKeyDescription": "Dovoljno je samo čitanje. Možete ga opozvati nakon uvoza.",
+				"openSettings": "Otvori Linear postavke",
+				"stepOpen": "U Linearu otvorite Settings, zatim Security and access.",
+				"stepCreate": "Pod Personal API keys stvorite ključ s Read pristupom.",
+				"stepPaste": "Kopirajte ga i zalijepite gore."
+			},
+			"jira": {
+				"urlLabel": "Jira URL stranice",
+				"urlDescription": "Kopirajte ga iz preglednika. Data Center također radi.",
+				"urlPlaceholder": "https://your-site.atlassian.net",
+				"emailLabel": "Email",
+				"emailDescription": "Email vašeg Atlassian računa. Ostavite prazno za Jira Data Center.",
+				"tokenLabel": "API token",
+				"tokenDescription": "Cloud: stvorite ga na id.atlassian.com. Data Center: koristite personal access token.",
+				"tokenPlaceholder": "Zalijepi token",
+				"openSettings": "Otvori Atlassian API tokene",
+				"stepOpen": "Otvori id.atlassian.com, zatim Security, pa API tokens.",
+				"stepCreate": "Stvorite API token i kopirajte ga.",
+				"stepPaste": "Zalijepite ga zajedno s emailom kojim se prijavljujete u Jiru.",
+				"nameMatchTip": "Jira često skriva adrese e-pošte, pa se dodijeljene osobe možda podudaraju ovdje prema potpunom imenu."
+			},
+			"trello": {
+				"apiKeyLabel": "API ključ",
+				"apiKeyDescription": "U Power-Upu koji posjedujete otvorite karticu Trello Auth i generirajte API ključ (ne OAuth 2.0 karticu) na",
+				"apiKeyPlaceholder": "Zalijepi API ključ",
+				"authorizeLabel": "Autoriziraj Kaneo",
+				"authorizeDescription": "Otvara Trello u novoj kartici. Samo za čitanje, istječe nakon jednog dana.",
+				"authorizeNeedsKey": "Prvo unesite API ključ. Samo za čitanje, istječe nakon jednog dana.",
+				"authorizeButton": "Autoriziraj na Trellu",
+				"tokenLabel": "Token",
+				"tokenDescription": "Kliknite Allow na Trellu, zatim zalijepite token koji vam prikaže.",
+				"tokenPlaceholder": "Zalijepi token"
+			},
+			"plane": {
+				"urlLabel": "URL radnog prostora",
+				"urlDescription": "Kopirajte ga iz preglednika dok ste u Planeu. Self-hosted također radi.",
+				"urlPlaceholder": "https://app.plane.so/your-workspace",
+				"tokenLabel": "Personal access token",
+				"tokenDescription": "Profile settings, Developer, pa Personal Access Tokens."
+			},
+			"planka": {
+				"urlLabel": "PLANKA URL",
+				"urlDescription": "Adresa na kojoj otvarate PLANKA.",
+				"signInLabel": "Prijavi se pomoću",
+				"signInDescription": "Upotrijebite API ključ ako se vaš račun prijavljuje putem SSO-a.",
+				"signInApiKey": "API ključ",
+				"signInPassword": "E-pošta i lozinka",
+				"apiKeyLabel": "API ključ",
+				"apiKeyDescription": "Stvoren u PLANKA-i pod postavkama vašeg računa.",
+				"apiKeyPlaceholder": "Zalijepite API ključ",
+				"usernameLabel": "E-pošta ili korisničko ime",
+				"usernameDescription": "Račun s kojim se prijavljujete u PLANKA-u.",
+				"passwordLabel": "Lozinka",
+				"passwordDescription": "Koristi se samo za prijavu radi ovog uvoza.",
+				"adminTip": "Upotrijebite PLANKA administratorski račun. PLANKA prikazuje adrese e-pošte samo administratorima, a članovi kartica ovdje se povezuju s osobama prema e-pošti."
+			},
+			"kaneo": {
+				"urlLabel": "Kaneo URL",
+				"urlDescription": "Instanca iz koje premještate podatke.",
+				"apiKeyLabel": "API ključ",
+				"apiKeyDescription": "U tom Kaneo otvorite Postavke, zatim API ključeve.",
+				"apiKeyPlaceholder": "Zalijepite API ključ"
+			},
+			"select": {
+				"selectAll": "Odaberi sve",
+				"clear": "Očisti",
+				"back": "Natrag",
+				"commentsLabel": "Uvezi komentare",
+				"commentsDescription": "Zadržava izvornog autora i datum svakog komentara.",
+				"membersNote": "Dodijeljene osobe se podudaraju s članovima radnog prostora {{workspace}} prema e-pošti. Prvo pozovite tim kako bi zadaci ostali dodijeljeni.",
+				"membersNoteTrello": "Dodijeljene osobe se podudaraju s članovima radnog prostora {{workspace}} prema e-pošti, ili po punom imenu za Trello. Prvo pozovite tim kako bi zadaci ostali dodijeljeni.",
+				"membersNoteJira": "Dodijeljene osobe se podudaraju s članovima radnog prostora {{workspace}} prema e-pošti, ili po punom imenu kada Jira skriva e-poštu. Prvo pozovite tim kako bi zadaci ostali dodijeljeni.",
+				"inviteMembers": "Pozovi članove"
+			},
+			"units": {
+				"team": {
+					"step": "Odaberite timove",
+					"section": "Timovi",
+					"pick": "Odaberite timove koje ćete prenijeti.",
+					"found_one": "Pronađen je {{count}} tim. Ako ga odaberete, postat će novi projekt u {{workspace}}.",
+					"found_other": "Pronađeno je {{count}} timova. Svaki koji odaberete postat će novi projekt u {{workspace}}.",
+					"empty": "Nema pronađenih timova. Provjerite može li ovaj ključ vidjeti timove koje želite uvesti.",
+					"limit": "Odaberite najviše {{max}} timova po uvozu.",
+					"importButton_one": "Uvezi {{count}} tim",
+					"importButton_other": "Uvezi {{count}} timova",
+					"progress_one": "Uvezen je {{done}} od {{count}} tima",
+					"progress_other": "Uvezeno je {{done}} od {{count}} timova",
+					"runTitle_one": "{{source}}, {{count}} tim",
+					"runTitle_other": "{{source}}, {{count}} timova",
+					"allImported_one": "Uvezen je {{count}} tim.",
+					"allImported_other": "Sva {{count}} tima uvezena.",
+					"someImported_one": "Uvezen je {{done}} od {{count}} tima.",
+					"someImported_other": "Uvezeno je {{done}} od {{count}} timova.",
+					"allImported_few": "Sva {{count}} tima uvezena.",
+					"found_few": "Pronađeno je {{count}} timova. Svaki koji odaberete postat će novi projekt u {{workspace}}.",
+					"importButton_few": "Uvezi {{count}} timova",
+					"progress_few": "Uvezeno je {{done}} od {{count}} timova",
+					"runTitle_few": "{{source}}, {{count}} timova",
+					"someImported_few": "Uvezeno je {{done}} od {{count}} timova."
+				},
+				"board": {
+					"step": "Odaberite ploče",
+					"section": "Ploče",
+					"pick": "Odaberite ploče koje ćete prenijeti.",
+					"found_one": "Pronađena je {{count}} ploča. Ako je odaberete, postat će novi projekt u {{workspace}}.",
+					"found_other": "Pronađeno je {{count}} ploča. Svaka koju odaberete postat će novi projekt u {{workspace}}.",
+					"empty": "Nema pronađenih ploča. Provjerite može li ovaj ključ vidjeti ploče koje želite uvesti.",
+					"limit": "Odaberite najviše {{max}} ploča po uvozu.",
+					"importButton_one": "Uvezi {{count}} ploču",
+					"importButton_other": "Uvezi {{count}} ploča",
+					"progress_one": "Uvezeno je {{done}} od {{count}} ploče",
+					"progress_other": "Uvezeno je {{done}} od {{count}} ploča",
+					"runTitle_one": "{{source}}, {{count}} ploča",
+					"runTitle_other": "{{source}}, {{count}} ploča",
+					"allImported_one": "Uvezeno je {{count}} ploča.",
+					"allImported_other": "Sve {{count}} ploče uvezene.",
+					"someImported_one": "Uvezeno je {{done}} od {{count}} ploče.",
+					"someImported_other": "Uvezeno je {{done}} od {{count}} ploča.",
+					"allImported_few": "Sve {{count}} ploče uvezene.",
+					"found_few": "Pronađeno je {{count}} ploča. Svaka koju odaberete postat će novi projekt u {{workspace}}.",
+					"importButton_few": "Uvezi {{count}} ploča",
+					"progress_few": "Uvezeno je {{done}} od {{count}} ploča",
+					"runTitle_few": "{{source}}, {{count}} ploča",
+					"someImported_few": "Uvezeno je {{done}} od {{count}} ploča."
+				},
+				"project": {
+					"step": "Odaberite projekte",
+					"section": "Projekti",
+					"pick": "Odaberite projekte koje ćete prenijeti.",
+					"found_one": "Pronađen je {{count}} projekt. Ako ga odaberete, postat će novi projekt u {{workspace}}.",
+					"found_other": "Pronađeno je {{count}} projekata. Svaki koji odaberete postat će novi projekt u {{workspace}}.",
+					"empty": "Nema pronađenih projekata. Provjerite može li ovaj ključ vidjeti projekte koje želite uvesti.",
+					"limit": "Odaberite najviše {{max}} projekata po uvozu.",
+					"importButton_one": "Uvezi {{count}} projekt",
+					"importButton_other": "Uvezi {{count}} projekata",
+					"progress_one": "Uvezen je {{done}} od {{count}} projekta",
+					"progress_other": "Uvezeno je {{done}} od {{count}} projekata",
+					"runTitle_one": "{{source}}, {{count}} projekt",
+					"runTitle_other": "{{source}}, {{count}} projekata",
+					"allImported_one": "Uvezen je {{count}} projekt.",
+					"allImported_other": "Sva {{count}} projekta uvezena.",
+					"someImported_one": "Uvezen je {{done}} od {{count}} projekta.",
+					"someImported_other": "Uvezeno je {{done}} od {{count}} projekata.",
+					"allImported_few": "Sva {{count}} projekta uvezena.",
+					"found_few": "Pronađeno je {{count}} projekata. Svaki koji odaberete postat će novi projekt u {{workspace}}.",
+					"importButton_few": "Uvezi {{count}} projekata",
+					"progress_few": "Uvezeno je {{done}} od {{count}} projekata",
+					"runTitle_few": "{{source}}, {{count}} projekata",
+					"someImported_few": "Uvezeno je {{done}} od {{count}} projekata."
+				}
+			},
+			"counts": {
+				"tasks_one": "{{count, number}} zadatak",
+				"tasks_other": "{{count, number}} zadataka",
+				"columns_one": "{{count, number}} stupac",
+				"columns_other": "{{count, number}} stupaca",
+				"labels_one": "{{count, number}} oznaka",
+				"labels_other": "{{count, number}} oznaka",
+				"comments_one": "{{count, number}} komentar",
+				"comments_other": "{{count, number}} komentara",
+				"columns_few": "{{count, number}} stupaca",
+				"comments_few": "{{count, number}} komentara",
+				"labels_few": "{{count, number}} oznaka",
+				"tasks_few": "{{count, number}} zadataka"
+			},
+			"run": {
+				"importingTitle": "Uvoz iz {{source}}",
+				"finishedTitle": "Uvoz završen",
+				"failedTitle": "Uvoz nije uspio",
+				"leavePage": "Možete napustiti ovu stranicu. Uvoz se nastavlja na poslužitelju.",
+				"started": "Započeto {{time}}",
+				"took_one": "Trajalo je {{count}} minutu",
+				"took_other": "Trajalo je {{count}} minute",
+				"tookUnderMinute": "Trajalo je manje od minute",
+				"totals": "Uvezeno: {{parts, list}}",
+				"nothingImported": "Ništa nije uvezeno",
+				"keyInMemory": "Vaš {{source}} ključ se čuva samo u memoriji dok ovaj uvoz ne završi.",
+				"finishedNote": "Uvezeni zadaci nisu poslali obavijesti. Komentari zadržavaju izvornog autora i datum.",
+				"finishedNoteNoComments": "Uvezeni zadaci nisu poslali obavijesti.",
+				"importMore": "Uvezi više",
+				"goToProjects": "Idi na projekte",
+				"open": "Otvori",
+				"openProject": "Otvori {{name}}",
+				"waiting": "Čeka se",
+				"queued": "U redu za obradu",
+				"starting": "Pokreće se",
+				"importingBadge": "Uvoz u tijeku",
+				"failedBadge": "Neuspjelo",
+				"warnings_one": "{{count}} upozorenje",
+				"warnings_other": "{{count}} upozorenja",
+				"noTasks": "Nema zadataka",
+				"notImported": "Nije uvezeno",
+				"failedNames_one": "{{names, list}} nije uspjelo, pa za njega ništa nije stvoreno.",
+				"failedNames_other": "{{names, list}} nije uspjelo, pa za njih ništa nije stvoreno.",
+				"loadError": "Ovaj uvoz se ne može učitati",
+				"failedNames_few": "{{names, list}} nije uspjelo, pa za njih ništa nije stvoreno.",
+				"took_few": "Trajalo je {{count}} minute",
+				"warnings_few": "{{count}} upozorenja"
+			},
+			"toast": {
+				"finished": "Uvoz iz {{source}} završen",
+				"partial": "Uvoz iz {{source}} završen s greškama",
+				"failed": "Uvoz iz {{source}} nije uspio"
+			},
+			"entry": {
+				"projectsEmpty": "Uvezi iz drugog alata",
+				"createProjectPrompt": "Premještate se iz Jira, Linear, Trello ili Plane?",
+				"createProjectLink": "Uvezi svoje projekte"
+			}
+		},
+		"projectGeneral": {
+			"pageTitle": "Postavke projekta",
+			"title": "Općenito",
+			"subtitle": "Ime, ključ i izgled {{name}}.",
+			"projectInfoTitle": "Projekt",
+			"iconLabel": "Ikona",
+			"iconHint": "Prikazuje se u bočnoj traci i popisima projekata.",
+			"pickIconTitle": "Odaberi ikonu",
+			"searchIconsPlaceholder": "Pretraži ikone...",
+			"projectNameLabel": "Ime",
+			"projectNamePlaceholder": "Ime projekta",
+			"keyLabel": "Ključ",
+			"keyHint": "Počinje svaki ID zadatka, npr. {{slug}}-123.",
+			"keyPlaceholder": "PRO",
+			"descriptionLabel": "Opis",
+			"descriptionPlaceholder": "Čemu služi ovaj projekt?",
+			"backgroundLabel": "Pozadina ploče",
+			"backgroundHint": "Slika iza ploče. Svaka osoba može ovo isključiti.",
+			"backgroundUnavailable": "Otpremanje slika nije postavljeno na ovoj instanci.",
+			"backgroundUpload": "Otpremi",
+			"backgroundReplace": "Zamijeni",
+			"backgroundRemove": "Ukloni sliku",
+			"backgroundUploadSuccess": "Pozadina projekta ažurirana",
+			"backgroundUploadError": "Neuspjelo ažuriranje pozadine projekta",
+			"backgroundRemoveSuccess": "Pozadina projekta uklonjena",
+			"backgroundRemoveError": "Neuspjelo uklanjanje pozadine projekta",
+			"dangerZone": "Opasna zona",
+			"deleteProject": "Izbriši projekt",
+			"deleteProjectDescription": "Trajno briše {{name}} i sve njegove zadatke.",
+			"deleteModalTitle": "Izbrisati projekt?",
+			"deleteModalDescription": "Ovo trajno briše {{name}} i sve njegove zadatke. Ne može se poništiti.",
+			"deleteModalConfirm": "Izbriši projekt",
+			"toastUpdateError": "Neuspjelo ažuriranje projekta",
+			"toastDeleted": "Projekt je uspješno izbrisan",
+			"toastDeleteError": "Neuspjelo brisanje projekta",
+			"validation": {
+				"nameRequired": "Naziv projekta je obavezan",
+				"keyRequired": "Ključ je obavezan",
+				"keyMax": "Ključ smije imati najviše 8 znakova",
+				"iconRequired": "Ikona je obavezna"
+			},
+			"moveProject": "Premjesti u drugi workspace",
+			"moveProjectDescription": "Zadaci, stupci i oznake se premještaju zajedno s projektom.",
+			"moveProjectPlaceholder": "Odaberite workspace",
+			"moveTargetsError": "Nije moguće provjeriti u koje workspacove možete premjestiti ovaj projekt. Ponovno učitajte da pokušate ponovo.",
+			"moveProjectAction": "Premjesti",
+			"moveModalConfirm": "Premjesti projekt",
+			"toastMoved": "Projekt je uspješno premješten",
+			"toastMovedWithUnassigned": "Projekt je uspješno premješten. {{taskCount}} zadatak(a) je ostalo neodređeno.",
+			"toastMoveError": "Neuspjelo premještanje projekta",
+			"tasksTitle": "Zadaci",
+			"moveTargetLabel": "Workspace",
+			"moveDialogTitle": "Premjestiti u drugi workspace?",
+			"moveDialogDescription": "Zadaci dodijeljeni osobama izvan novog workspacea postaju neodređeni, a pretplate na obavijesti za ovaj projekt se brišu.",
+			"moving": "Premještanje..."
+		},
+		"projectIntegrations": {
+			"pageTitle": "Integracije",
+			"title": "Integracije",
+			"subtitle": "Povežite ovaj projekt s vašim kodnim repozitorijem i timskim chatom.",
+			"githubSectionTitle": "GitHub integracija",
+			"githubSectionSubtitle": "Sinkronizirajte zadatke s GitHub issueima i omogućite dvosmjernu sinkronizaciju.",
+			"giteaSectionTitle": "Gitea integracija",
+			"giteaSectionSubtitle": "Sinkronizirajte zadatke s vlastitom Gitea instancom (issues, PR-ovi, webhooks).",
+			"gitlabSectionTitle": "GitLab integracija",
+			"gitlabSectionSubtitle": "Sinkronizirajte zadatke s GitLab.com ili samostalno upravljanom instancom.",
+			"discordSectionTitle": "Discord integracija",
+			"discordSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Discord kanal putem webhooka.",
+			"genericWebhookSectionTitle": "Webhooks",
+			"genericWebhookSectionSubtitle": "Šaljite događaje zadataka projekta na bilo koju HTTP adresu kao JSON.",
+			"slackSectionTitle": "Slack integracija",
+			"slackSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Slack kanal putem incoming webhooka.",
+			"mattermostSectionTitle": "Mattermost integracija",
+			"mattermostSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Mattermost kanal putem incoming webhooka.",
+			"telegramSectionTitle": "Telegram integracija",
+			"telegramSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Telegram chat ili temu pomoću bota.",
+			"codeHostingTitle": "Hostanje koda",
+			"chatTitle": "Chat i webhooks",
+			"statusConnected": "Povezano",
+			"statusPaused": "Pauzirano",
+			"connect": "Poveži",
+			"configure": "Konfiguriraj",
+			"done": "Gotovo"
+		},
+		"projectVisibility": {
+			"pageTitle": "Vidljivost projekta",
+			"title": "Vidljivost",
+			"subtitle": "Odaberite tko može vidjeti {{project}} izvan {{workspace}}.",
+			"sectionTitle": "Pristup",
+			"publicAccess": "Javni link",
+			"publicAccessHint": "Bilo tko s linkom može pregledati ploču i zadatke. Ne mogu ništa mijenjati.",
+			"publicUrl": "Javni URL",
+			"copy": "Kopiraj link",
+			"toastUpdated": "Vidljivost ažurirana",
+			"toastUpdateError": "Neuspjelo ažuriranje vidljivosti",
+			"thisWorkspace": "ovaj workspace",
+			"membersTitle": "Članovi {{workspace}}",
+			"membersDescription": "Svi u workspaceu, u skladu s njihovim ulogama.",
+			"always": "Uvijek",
+			"on": "Uključeno",
+			"copied": "Kopirano",
+			"copyError": "Nije moguće kopirati link",
+			"openPublicPage": "Otvori javnu stranicu",
+			"offNote": "Isključivanje javnog linka odmah ga onemogućuje."
+		},
+		"projectWorkflow": {
+			"pageTitle": "Postavke tijeka rada",
+			"title": "Tijek rada",
+			"subtitle": "Stupci na vašoj ploči i što premješta zadatke između njih.",
+			"columnsTitle": "Stupci",
+			"columnsDescription": "Povucite za promjenu redoslijeda. Zadaci u dovršenom stupcu broje se kao završeni.",
+			"automationTitle": "Automatizacije",
+			"automationDescription": "Premjesti povezani zadatak kad se nešto dogodi u povezanom repozitoriju."
+		},
+		"projectSwitcher": {
+			"selectProject": "Odaberite projekt",
+			"noProjects": "Nema projekata"
+		},
+		"columnEditor": {
+			"toastCreateError": "Neuspjelo stvaranje stupca",
+			"toastRenameError": "Neuspjelo ažuriranje stupca",
+			"toastUpdateError": "Neuspjelo ažuriranje stupca",
+			"toastDeleteError": "Neuspjelo brisanje stupca",
+			"pickIconTitle": "Odaberi ikonu stupca",
+			"searchIconsPlaceholder": "Pretraži ikone...",
+			"markDoneAria": "Označi {{name}} kao dovršeni stupac",
+			"newColumnPlaceholder": "Naziv stupca",
+			"deleteAria": "Izbriši stupac {{name}}",
+			"renameAria": "Preimenuj stupac {{name}}",
+			"columnHeader": "Stupac",
+			"doneHeader": "Dovršeno",
+			"addColumn": "Dodaj stupac",
+			"dragAria": "Promijeni redoslijed {{name}}",
+			"deleteTitle": "Obrisati “{{name}}”?",
+			"deleteDescription": "Stupci koji i dalje imaju zadatke ne mogu se obrisati. Najprije premjesti te zadatke.",
+			"deleteConfirm": "Izbriši stupac",
+			"reorderError": "Neuspjelo promicanje redoslijeda stupaca"
+		},
+		"customFields": {
+			"namePlaceholder": "Naziv polja",
+			"selectPlaceholder": "Odaberi opciju(e)",
+			"required": "Obavezno",
+			"creating": "Stvaranje...",
+			"defaultLabel": "Zadano",
+			"createSuccess": "Prilagođeno polje je stvoreno.",
+			"createError": "Neuspjelo stvaranje prilagođenog polja.",
+			"deleting": "Brisanje...",
+			"deleteSuccess": "Prilagođeno polje izbrisano.",
+			"deleteError": "Neuspjelo brisanje prilagođenog polja.",
+			"reorderError": "Neuspjelo promicanje redoslijeda polja",
+			"moreOptions": "+{{hiddenCount}} više",
+			"clearDefault": "Ukloni zadano",
+			"types": {
+				"text": "Tekst",
+				"number": "Broj",
+				"date": "Datum",
+				"dropdown": "Padajući izbornik",
+				"boolean": "Potvrdni okvir",
+				"multiselect": "Padajući, odaberi više"
+			},
+			"startsAs": "Početak kao “{{value}}”",
+			"startsAt": "Počinje u {{value}}",
+			"startsOn": "Počinje {{date}}",
+			"startsChecked": "Početno označeno",
+			"startsUnchecked": "Početno neoznačeno",
+			"dragAria": "Promijeni redoslijed {{name}}",
+			"actionsAria": "Radnje za {{name}}",
+			"edit": "Uredi",
+			"emptyTitle": "Još nema prilagođenih polja",
+			"emptyDescription": "Prati podatke poput veličine, klijenta ili datuma lansiranja za svaki zadatak.",
+			"deleteTitle": "Obrisati “{{name}}”?",
+			"deleteDescription": "Polje i njegove vrijednosti na svakom zadatku bit će uklonjeni. Ovo se ne može poništiti.",
+			"deleteConfirm": "Izbriši polje",
+			"newTitle": "Novo polje",
+			"editTitle": "Uredi polje",
+			"dialogDescription": "Svaki zadatak u {{project}} dobiva ovo polje.",
+			"dialogDescriptionFallback": "Svaki zadatak u ovom projektu dobiva ovo polje.",
+			"typeLabel": "Vrsta",
+			"typeLocked": "Vrsta se ne može promijeniti nakon stvaranja polja.",
+			"nameLabel": "Naziv",
+			"optionsLabel": "Opcije",
+			"addOption": "Dodaj opciju",
+			"dragOptionAria": "Promijeni redoslijed {{option}}",
+			"renameOptionAria": "Preimenuj {{option}}",
+			"removeOptionAria": "Ukloni {{option}}",
+			"allowSeveral": "Dozvoli više",
+			"allowSeveralDescription": "Zadatak može odabrati više od jedne opcije.",
+			"requiredDescription": "Svaki zadatak uvijek mora imati vrijednost.",
+			"defaultDescription": "Novi zadaci počinju s ovim.",
+			"noDefault": "Nema zadanog",
+			"checked": "Označeno",
+			"unchecked": "Neoznačeno",
+			"issues": {
+				"optionsRequired": "Dodaj barem jednu opciju.",
+				"moreOptionsRequired": "Dodaj barem dvije opcije da bi se omogućio višestruki odabir.",
+				"defaultRequired": "Obavezna polja trebaju zadanu vrijednost."
+			},
+			"createField": "Stvori polje",
+			"save": "Spremi",
+			"saving": "Spremanje...",
+			"updateSuccess": "Prilagođeno polje spremljeno.",
+			"updateError": "Neuspjelo spremanje prilagođenog polja."
+		},
+		"githubIntegration": {
+			"toast": {
+				"verifyError": "Neuspjelo provjeravanje GitHub instalacije",
+				"installAppFirst": "Prvo instalirajte GitHub aplikaciju na ovaj repozitorij",
+				"missingPermsDetail": "GitHub aplikaciji nedostaju potrebne dozvole: {{list}}. Ažurirajte dozvole aplikacije.",
+				"updated": "GitHub integracija je uspješno ažurirana",
+				"updateError": "Neuspjelo ažuriranje GitHub integracije",
+				"removed": "GitHub integracija je uspješno uklonjena",
+				"removeError": "Neuspjelo uklanjanje GitHub integracije",
+				"issuesImported": "Problemi su uspješno uvezeni",
+				"importError": "Neuspjelo uvoz problema",
+				"commentOnEnabled": "Kaneo će komentirati s poveznicom na zadatak na novim problemima",
+				"commentOnDisabled": "Komentari s poveznicom na zadatak za nove probleme su isključeni",
+				"settingsUpdateError": "Neuspjelo ažuriranje postavki GitHub integracije"
+			},
+			"commentTaskLinkTitle": "Komentiraj poveznicu na Kaneo zadatak na novim problemima",
+			"commentTaskLinkHint": "Tako ljudi na GitHubu mogu otići do zadatka.",
+			"updatePermissions": "Ažuriraj dozvole",
+			"installGithubApp": "Instaliraj GitHub aplikaciju",
+			"importSectionHint": "Uvezi otvorene probleme repozitorija kao zadatke.",
+			"importDisabledHint": "Ponovno poveži repozitorij da bi omogućili uvoz.",
+			"accountVerificationHint": "Poveži svoj GitHub račun da dokažeš da upravljaš ovim repozitorijem.",
+			"enableGithubSignInHint": "Zatražite od administratora instance da omogući prijavu putem GitHub-a.",
+			"reverifyHint": "Ponovno poveži ovaj repozitorij da provjeriš pristup i nastaviš sinkronizaciju.",
+			"resumeImport": "Nastavi uvoz",
+			"importPaused": "Ovaj uvoz je sačuvao napredak. Možeš ga nastaviti.",
+			"importSummary": "Stvoreno: {{imported}} · Ažurirano: {{updated}} · Preskočeno: {{skipped}}",
+			"chooseRepositoryDescription": "Problemi i pull requestovi iz njega bit će povezani s zadacima ovdje.",
+			"linkAccountDescription": "Dokazuje da možeš upravljati repozitorijem.",
+			"linkAccountTitle": "Poveži svoj GitHub račun",
+			"linkGithub": "Poveži GitHub",
+			"linked": "Povezano",
+			"verifyMissingPermissions": "Kaneo GitHub aplikaciji nedostaju dozvole: {{list}}.",
+			"verifyNotInstalled": "Kaneo GitHub aplikacija nije instalirana na ovom repozitoriju.",
+			"verifyReady": "Kaneo GitHub aplikacija je instalirana s potrebnim dozvolama.",
+			"workflowHint": "Premjesti zadatke kada se otvore ili spoje pull requestovi",
+			"workflowLink": "Radni tijek"
+		},
+		"giteaIntegration": {
+			"validation": {
+				"baseUrlRequired": "Gitea osnovna URL adresa je obavezna",
+				"baseUrlInvalid": "Unesi valjani URL (npr. https://gitea.example.com)"
+			},
+			"toast": {
+				"verifyError": "Neuspjelo provjeravanje pristupa Gitea",
+				"verifyFirst": "Provjera pristupa nije uspjela. Provjeri URL, token i repozitorij",
+				"updated": "Gitea integracija spremljena",
+				"updateError": "Neuspjelo spremanje Gitea integracije",
+				"removed": "Gitea integracija uklonjena",
+				"removeError": "Neuspjelo uklanjanje Gitea integracije",
+				"issuesImported": "Problemi su uspješno uvezeni",
+				"importError": "Neuspjelo uvoz problema",
+				"commentOnEnabled": "Kaneo će komentirati s poveznicom na zadatak na novim problemima",
+				"commentOnDisabled": "Komentari s poveznicom na zadatak za nove probleme su isključeni",
+				"settingsUpdateError": "Neuspjelo ažuriranje Gitea postavki"
+			},
+			"commentTaskLinkTitle": "Komentiraj poveznicu na Kaneo zadatak na novim problemima",
+			"commentTaskLinkHint": "Tako ljudi na Gitea mogu otići do zadatka.",
+			"webhookHint": "Dodaj ovaj webhook u postavkama repozitorija kako bi se promjene vratile u Kaneo.",
+			"baseUrlLabel": "Gitea URL",
+			"tokenLabel": "Osobni pristupni token",
+			"tokenPlaceholder": "Zalijepi token",
+			"tokenPlaceholderUpdate": "Zalijepi novi token za rotaciju",
+			"importSectionHint": "Uvezi otvorene probleme i pull requestove kao zadatke.",
+			"importDisabledHint": "Uvoz zahtijeva verificiran pristup. Provjeri status tokena gore.",
+			"browseModalHint": "Spremišta kojima vaš token ima pristup.",
+			"browseNeedsCredentials": "Unesite Gitea URL i token za pregledavanje.",
+			"browseEmpty": "Ovaj token ne vidi nijedno spremište.",
+			"chooseRepositoryDescription": "Upišite owner/name ili odaberite s popisa.",
+			"webhookEvents": "Uključite push, pull request, issue, komentar issuea i create događaje."
+		},
+		"gitlabIntegration": {
+			"validation": {
+				"baseUrlRequired": "Potreban je GitLab osnovni URL",
+				"baseUrlInvalid": "Unesite valjan URL (npr. https://gitlab.com)",
+				"pathInvalid": "Unesite puni put, npr. group/project"
+			},
+			"toast": {
+				"verifyError": "Nije uspjelo potvrđivanje pristupa GitLabu",
+				"verifyFirst": "Provjera pristupa nije uspjela. Provjerite URL, token i put projekta",
+				"updated": "GitLab integracija spremljena",
+				"updateError": "Nije uspjelo spremanje GitLab integracije",
+				"removed": "GitLab integracija uklonjena",
+				"removeError": "Nije uspjelo uklanjanje GitLab integracije",
+				"issuesImported": "Issuevi uspješno uvezeni",
+				"importError": "Nije uspjelo uvoziti issueve",
+				"commentOnEnabled": "Kaneo će komentirati issueve otvorene u GitLabu s poveznicom na zadatak",
+				"commentOnDisabled": "Komentari s poveznicom na zadatak za issueve otvorene u GitLabu su isključeni",
+				"settingsUpdateError": "Nije uspjelo ažuriranje GitLab integracije"
+			},
+			"commentTaskLinkTitle": "Komentiraj poveznicu na Kaneo na issueve otvorene u GitLabu",
+			"commentTaskLinkHint": "Tako ljudi na GitLabu mogu skočiti na zadatak.",
+			"webhookHint": "Dodajte ovaj webhook u postavkama projekta kako bi promjene dolazile natrag u Kaneo.",
+			"baseUrlLabel": "GitLab URL",
+			"tokenTypeLabel": "Vrsta tokena",
+			"tokenTypePrivate": "Osobni, projektni ili grupni access token",
+			"tokenTypeBearer": "OAuth2 token",
+			"tokenLabel": "Access token",
+			"tokenPlaceholder": "Zalijepite token",
+			"tokenPlaceholderUpdate": "Zalijepite novi token za rotaciju",
+			"projectPathLabel": "Put projekta",
+			"importSectionHint": "Uvezite otvorene issueve i merge requestove kao zadatke.",
+			"browseModalHint": "Projekti od kojih je vaš token član.",
+			"searchProjects": "Pretraži projekte",
+			"browseNeedsCredentials": "Unesite GitLab URL i token za pregledavanje.",
+			"loadProjectsError": "Nije moguće učitati projekte.",
+			"openInGitlab": "Otvori {{project}} u GitLabu",
+			"importPermissionHint": "Uvoz zahtijeva dopuštenje za stvaranje i ažuriranje zadataka.",
+			"browseEmpty": "Ovaj token nije član nijednog projekta.",
+			"chooseProjectDescription": "Upišite njegov put ili odaberite s popisa.",
+			"noSearchMatchTitle": "Nema podudaranja projekata",
+			"useProject": "Koristi projekt",
+			"webhookEvents": "Uključite push, issue, komentar i merge request događaje."
+		},
+		"slackIntegration": {
+			"validation": {
+				"webhookInvalid": "Unesite valjan Slack webhook URL"
+			},
+			"toast": {
+				"saved": "Slack integracija uspješno spremljena",
+				"saveError": "Nije uspjelo spremanje Slack integracije",
+				"enabled": "Slack obavijesti uključene",
+				"disabled": "Slack obavijesti pauzirane",
+				"updateError": "Nije uspjelo ažuriranje Slack integracije",
+				"removed": "Slack integracija uspješno uklonjena",
+				"removeError": "Nije uspjelo uklanjanje Slack integracije"
+			},
+			"webhookPlaceholder": "https://hooks.slack.com/services/...",
+			"webhookHint": "Napravite incoming webhook u Slacku i zalijepite ga ovdje.",
+			"connect": "Poveži Slack",
+			"update": "Ažuriraj Slack"
+		},
+		"discordIntegration": {
+			"validation": {
+				"webhookInvalid": "Unesite valjan Discord webhook URL"
+			},
+			"toast": {
+				"saved": "Discord integracija uspješno spremljena",
+				"saveError": "Nije uspjelo spremanje Discord integracije",
+				"enabled": "Discord obavijesti uključene",
+				"disabled": "Discord obavijesti pauzirane",
+				"updateError": "Nije uspjelo ažuriranje Discord integracije",
+				"removed": "Discord integracija uspješno uklonjena",
+				"removeError": "Nije uspjelo uklanjanje Discord integracije"
+			},
+			"webhookPlaceholder": "https://discord.com/api/webhooks/...",
+			"webhookHint": "Napravite channel webhook u Discordu i zalijepite ga ovdje.",
+			"connect": "Poveži Discord",
+			"update": "Ažuriraj Discord"
+		},
+		"mattermostIntegration": {
+			"validation": {
+				"webhookInvalid": "Unesite valjan Mattermost webhook URL"
+			},
+			"toast": {
+				"saved": "Mattermost integracija uspješno spremljena",
+				"saveError": "Nije uspjelo spremanje Mattermost integracije",
+				"enabled": "Mattermost obavijesti uključene",
+				"disabled": "Mattermost obavijesti pauzirane",
+				"updateError": "Nije uspjelo ažuriranje Mattermost integracije",
+				"removed": "Mattermost integracija uspješno uklonjena",
+				"removeError": "Nije uspjelo uklanjanje Mattermost integracije"
+			},
+			"webhookPlaceholder": "https://your-mattermost-server.com/hooks/...",
+			"webhookHint": "Napravite incoming webhook u Mattermostu i zalijepite ga ovdje.",
+			"connect": "Poveži Mattermost",
+			"update": "Ažuriraj Mattermost"
+		},
+		"genericWebhookIntegration": {
+			"validation": {
+				"webhookInvalid": "Unesite valjan webhook URL",
+				"leadTimeRange": "Odaberite vrijeme između 5 minuta i 720 sati."
+			},
+			"toast": {
+				"saved": "Generička webhook integracija uspješno spremljena",
+				"saveError": "Nije uspjelo spremanje generičke webhook integracije",
+				"enabled": "Generičke webhook obavijesti uključene",
+				"disabled": "Generičke webhook obavijesti pauzirane",
+				"updateError": "Nije uspjelo ažuriranje generičke webhook integracije",
+				"removed": "Generička webhook integracija uspješno uklonjena",
+				"removeError": "Nije uspjelo uklanjanje generičke webhook integracije"
+			},
+			"webhookLabel": "Endpoint URL",
+			"webhookPlaceholder": "https://example.com/webhooks/kaneo",
+			"webhookHint": "Kaneo šalje POST zahtjeve s JSON payloadom za svaki omogućeni događaj.",
+			"secretLabel": "Potpisni tajni ključ",
+			"secretPlaceholder": "Zajednički tajni ključ",
+			"secretHint": "Kaneo potpisuje svaki zahtjev tim ključem i šalje digest u zaglavlju X-Kaneo-Signature.",
+			"secretHintConfigured": "Trenutni tajni ključ: {{secret}}. Zalijepite novi da ga zamijenite.",
+			"eventsTitle": "Pošalji kada",
+			"events": {
+				"taskCreated": "Zadatak je stvoren",
+				"taskStatusChanged": "Status je promijenjen",
+				"taskPriorityChanged": "Prioritet je promijenjen",
+				"taskTitleChanged": "Naslov je promijenjen",
+				"taskDescriptionChanged": "Opis je promijenjen",
+				"taskCommentCreated": "Novi komentar",
+				"taskDeleted": "Zadatak je izbrisan",
+				"taskMoved": "Zadatak je premješten",
+				"taskDueDateChanged": "Rok je promijenjen",
+				"taskAssigneeChanged": "Izmijenjen dodijeljeni izvršitelj",
+				"taskUnassigned": "Zadatak bez izvršitelja",
+				"dueDateReminder": "Podsjetnik za rok"
+			},
+			"reminderLeadTimeLabel": "Sati prije roka zadatka",
+			"connect": "Poveži webhook",
+			"activeTitle": "Slanje događaja",
+			"reminderLeadTimeBefore": "Pošalji podsjetnike",
+			"reminderLeadTimeAfter": "sati prije roka zadatka",
+			"disconnectTitle": "Prekinuti vezu webhooka?",
+			"disconnectDescription": "Kaneo će prestati slati događaje i ukloniti spremljeni endpoint i tajni ključ."
+		},
+		"telegramIntegration": {
+			"validation": {
+				"botTokenInvalid": "Unesite valjan Telegram bot token",
+				"chatIdRequired": "Chat ID je obavezan",
+				"threadIdInvalid": "Unesite valjan ID teme"
+			},
+			"toast": {
+				"saved": "Telegram integracija uspješno spremljena",
+				"saveError": "Nije uspjelo spremanje Telegram integracije",
+				"enabled": "Telegram obavijesti uključene",
+				"disabled": "Telegram obavijesti pauzirane",
+				"updateError": "Neuspjelo ažuriranje Telegram integracije",
+				"removed": "Telegram integracija uspješno uklonjena",
+				"removeError": "Neuspjelo uklanjanje Telegram integracije"
+			},
+			"botTokenLabel": "Token bota",
+			"botTokenPlaceholder": "123456789:AAExampleBotToken",
+			"botTokenHint": "Napravite bota s BotFatherom i ovdje zalijepite njegov token.",
+			"botTokenHintConfigured": "Trenutni token: {{token}}",
+			"chatIdLabel": "ID chata",
+			"chatIdPlaceholder": "-1001234567890 ili @team_updates",
+			"threadIdLabel": "ID teme",
+			"threadIdPlaceholder": "Za forum teme",
+			"chatLabelLabel": "Naziv chata",
+			"chatLabelPlaceholder": "Engineering Updates",
+			"connect": "Poveži Telegram",
+			"loadError": "Nije moguće učitati Telegram postavke.",
+			"botTokenSavedPlaceholder": "Spremljeno. Zalijepite novi token za zamjenu."
+		},
+		"repositoryBrowser": {
+			"title": "Odaberite repozitorij",
+			"description": "Repozitoriji kojima Kaneo GitHub App ima pristup.",
+			"searchPlaceholder": "Pretraži repozitorije",
+			"loadError": "Nije moguće učitati repozitorije.",
+			"tryAgain": "Pokušaj ponovo",
+			"emptyTitle": "Još nema repozitorija",
+			"emptyHint": "Instalirajte GitHub App na svoje repozitorije da biste ih vidjeli ovdje.",
+			"installGithubApp": "Instaliraj GitHub App",
+			"noSearchMatchTitle": "Nema odgovarajućih repozitorija",
+			"noSearchMatchHint": "Pokušajte drugi naziv ili očistite pretragu.",
+			"emptyPageHint": "Ništa na ovoj stranici. Učitaj više za nastavak pretraživanja.",
+			"loadMore": "Učitaj još",
+			"manageAccess": "Upravljanje pristupom aplikacije",
+			"missingOne": "Nedostaje jedan?",
+			"searching": "Pretraživanje…",
+			"updated": "Ažurirano {{time}}",
+			"useRepository": "Upotrijebi repozitorij"
+		},
+		"tasksImportExport": {
+			"exportTasks": "Izvezi zadatke",
+			"importTasks": "Uvezi zadatke",
+			"dialogTitle": "Uvezi zadatke",
+			"dialogDescription": "Prenesite JSON datoteku koja sadrži zadatke za uvoz u ovaj projekt.",
+			"expectedFormat": "Očekivani format:",
+			"dropHint": "Povucite i ispustite svoju JSON datoteku ovdje",
+			"selectFile": "Odaberite datoteku",
+			"exporting": "Izvoz zadataka...",
+			"exportSuccess": "Zadaci uspješno izvezeni",
+			"exportError": "Neuspjelo izvoz zadataka",
+			"importing": "Uvoz zadataka...",
+			"importSuccess": "Uvezeno {{count}} zadataka uspješno",
+			"importPartialError": "Neuspjelo uvoziti {{count}} zadataka",
+			"importError": "Neuspješan uvoz zadataka",
+			"invalidFormat": "Neispravan format datoteke za uvoz",
+			"noFileDropped": "Nijedna datoteka nije ispuštena",
+			"notJsonFile": "Molimo prenesite JSON datoteku",
+			"exportDescription": "Preuzmite sve zadatke u ovom projektu kao datoteku.",
+			"export": "Izvezi",
+			"importDescription": "Dodajte zadatke iz datoteke koju ste ranije izvezli.",
+			"import": "Uvezi"
+		},
+		"workflowEditor": {
+			"toastError": "Neuspjelo ažuriranje pravila",
+			"events": {
+				"branch_push": "Pritisnut branch",
+				"pr_opened": "Otvoren pull request",
+				"pr_merged": "Pull request spojen",
+				"issue_opened": "Otvoren issue",
+				"issue_closed": "Issue zatvoren"
+			},
+			"dontMove": "Ne premještaj",
+			"emptyTitle": "Nema povezanih repozitorija",
+			"emptyDescription": "Automatizacije trebaju povezan GitHub, Gitea ili GitLab repozitorij.",
+			"openIntegrations": "Otvori integracije",
+			"connectMore": "Povežite {{providers}} u <link>Integrations</link> da biste ih i njih automatizirali."
+		},
+		"externalLinks": {
+			"resources": "Resursi",
+			"issue": "Issue",
+			"branch": "Branch",
+			"merged": "Spojeno",
+			"draft": "Skica",
+			"open": "Otvori",
+			"addResource": "Dodaj resurs",
+			"url": "URL",
+			"titleOptional": "Naslov (opcionalno)",
+			"cancel": "Odustani",
+			"adding": "Dodavanje...",
+			"empty": "Nema povezanih resursa za ovaj zadatak.",
+			"remove": "Ukloni {{title}}",
+			"removeError": "Neuspjelo uklanjanje veze na resurs."
+		},
+		"security": "Sigurnost",
+		"securityPage": {
+			"pageTitle": "Sigurnost",
+			"title": "Sigurnost",
+			"subtitle": "Kako se prijavljujete u Kaneo.",
+			"sectionTitle": "Prijava",
+			"currentPassword": "Trenutna lozinka",
+			"newPassword": "Nova lozinka",
+			"confirmPassword": "Potvrdite novu lozinku",
+			"currentPasswordPlaceholder": "Unesite svoju trenutnu lozinku",
+			"newPasswordPlaceholder": "Unesite novu lozinku",
+			"confirmPasswordPlaceholder": "Ponovno unesite novu lozinku",
+			"submit": "Promijeni lozinku",
+			"submitting": "Promjena...",
+			"updateSuccess": "Lozinka je ažurirana.",
+			"updateError": "Neuspjelo ažuriranje lozinke.",
+			"noPassword": {
+				"title": "Promjena lozinke nije dostupna",
+				"description": "Vaš račun se prijavljuje drugačijim načinom, pa nema lozinke za promjenu."
+			},
+			"validation": {
+				"currentRequired": "Unesite svoju trenutnu lozinku.",
+				"tooShort": "Nova lozinka mora imati najmanje 8 znakova.",
+				"confirmRequired": "Potvrdite svoju novu lozinku.",
+				"mismatch": "Lozinke se ne podudaraju.",
+				"sameAsCurrent": "Nova lozinka mora biti različita od trenutne lozinke."
+			},
+			"passwordTitle": "Lozinka",
+			"passwordHint": "Koristite barem 8 znakova koje nigdje drugdje ne koristite.",
+			"changePassword": "Promijeni lozinku",
+			"dialogTitle": "Promijeni lozinku",
+			"dialogDescription": "Najmanje 8 znakova, različita od trenutne."
+		},
+		"calendarFeeds": {
+			"title": "Kalendar feedovi",
+			"subtitle": "Pretplatite se na zakazane zadatke projekta u svojoj kalendarskoj aplikaciji.",
+			"labels": "Uključi samo oznake",
+			"selectLabels": "Dodaj oznaku",
+			"noLabels": "Nije pronađeno oznaka.",
+			"timeZoneHint": "Datumi koji traju cijeli dan koriste {{timeZone}}.",
+			"accessHint": "Svaka osoba s vezom na feed može pročitati odgovarajuće naslove zadataka, opise i datume. Poništite vezu da biste zaustavili budući pristup.",
+			"create": "Kreiraj feed",
+			"creating": "Kreiranje…",
+			"created": "Kalendar feed kreiran.",
+			"createError": "Nije moguće kreirati kalendar feed.",
+			"activeFeeds": "Feedovi",
+			"allScheduledTasks": "Svi zakazani zadaci",
+			"subscribeHint": "Dodajte vezu u svoju aplikaciju kalendara kao pretplatu. Ažuriranja se pojavljuju kada aplikacija osvježi feed.",
+			"copy": "Kopiraj vezu",
+			"copyError": "Ne mogu kopirati vezu. Označite URL i kopirajte ručno.",
+			"revoke": "Poništi",
+			"revoked": "Feed kalendara poništen.",
+			"revokeError": "Ne mogu poništiti feed kalendara.",
+			"loadError": "Ne mogu učitati feedove kalendara ili oznake. Pokušajte ponovno.",
+			"deletedLabel": "Izbrisana oznaka",
+			"permissionRequired": "Potrebno je dopuštenje za dijeljenje projekta za upravljanje feedovima kalendara.",
+			"newFeed": "Novi feed",
+			"dialogTitle": "Novi feed kalendara",
+			"dialogDescription": "Zadaci s početnim ili krajnjim datumom pojavljuju se u feedu.",
+			"labelsHint": "Ostavite prazno da uključite sve zakazane zadatke.",
+			"copiedLabel": "Kopirano",
+			"feedActions": "Radnje nad feedom",
+			"revokeConfirmTitle": "Poništiti ovaj feed?",
+			"revokeConfirmDescription": "Aplikacije kalendara koje koriste ovu vezu prestaju primati ažuriranja. To se ne može poništiti.",
+			"revokeConfirm": "Poništi feed",
+			"revoking": "Poništavanje…",
+			"emptyTitle": "Još nema feedova kalendara",
+			"emptyDescription": "Stvorite feed da biste vidjeli zakazane zadatke u aplikaciji kalendara."
+		},
+		"invitationEmailFailed": "Pozivnica je spremljena, ali dostava e-pošte nije uspjela. Provjerite SMTP postavke i ponovno pošaljite pozivnicu.",
+		"billing": {
+			"pageTitle": "Naplata",
+			"subtitle": "Vaš plan za {{workspace}}.",
+			"disabled": "Naplata nije omogućena na ovoj instanci. Samostalno hostani Kaneo uključuje sve značajke, besplatno zauvijek.",
+			"currentPlan": {
+				"title": "Trenutni plan"
+			},
+			"foundingFree": {
+				"title": "Founding Free",
+				"badge": "Besplatno",
+				"description": "Ovom radnom prostoru je kao ranim podržavateljima dodan besplatan pristup Kaneo Cloudu. Hvala što ste s nama od početka."
+			},
+			"seats_one": "{{count}} mjesto",
+			"seats_other": "{{count}} mjesta",
+			"accessEnds": "Pristup završava",
+			"renews": "Obnavlja se",
+			"portalHint": "Racune, način plaćanja i otkazivanje upravlja se u Creem.",
+			"manage": "Upravljanje naplatom",
+			"opening": "Otvaranje...",
+			"trial": {
+				"activeTitle": "Besplatno probno razdoblje",
+				"expiredTitle": "Vaše probno razdoblje je završilo",
+				"expiredDescription": "Pretplatite se na plan ispod kako biste mogli nastaviti stvarati i uređivati. Vaši podaci su sigurni i izvozivi u međuvremenu.",
+				"noDate": "Odaberite plan ispod da nastavite nakon probnog razdoblja.",
+				"badgeDaysLeft_one": "Preostao je {{count}} dan",
+				"badgeDaysLeft_other": "Preostalo je {{count}} dana",
+				"badgeDaysLeft_few": "Preostalo je {{count}} dana"
+			},
+			"choosePlan": {
+				"title": "Odaberite plan",
+				"subtitle": "Promijenite u bilo kojem trenutku. Otkažite kad želite."
+			},
+			"interval": {
+				"monthly": "Mjesečno",
+				"annual": "Godišnje",
+				"annualBadge": "2 mjeseca besplatno"
+			},
+			"mostPopular": "Najpopularnije",
+			"choose": "Odaberi {{plan}}",
+			"starting": "Pokretanje...",
+			"processedBy": "Plaćanja sigurno obrađuje Creem. Cijene ne uključuju porez, gdje je primjenjivo.",
+			"adminsOnly": "Samo vlasnici i administratori radnog prostora mogu upravljati naplatom.",
+			"price": {
+				"perMonth": "/ mj.",
+				"perYear": "/ god.",
+				"perUserMonth": "/ korisnik / mj.",
+				"perUserYear": "/ korisnik / god.",
+				"billedMonthly": "Fakturira se mjesečno",
+				"billedYearly": "{{price}} / mj., fakturirano godišnje",
+				"billedYearlyPerUser": "{{price}} / korisnik / mj., fakturirano godišnje"
+			},
+			"plans": {
+				"personal": {
+					"name": "Personalno",
+					"tagline": "Za pojedince"
+				},
+				"team": {
+					"name": "Tim",
+					"tagline": "Za timove koji surađuju"
+				}
+			},
+			"features": {
+				"singleUser": "Jedan korisnik",
+				"unlimitedMembers": "Neograničeno članova tima",
+				"unlimitedProjects": "Neograničeno projekata i zadataka",
+				"roles": "Uloge i dopuštenja radnog prostora",
+				"backups": "Automatske sigurnosne kopije i ažuriranja",
+				"emailSupport": "Podrška putem e-pošte",
+				"prioritySupport": "Prioritetna podrška putem e-pošte"
+			},
+			"status": {
+				"active": "Aktivan",
+				"trialing": "Probno razdoblje",
+				"past_due": "Plaćanje zakašnjelo",
+				"scheduled_cancel": "Uskoro otkazano",
+				"canceled": "Otkazano",
+				"expired": "Isteklo",
+				"paused": "Pauzirano"
+			},
+			"trialCard": {
+				"daysLeft_one": "Preostao je {{count}} dan probnog razdoblja",
+				"daysLeft_other": "Preostalo je {{count}} dana probnog razdoblja",
+				"ended": "Probno razdoblje završeno",
+				"activeDescription": "Nadogradite u bilo kojem trenutku da zadržite radni prostor nakon probnog razdoblja.",
+				"endingDescription": "Odaberite plan sada kako se vaš tim ne bi prekinuo.",
+				"expiredDescription": "Pretplatite se kako biste nastavili stvarati i uređivati.",
+				"viewPlans": "Pregled planova",
+				"choosePlan": "Odaberite plan",
+				"dismiss": "Zatvori",
+				"daysLeft_few": "Preostalo je {{count}} dana probnog razdoblja"
+			},
+			"expiredCallout": {
+				"title": "Vaše besplatno probno razdoblje je završilo",
+				"adminDescription": "I dalje sve možete pregledavati, ali stvaranje i uređivanje su pauzirani dok ne odaberete plan. Ništa nije izbrisano.",
+				"memberDescription": "I dalje sve možete pregledavati, ali stvaranje i uređivanje su pauzirani dok vlasnik ili administrator radnog prostora ne odabere plan.",
+				"action": "Odaberite plan"
+			},
+			"openFailed": "Nije moguće otvoriti naplatu za ovaj radni prostor",
+			"checkoutSuccess": {
+				"title": "Hvala na pretplati",
+				"description": "Plaćanje primljeno. Plan u nastavku će se ažurirati kada bude potvrđeno."
+			},
+			"seats_few": "{{count}} mjesta"
+		},
+		"chatIntegrations": {
+			"optional": "Opcionalno",
+			"webhookUrlLabel": "Webhook URL",
+			"savedUrlPlaceholder": "Spremljeno. Zalijepite novi URL za zamjenu.",
+			"channelLabel": "Kanal",
+			"channelPlaceholder": "#team-updates",
+			"channelHint": "Samo oznaka za ovaj popis.",
+			"postWhen": "Objavi kada",
+			"events": {
+				"taskCreated": "Stvoren je zadatak",
+				"taskStatusChanged": "Promjena statusa",
+				"taskPriorityChanged": "Promjena prioriteta",
+				"taskTitleChanged": "Promjena naslova",
+				"taskDescriptionChanged": "Promjena opisa",
+				"taskCommentCreated": "Netko je komentirao"
+			},
+			"activeTitle": "Objavljivanje na {{provider}}",
+			"activeDescription": "Isključite da privremeno obustavite bez gubitka postavki.",
+			"saveChanges": "Spremi promjene",
+			"disconnect": "Prekini vezu",
+			"disconnecting": "Prekidanje veze…",
+			"disconnectTitle": "Prekinuti vezu s {{provider}}?",
+			"disconnectDescription": "Kaneo prestaje objavljivati na {{provider}} i uklanja spremljene postavke.",
+			"retry": "Pokušaj ponovno"
+		},
+		"codeHosting": {
+			"browse": "Pregledaj",
+			"changeToken": "Promijeni token",
+			"checking": "Provjeravam pristup…",
+			"chooseProjectTitle": "Odaberite projekt",
+			"chooseRepositoryTitle": "Odaberite repozitorij",
+			"connectProject": "Poveži projekt",
+			"connectRepository": "Poveži spremište",
+			"copied": "Kopirano",
+			"copyFailed": "Nije moguće kopirati u međuspremnik.",
+			"copySecret": "Kopiraj tajni ključ",
+			"copyUrl": "Kopiraj URL webkuka",
+			"disconnect": "Prekini vezu",
+			"disconnectDescription": "Zadaci će prestati sinkronizirati s {{target}}. Možete ponovno povezati kasnije.",
+			"disconnectTitle": "Prekinuti vezu s {{provider}}?",
+			"disconnecting": "Prekidanje veze…",
+			"hideSecret": "Sakrij tajni ključ",
+			"importIssues": "Uvezi probleme",
+			"importNeedsReconnect": "Ponovno se povežite za omogućavanje uvoza.",
+			"importTitle": "Uvezi otvorene probleme",
+			"importing": "Uvoz…",
+			"issuesSection": "Problemi",
+			"lastImport": "Zadnji uvoz: {{imported}} stvoreno, {{updated}} ažurirano, {{skipped}} preskočeno.",
+			"loadError": "Nije moguće učitati ovu integraciju.",
+			"pausedHint": "Sinkronizacija je pauzirana. Ponovno se povežite za nastavak.",
+			"projectSection": "Projekt",
+			"reconnect": "Ponovno poveži",
+			"repositoryPathInvalid": "Unesite spremište kao owner/name.",
+			"repositoryPathLabel": "Spremište",
+			"repositorySection": "Spremište",
+			"retry": "Pokušaj ponovno",
+			"saveToken": "Spremi token",
+			"showSecret": "Prikaži tajni ključ",
+			"signInDescription": "Koristite token koji može čitati projekt i njegove probleme.",
+			"signInTitle": "Prijavite se u svoju instancu",
+			"tokenStored": "Pohranjeni token",
+			"tokenTitle": "Pristupni token",
+			"webhookSecret": "Tajna",
+			"webhookSection": "Webhook",
+			"webhookUrl": "URL"
+		},
+		"shared": {
+			"autosave": "Promjene se automatski spremaju"
+		},
+		"projectCustomFields": {
+			"pageTitle": "Prilagođena polja",
+			"title": "Prilagođena polja",
+			"subtitle": "Dodatni podaci koje svaki zadatak u {{project}} može pratiti, poput veličine ili klijenta.",
+			"subtitleFallback": "Dodatni podaci koje svaki zadatak u ovom projektu može pratiti, poput veličine ili klijenta.",
+			"newField": "Novo polje",
+			"fieldsTitle": "Polja",
+			"fieldsDescription": "Povucite da promijenite redoslijed prikaza na zadatku."
+		}
+	},
+	"navigation": {
+		"commandPalette": {
+			"suggestions": "Prijedlozi",
+			"commands": "Naredbe",
+			"projects": "Projekti",
+			"search": "Pretraži",
+			"members": "Članovi",
+			"createTask": "Stvori zadatak",
+			"createProject": "Stvori projekt",
+			"createWorkspace": "Stvori radni prostor",
+			"lightTheme": "Svijetla tema",
+			"darkTheme": "Tamna tema",
+			"systemTheme": "Sistemska tema",
+			"keyboardShortcuts": "Tipkovnički prečaci",
+			"inputPlaceholder": "Pretraži aplikacije i naredbe...",
+			"empty": "Nema rezultata.",
+			"footer": {
+				"navigate": "Idi",
+				"open": "Otvori",
+				"close": "Zatvori"
+			}
+		},
+		"sidebar": {
+			"projects": "Projekti",
+			"members": "Članovi",
+			"invitations": "Pozivnice",
+			"more": "Više",
+			"backToBoard": "Natrag na ploču",
+			"home": "Početna",
+			"inbox": "Inbox",
+			"myTasks": "Moji zadaci",
+			"invitePeople": "Pozovi ljude"
+		},
+		"projectList": {
+			"viewProject": "Pregled projekta",
+			"shareProject": "Podijeli projekt",
+			"projectSettings": "Postavke projekta",
+			"linkCopied": "Poveznica na projekt kopirana u međuspremnik",
+			"addProject": "Dodaj projekt",
+			"deleteConfirmTitle": "Obrisati projekt?",
+			"deleteConfirmDescription": "Ovo će trajno ukloniti projekt i sve njegove podatke. Nije moguće vratiti ovu radnju.",
+			"deletedToast": "Projekt obrisan",
+			"deleteProject": "Obriši projekt",
+			"switcherLabel": "Prebaci projekt ili prikaz"
+		},
+		"search": {
+			"inputPlaceholder": "Pretraži zadatke, projekte, komentare...",
+			"minCharsHint": "Upišite barem 3 znaka za pretragu",
+			"groups": {
+				"task": "Zadaci",
+				"project": "Projekti",
+				"workspace": "Radni prostori",
+				"comment": "Komentari",
+				"activity": "Aktivnosti",
+				"fallback": "Rezultati"
+			}
+		},
+		"settingsLayout": {
+			"toggleSidebar": "Prebaci bočnu traku",
+			"back": "Natrag"
+		},
+		"userMenu": {
+			"signedOutSuccess": "Uspješno odjavljeni",
+			"signOutFailed": "Neuspjela odjava",
+			"unnamedUser": "Korisnik",
+			"settings": "Postavke",
+			"signingOut": "Odjavljuje se...",
+			"logOut": "Odjavi se"
+		},
+		"workspaceSwitcher": {
+			"workspaces": "Radni prostori",
+			"switching": "Prebacivanje...",
+			"addWorkspace": "Dodaj radni prostor",
+			"selectWorkspace": "Odaberi radni prostor"
+		},
+		"page": {
+			"projectsTitle": "Projekti",
+			"settingsTitle": "Postavke",
+			"backToWorkspace": "Natrag na radni prostor",
+			"settingsWorkspaceTab": "Radni prostor"
+		},
+		"projectSettings": {
+			"projectLabel": "Projekt"
+		},
+		"shortcuts": {
+			"categories": {
+				"general": "Općenito",
+				"navigation": "Navigacija",
+				"create": "Stvaranje",
+				"views": "Prikazi",
+				"tasks": "Zadaci",
+				"list": "Ploča i lista",
+				"inbox": "Inbox",
+				"filters": "Filtri",
+				"editor": "Uređivač"
+			},
+			"items": {
+				"openCommandMenu": "Otvori izbornik naredbi",
+				"openSearch": "Otvori pretragu",
+				"openShortcuts": "Tipkovnički prečaci",
+				"submit": "Spremi ili pošalji",
+				"back": "Zatvori ili se vrati",
+				"switchWorkspace": "Promijeni radni prostor",
+				"logOut": "Odjavi se",
+				"showDisplayOptions": "Opcije prikaza",
+				"dismissToasts": "Zatvori sve obavijesti",
+				"toggleSidebar": "Prebaci bočnu traku",
+				"goToHome": "Idi na početnu",
+				"goToInbox": "Idi na ulaznu poštu",
+				"goToMyTasks": "Idi na moje zadatke",
+				"goToProjects": "Idi na projekte",
+				"goToSettings": "Idi na postavke",
+				"goToTasks": "Idi na zadatke",
+				"goToBacklog": "Idi na backlog",
+				"goToProject": "Idi na projekt 1–9",
+				"openTask": "Otvori zadatak",
+				"openProject": "Otvori projekt",
+				"createTask": "Stvori zadatak",
+				"createProject": "Stvori projekt",
+				"toggleLayout": "Prebaci između ploče i liste",
+				"deleteTask": "Izbriši zadatak",
+				"copyTaskUrl": "Kopiraj URL zadatka",
+				"copyBranchName": "Kopiraj ime grane",
+				"nextTask": "Sljedeći stavka",
+				"previousTask": "Prethodna stavka",
+				"openFocusedTask": "Otvori odabranu stavku",
+				"selectAll": "Odaberi sve",
+				"clearSelection": "Očisti odabir",
+				"changeStatus": "Promijeni status",
+				"changePriority": "Promijeni prioritet",
+				"assignTask": "Dodijeli",
+				"assignToMe": "Dodijeli meni",
+				"changeLabels": "Promijeni oznake",
+				"setDueDate": "Postavi rok",
+				"removeDueDate": "Ukloni rok",
+				"renameTask": "Preimenuj",
+				"editDescription": "Uredi opis",
+				"commentOnTask": "Komentiraj",
+				"moveToProject": "Premjesti u drugi projekt",
+				"createSubtask": "Stvori podzadatak",
+				"setParent": "Postavi roditeljski zadatak",
+				"openParent": "Otvori roditeljski zadatak",
+				"openSubtask": "Otvori podzadatak",
+				"markBlockedBy": "Označi kao blokirano od strane",
+				"markBlocking": "Označi kao blokira",
+				"markRelated": "Označi kao povezano",
+				"addLink": "Dodaj poveznicu",
+				"toggleResources": "Prikaži ili sakrij resurse",
+				"copyTaskId": "Kopiraj ID zadatka",
+				"copyTaskTitle": "Kopiraj naslov zadatka",
+				"copyAsMarkdown": "Kopiraj kao Markdown",
+				"peekTask": "Pregledaj odabrani zadatak",
+				"selectTask": "Odaberi zadatak",
+				"selectGroup": "Odaberi sve u grupi",
+				"copyPageUrl": "Kopiraj URL stranice",
+				"focusRight": "Sljedeći stupac",
+				"focusLeft": "Prethodni stupac",
+				"moveTaskTop": "Premjesti na vrh grupe",
+				"moveTaskUp": "Premjesti jedan gore",
+				"moveTaskDown": "Premjesti jedan dolje",
+				"moveTaskBottom": "Premjesti na dno grupe",
+				"moveTaskLeft": "Premjesti u prethodni stupac",
+				"moveTaskRight": "Premjesti u sljedeći stupac",
+				"toggleGroup": "Skupi ili proširi grupu",
+				"toggleAllGroups": "Skupi ili proširi sve grupe",
+				"deleteNotification": "Izbriši obavijest",
+				"deleteReadNotifications": "Izbriši sve pročitane obavijesti",
+				"toggleNotificationRead": "Označi kao pročitano ili nepročitano",
+				"markAllNotificationsRead": "Označi sve kao pročitano",
+				"addFilter": "Dodaj filtar",
+				"clearAllFilters": "Očisti sve filtre",
+				"clearLastFilter": "Očisti zadnji filtar",
+				"editorBold": "Podebljano",
+				"editorItalic": "Kurziv",
+				"editorUnderline": "Podcrtano",
+				"editorStrike": "Precrtano",
+				"editorAttach": "Priloži sliku ili datoteku",
+				"editorInlineCode": "Inline kod",
+				"editorLink": "Pretvori tekst u poveznicu",
+				"editorQuote": "Citat u bloku",
+				"editorParagraph": "Običan tekst",
+				"editorHeading1": "Naslov 1",
+				"editorHeading2": "Naslov 2",
+				"editorHeading3": "Naslov 3",
+				"editorChecklist": "Kontrolna lista",
+				"editorToggleChecklist": "Prebaci stavku kontrolne liste",
+				"editorBulletList": "Popis s grafičkim oznakama",
+				"editorNumberedList": "Numerirani popis",
+				"editorCodeBlock": "Blok koda",
+				"editorUndo": "Poništi",
+				"editorRedo": "Vrati"
+			},
+			"title": "Tipkovnički prečaci",
+			"searchPlaceholder": "Pretraži po radnji ili tipki",
+			"results_one": "{{count}} rezultat",
+			"results_other": "{{count}} rezultata",
+			"noResults": "Nema podudarnih prečaca",
+			"then": "zatim",
+			"or": "ili",
+			"thenEllipsis": "zatim…",
+			"results_few": "{{count}} rezultata"
+		}
+	},
+	"notifications": {
+		"newCount_one": "{{count}} novo",
+		"newCount_other": "{{count}} novih",
+		"emptyTitle": "Još nema obavijesti",
+		"emptySubtitle": "Ovdje će se prikazivati ažuriranja i aktivnosti.",
+		"clearAll": "Očisti sve obavijesti",
+		"clearDialogTitle": "Obrisati sve obavijesti?",
+		"clearDialogDescription": "Ovo će trajno ukloniti sve obavijesti. Ne možete poništiti ovu radnju.",
+		"reminderLeadTime": {
+			"minutes_one": "{{count}} minuta",
+			"minutes_other": "{{count}} minuta",
+			"hours_one": "{{count}} sat",
+			"hours_other": "{{count}} sati",
+			"days_one": "{{count}} dan",
+			"days_other": "{{count}} dana",
+			"days_few": "{{count}} dana",
+			"hours_few": "{{count}} sati",
+			"minutes_few": "{{count}} minuta"
+		},
+		"events": {
+			"task_created": {
+				"title": "Stvoren je novi zadatak",
+				"content": "Zadatak „{{taskTitle}}\" je stvoren"
+			},
+			"workspace_created": {
+				"title": "Workspace je stvoren",
+				"content": "Vaš workspace „{{workspaceName}}\" je uspješno stvoren"
+			},
+			"task_status_changed": {
+				"title": "Status zadatka promijenjen",
+				"content": "Status zadatka „{{taskTitle}}\" promijenjen je s „{{oldStatus}}\" na „{{newStatus}}\""
+			},
+			"task_assignee_changed": {
+				"title": "Zadatak dodijeljen vama",
+				"content": "Dodijeljeni ste zadatku: {{taskTitle}}"
+			},
+			"task_mention": {
+				"title": "{{mentionerName}} vas je spomenuo",
+				"content": "{{mentionerName}} vas je spomenuo u: {{taskTitle}}"
+			},
+			"task_comment": {
+				"title": "{{commenterName}} je komentirao vaš zadatak",
+				"content": "Novi komentar na {{taskTitle}}: {{commentPreview}}"
+			},
+			"due_date_reminder": {
+				"title": "Rok zadatka uskoro ističe",
+				"content": "{{taskTitle}} istječe za {{leadTime}}"
+			},
+			"task_overdue": {
+				"title": "Zadatak je probio rok",
+				"content": "{{taskTitle}} je prošao rok"
+			},
+			"time_entry_created": {
+				"title": "Praćenje vremena pokrenuto",
+				"contentWithTask": "Praćenje vremena pokrenuto za zadatak: {{taskTitle}}",
+				"contentWithoutTask": "Praćenje vremena pokrenuto za zadatak"
+			}
+		},
+		"inbox": {
+			"pageTitle": "Inbox",
+			"unread": "Neprečito",
+			"today": "Danas",
+			"earlier": "Ranije",
+			"filters": {
+				"label": "Filtriraj obavijesti",
+				"all": "Sve",
+				"unread": "Neprečito",
+				"mentions": "Spominjanja"
+			},
+			"emptyFilter": "Prazno ovdje",
+			"loadError": "Obavijesti se nisu mogle učitati.",
+			"selectPrompt": "Odaberite obavijest za čitanje",
+			"back": "Inbox",
+			"openTask": "Otvori zadatak",
+			"recentActivity": "Nedavna aktivnost",
+			"taskUnavailable": "Ovaj zadatak više nije dostupan.",
+			"taskLoadError": "Ovaj zadatak se nije mogao učitati.",
+			"actionError": "Nije moguće ažurirati inbox. Pokušajte ponovo.",
+			"readCleared": "Obrisane pročitane obavijesti"
+		},
+		"newCount_few": "{{count}} novih"
+	},
+	"activity": {
+		"assignedToSelf": "dodijelio zadatak sebi",
+		"unassigned": "uklonio dodjelu zadatka",
+		"assignedTo": "dodijelio zadatak korisniku {{name}}",
+		"changedStatus": "promijenio status s {{from}} na {{to}}",
+		"changedPriority": "promijenio prioritet s {{from}} na {{to}}",
+		"clearedDueDate": "uklonio rok",
+		"setDueDate": "postavio rok na {{date}}",
+		"changedDueDate": "promijenio rok s {{from}} na {{to}}",
+		"changedTitle": "promijenio naslov s \"{{from}}\" u \"{{to}}\"",
+		"moved": "premjestio zadatak iz \"{{from}}\" u \"{{to}}\"",
+		"movedFromOtherProject": "premjestio zadatak iz drugog projekta u \"{{to}}\"",
+		"created": "kreirao ovaj zadatak",
+		"githubUser": "GitHub User",
+		"comment": {
+			"viewGithubProfile": "Pogledaj GitHub profil",
+			"commentedOnForge": "komentirao na {{forge}}",
+			"cannotBeEmpty": "Komentar ne može biti prazan",
+			"mustBeLoggedInToEdit": "Morate biti prijavljeni za uređivanje komentara",
+			"updated": "Komentar ažuriran",
+			"failedToUpdate": "Ažuriranje komentara nije uspjelo",
+			"edit": "Uredi komentar",
+			"editPlaceholder": "Uredi komentar...",
+			"save": "Spremi",
+			"added": "Komentar dodan",
+			"failedToAdd": "Dodavanje komentara nije uspjelo",
+			"leavePlaceholder": "Ostavi komentar...",
+			"attachFile": "Priloži datoteku",
+			"submitShortcut": "Pošalji komentar",
+			"editor": {
+				"uploadsOnlyOnSavedTasks": "Učitavanje datoteka dostupno je samo za spremljene zadatke.",
+				"uploadingFile": "Učitavanje datoteke...",
+				"imageUploaded": "Slika učitana",
+				"fileAttached": "Datoteka priložena",
+				"failedToUploadFile": "Učitavanje datoteke nije uspjelo",
+				"plaintext": "Čisti tekst",
+				"autoDetect": "Automatsko otkrivanje",
+				"slashGroupText": "Tekst",
+				"slashGroupLists": "Liste",
+				"slashGroupInsert": "Umetni",
+				"slashParagraph": "Tekst",
+				"slashHeading": "Naslov",
+				"slashBulletList": "Popis s grafičkim oznakama",
+				"slashTaskList": "Popis zadataka",
+				"slashOrderedList": "Numerirani popis",
+				"slashQuote": "Citiraj",
+				"slashCodeBlock": "Blok koda",
+				"slashTable": "Tablica",
+				"slashFile": "Datoteka",
+				"searchParagraph": "odlomak teksta normalno",
+				"searchHeading": "naslov h2",
+				"searchBulletList": "popis grafičke oznake neuređeno",
+				"searchTaskList": "todo zaokruži kontrolni popis zadatak lista",
+				"searchOrderedList": "popis uređen numeriran",
+				"searchQuote": "citat blockquote",
+				"searchCodeBlock": "isječak koda",
+				"searchTable": "tablica mreža",
+				"searchFile": "datoteka privitak slika fotografija upload",
+				"embedErrorInvalidUrl": "Unesite valjani URL",
+				"embedErrorYoutubeOnly": "Mogu se ugraditi samo YouTube veze.",
+				"embedVideo": "Ugradi video",
+				"keepAsLink": "Ostavi kao poveznicu",
+				"hintTab": "Tab",
+				"hintEsc": "Esc",
+				"pasteUrl": "Zalijepi URL",
+				"asLink": "Kao poveznica",
+				"embed": "Ugradi",
+				"noCommands": "Nema naredbi",
+				"ariaCommentContent": "Sadržaj komentara",
+				"ariaCommentEditor": "Uređivač komentara",
+				"ariaCopyCode": "Kopiraj kod",
+				"ariaCopied": "Kopirano",
+				"copy": "Kopiraj",
+				"copied": "Kopirano",
+				"dropImageToUpload": "Otpustite sliku za učitavanje",
+				"previewImageAlt": "Pregled slike",
+				"codeLang": {
+					"bash": "Bash",
+					"csharp": "C#",
+					"cpp": "C++",
+					"css": "CSS",
+					"go": "Golang",
+					"graphql": "GraphQL",
+					"html": "HTML",
+					"json": "JSON",
+					"java": "Java",
+					"javascript": "JavaScript",
+					"markdown": "Markdown",
+					"mermaid": "Mermaid",
+					"plaintext": "Čisti tekst",
+					"python": "Python",
+					"rust": "Rust",
+					"sql": "SQL",
+					"swift": "Swift",
+					"typescript": "TypeScript",
+					"yaml": "YAML"
+				},
+				"table": {
+					"addColumnBefore": "Umetni stupac lijevo",
+					"addColumnAfter": "Umetni stupac desno",
+					"deleteColumn": "Izbriši stupac",
+					"addRowBefore": "Umetni red iznad",
+					"addRowAfter": "Umetni red ispod",
+					"deleteRow": "Izbriši redak",
+					"deleteTable": "Izbriši tablicu"
+				},
+				"mermaid": {
+					"renderFailed": "Mermaid dijagram se nije mogao prikazati"
+				}
+			},
+			"importedFrom": "Uvezeno iz {{source}}",
+			"importedBy": "Uvezao/la {{name}}"
+		}
+	},
+	"tasks": {
+		"checklistProgress": "{{completed}} od {{total}} stavki iz kontrolnog popisa dovršeno",
+		"title": "Zadaci",
+		"status": {
+			"label": "Status",
+			"to-do": "Za napraviti",
+			"in-progress": "U tijeku",
+			"in-review": "Na provjeri",
+			"done": "Dovršeno",
+			"archived": "Arhivirano",
+			"planned": "Planirano"
+		},
+		"priority": {
+			"label": "Prioritet",
+			"no-priority": "Bez prioriteta",
+			"low": "Nizak",
+			"medium": "Srednji",
+			"high": "Visok",
+			"urgent": "Hitno"
+		},
+		"view": {
+			"board": "Board",
+			"list": "Popis",
+			"backlog": "Backlog",
+			"gantt": "Gantt",
+			"heading": "Prikaz"
+		},
+		"common": {
+			"selectTask": "Odaberi zadatak",
+			"loadingTask": "Učitavanje zadatka...",
+			"taskNotFound": "Zadatak nije pronađen",
+			"taskNotFoundDescription": "Zadatak koji tražite ne postoji ili je izbrisan.",
+			"ticketAmbiguous": "ID zadatka odgovara više zadataka",
+			"ticketAmbiguousDescription": "{{ticketId}} odgovara zadacima u više projekata u ovom radnom prostoru. Dodijelite drugačiji ključ jednom od tih projekata kako biste popravili poveznicu.",
+			"ticketNotFoundDescription": "Ne postoji zadatak s ID-jem {{ticketId}} u ovom radnom prostoru ili nemate pristup.",
+			"customFields": "Prilagođena polja"
+		},
+		"detail": {
+			"subtaskOf": "Podzadatak od",
+			"activity": "Aktivnost",
+			"noActivity": "Nema pronađene aktivnosti",
+			"openInFullPage": "Otvori na punoj stranici",
+			"titlePlaceholder": "Kliknite za dodavanje naslova",
+			"addDescription": "Dodaj opis...",
+			"editor": {
+				"ariaLabel": "Uređivač opisa zadatka",
+				"placeholder": "Napišite opis...",
+				"previewImage": "Pregled slike",
+				"autoDetect": "Automatski otkrij",
+				"copyCode": "Kopiraj kod",
+				"copy": "Kopiraj",
+				"copied": "Kopirano",
+				"attachFile": "Priloži datoteku",
+				"dropToUpload": "Ovdje ispustite sliku za prijenos",
+				"checkbox": {
+					"markIncomplete": "Označi zadatak kao nedovršen",
+					"markComplete": "Označi zadatak kao dovršen"
+				},
+				"upload": {
+					"loading": "Prijenos datoteke...",
+					"failed": "Neuspješan prijenos datoteke",
+					"imageSuccess": "Slika prenesena",
+					"fileSuccess": "Datoteka priložena"
+				},
+				"slash": {
+					"groups": {
+						"text": "Tekst",
+						"lists": "Popisi",
+						"insert": "Umetni"
+					},
+					"empty": "Nema naredbi",
+					"commands": {
+						"paragraph": "Tekst",
+						"heading-2": "Naslov",
+						"bullet-list": "Nabrajani popis",
+						"task-list": "Popis zadataka",
+						"ordered-list": "Numerirani popis",
+						"blockquote": "Citat",
+						"code-block": "Blok koda",
+						"table": "Tablica",
+						"file": "Datoteka"
+					}
+				},
+				"languages": {
+					"bash": "Bash",
+					"csharp": "C#",
+					"cpp": "C++",
+					"css": "CSS",
+					"clojure": "Clojure",
+					"cypher": "Cypher",
+					"dart": "Dart",
+					"diff": "Diff",
+					"elixir": "Elixir",
+					"excel": "Excel",
+					"go": "Golang",
+					"graphql": "GraphQL",
+					"html": "HTML",
+					"haskell": "Haskell",
+					"json": "JSON",
+					"java": "Java",
+					"javascript": "JavaScript",
+					"kotlin": "Kotlin",
+					"makefile": "Makefile",
+					"markdown": "Markdown",
+					"mermaid": "Mermaid",
+					"ocaml": "OCaml",
+					"php": "PHP",
+					"perl": "Perl",
+					"plaintext": "Plaintext",
+					"python": "Python",
+					"r": "R",
+					"reasonml": "ReasonML",
+					"ruby": "Ruby",
+					"rust": "Rust",
+					"sql": "SQL",
+					"swift": "Swift",
+					"toml": "TOML",
+					"terraform": "Terraform",
+					"typescript": "TypeScript",
+					"xml": "XML",
+					"yaml": "YAML"
+				},
+				"embed": {
+					"choice": {
+						"embedVideo": "Umetni video",
+						"keepAsLink": "Zadrži kao poveznicu"
+					},
+					"inputPlaceholder": "Zalijepite URL",
+					"embeddedContent": "Umetnuti sadržaj",
+					"asLink": "Kao poveznica",
+					"submit": "Umetni",
+					"errors": {
+						"invalidUrl": "Unesite valjan URL",
+						"onlyYoutube": "Može se ugraditi samo YouTube poveznice."
+					},
+					"onlyYoutubeInline": "Samo YouTube URL-ovi mogu se ugraditi. Umjesto toga upotrijebite način poveznice."
+				},
+				"mermaid": {
+					"renderFailed": "Mermaid dijagram se nije mogao prikazati"
+				},
+				"image": {
+					"large": "Velika",
+					"medium": "Srednja",
+					"reset": "Poništi veličinu",
+					"resizeHandle": "Promijeni veličinu slike",
+					"small": "Mala"
+				},
+				"saved": "Spremljeno",
+				"saving": "Spremanje…",
+				"saveFailed": "Promjene nije bilo moguće spremiti",
+				"retrySave": "Pokušaj ponovno"
+			}
+		},
+		"entity": {
+			"task": "Zadatak"
+		},
+		"relations": {
+			"title": "Veze",
+			"tasksInProject": "Zadaci u projektu",
+			"linkError": "Povezivanje zadatka nije uspjelo",
+			"empty": "Nema povezanih zadataka",
+			"searchPlaceholder": "Pretraži zadatke za povezivanje...",
+			"noTasksFound": "Nema pronađenih zadataka",
+			"openTask": "Otvori zadatak",
+			"removeRelation": "Ukloni vezu",
+			"related": "Povezano",
+			"blocks": "Blokira",
+			"selectTask": "Odaberite zadatak za povezivanje",
+			"types": {
+				"blocks": "blokira",
+				"blocked_by": "blokiran od",
+				"related": "povezano s"
+			},
+			"blockedBy": "Blokiran od",
+			"parentPlaceholder": "Postavi roditeljski zadatak…"
+		},
+		"subtasks": {
+			"progress": "{{completed}} od {{total}} podzadatka dovršeno",
+			"noCompletionColumn": "Ovaj projekt nema odgovarajući stupac za dovršavanje ili ponovno otvaranje ovog podzadatka.",
+			"title": "Podzadatci",
+			"inputPlaceholder": "Naslov podzadatka...",
+			"addAction": "Dodaj",
+			"empty": "Još nema podzadataka",
+			"createError": "Nije uspjelo stvaranje podzadatka",
+			"deleteSuccess": "Zadatak je uspješno izbrisan",
+			"deleteError": "Nije uspjelo brisanje zadatka",
+			"deleteDialogTitle": "Izbrisati zadatak?",
+			"deleteDialogDescription": "Ovo će trajno ukloniti zadatak i sve njegove podatke. Ne možete poništiti ovu radnju.",
+			"deleteAction": "Izbriši zadatak",
+			"completeAria": "Označi podzadatak dovršenim"
+		},
+		"properties": {
+			"title": "Svojstva",
+			"labels": "Oznake",
+			"addLabels": "Dodaj oznake",
+			"copyTaskLink": "Kopiraj poveznicu zadatka",
+			"copyTaskBranch": "Kopiraj naziv grane zadatka",
+			"taskLinkCopied": "Poveznica zadatka kopirana",
+			"taskBranchCopied": "Naziv grane kopiran",
+			"start": "Početak",
+			"startDate": "Datum početka",
+			"noDate": "Bez datuma",
+			"dates": "Datumi",
+			"project": "Projekt"
+		},
+		"move": {
+			"title": "Premjesti zadatak",
+			"projectLabel": "Odredišni projekt",
+			"projectPlaceholder": "Odaberite projekt",
+			"statusLabel": "Odredišni status",
+			"statusHintKeep": "Radni tijek ovog projekta već podržava trenutni status.",
+			"statusHintAdjust": "Odaberite status koji će se koristiti u odredišnom projektu.",
+			"action": "Premjesti zadatak",
+			"success": "Zadatak je uspješno premješten",
+			"error": "Nije uspjelo premještanje zadatka"
+		},
+		"popover": {
+			"assignee": {
+				"unassigned": "Nezaduženo",
+				"updateError": "Nije uspjelo ažuriranje izvršitelja zadatka"
+			},
+			"status": {
+				"updateError": "Nije uspjelo ažuriranje statusa zadatka"
+			},
+			"priority": {
+				"updateError": "Nije uspjelo ažuriranje prioriteta zadatka"
+			},
+			"dueDate": {
+				"updateError": "Nije uspjelo ažuriranje roka zadatka",
+				"clear": "Očisti datum"
+			},
+			"startDate": {
+				"updateError": "Nije uspjelo ažuriranje datuma početka zadatka",
+				"clear": "Očisti datum početka"
+			},
+			"labels": {
+				"searchPlaceholder": "Pretraži oznake...",
+				"empty": "Nema pronađenih oznaka",
+				"create": "Stvori \"{{name}}\"",
+				"chooseColor": "Odaberite boju",
+				"updateError": "Nije uspjelo ažuriranje oznake",
+				"createSuccess": "Oznaka stvorena i dodana",
+				"createError": "Nije uspjelo stvaranje oznake",
+				"colors": {
+					"stone": "Stone",
+					"slate": "Slate",
+					"lavender": "Lavender",
+					"sage": "Sage",
+					"forest": "Forest",
+					"amber": "Amber",
+					"terracotta": "Terracotta",
+					"rose": "Rose",
+					"crimson": "Crimson"
+				},
+				"editLabels": "Uredi oznake"
+			}
+		},
+		"backlog": {
+			"pageTitle": "{{name}}'s backlog",
+			"noTasksToMove": "Nema planiranih zadataka za premještanje",
+			"moveAllConfirm": "Premjestiti svih {{count}} planiranih zadataka u To Do?",
+			"moveAllSuccess": "Premješteno {{count}} zadataka u To Do",
+			"plan": "Planiraj",
+			"moveAllTooltip": "Premjesti sve planirane zadatke u To Do",
+			"moveAll": "Premjesti sve",
+			"addTask": "Dodaj zadatak",
+			"sections": {
+				"planned": "Planirano",
+				"archived": "Arhivirano"
+			},
+			"noTasksInSection": "Nema zadataka u odjeljku {{section}}",
+			"filters": {
+				"dueThisWeek": "Rok ovaj tjedan",
+				"dueNextWeek": "Rok sljedeći tjedan",
+				"noDueDate": "Bez roka"
+			}
+		},
+		"sort": {
+			"direction": "Smjer",
+			"ascending": "Uzlazno",
+			"descending": "Silazno",
+			"fields": {
+				"position": "Ručno (pozicija)",
+				"createdAt": "Datum kreiranja",
+				"priority": "Prioritet",
+				"dueDate": "Rok",
+				"title": "Naslov",
+				"number": "Broj zadatka"
+			}
+		},
+		"boardFilters": {
+			"noValuesUsedYet": "Još nisu korištene vrijednosti",
+			"noCustomFieldValues": "Nema vrijednosti prilagođenih polja",
+			"allCustomFieldValues": "Sve vrijednosti",
+			"selectedCount": "{{count}} odabrano",
+			"subjects": {
+				"status": "Status",
+				"priority": "Prioritet",
+				"assignee": "Izvršitelj",
+				"dueDate": "Rok",
+				"labels": "Oznake"
+			},
+			"operators": {
+				"isAnyOf": "je bilo koji od",
+				"includeAnyOf": "uključuje bilo koji od",
+				"is": "je",
+				"isNot": "nije",
+				"isNoneOf": "nije nijedan od",
+				"include": "uključi",
+				"exclude": "isključi"
+			}
+		},
+		"calendar": {
+			"pageTitle": "{{name}} – Kalendar",
+			"title": "Kalendar",
+			"previousMonth": "Prethodni mjesec",
+			"nextMonth": "Sljedeći mjesec",
+			"today": "Danas",
+			"noTasks": "Nema zakazanih zadataka",
+			"noTasksSubtitle": "Dodajte datum početka, rok ili oboje zadacima da biste ih stavili u kalendar.",
+			"moreTasks": "+{{count}} više",
+			"loadError": "Neuspjelo učitavanje zadataka.",
+			"dayTasksAriaLabel": "Prikaži sve zadatke za {{date}}",
+			"taskAriaLabel": "{{title}}, {{range}}: otvori zadatak",
+			"noTasksThisMonth": "Ovaj mjesec nema ništa zakazano"
+		},
+		"gantt": {
+			"searchPlaceholder": "Traži zakazane tikete...",
+			"pageTitle": "{{name}} – Gantt",
+			"title": "Gantt vremenska crta",
+			"jumpToToday": "Idi na danas",
+			"hideTasks": "Sakrij zadatke",
+			"showTasks": "Prikaži zadatke",
+			"noTasks": "Nema zakazanih zadataka",
+			"noTasksSubtitle": "Dodajte datum početka, rok ili oboje zadacima da biste ih postavili na vremensku crtu projekta.",
+			"noTasksFound": "Nema pronađenih zadataka",
+			"taskHeader": "Zadatak",
+			"updateDatesError": "Neuspjelo ažuriranje datuma zadatka",
+			"resizeStart": "Promijeni veličinu datuma početka",
+			"resizeDue": "Promijeni veličinu datuma roka",
+			"taskAriaLabel": "{{title}}: otvori ili povuci za premještanje",
+			"previousPeriod": "Prethodno razdoblje",
+			"nextPeriod": "Sljedeće razdoblje",
+			"periodStart": "Datum početka vremenske crte",
+			"showTaskDates": "Prikaži datume zadataka"
+		},
+		"delete": {
+			"title": "Obrisati zadatak?",
+			"description": "Ovo će trajno ukloniti zadatak i sve njegove podatke. Ne možete poništiti ovu radnju.",
+			"action": "Obriši zadatak",
+			"success": "Zadatak je uspješno obrisan",
+			"error": "Neuspjelo brisanje zadatka"
+		},
+		"duplicate": {
+			"titleSuffix": "{{title}} (kopija)",
+			"success": "Zadatak je uspješno dupliciran",
+			"error": "Neuspjelo dupliciranje zadatka"
+		},
+		"archive": {
+			"success": "Arhivirano {{count}} zadataka",
+			"confirmTitle_one": "Arhivirati {{count}} dovršeni zadatak?",
+			"confirmTitle_other": "Arhivirati {{count}} dovršenih zadataka?",
+			"confirmDescription": "Odlaze s ploče i premještaju se u Arhivirano u backlogu.",
+			"confirmTitle_few": "Arhivirati {{count}} dovršenih zadataka?"
+		},
+		"listView": {
+			"addTask": "Dodaj zadatak",
+			"archiveAllTooltip": "Arhiviraj sve dovršene zadatke",
+			"noTasks": "Nema zadataka"
+		},
+		"kanban": {
+			"addTask": "Dodaj zadatak",
+			"automaticallySortedHint": "Automatski sortirano po {{sort}}"
+		},
+		"pr": {
+			"merged": "Spojeno",
+			"draft": "Skeč",
+			"open": "Otvoreno",
+			"label": "Pull Request",
+			"count_one": "{{count}} PR",
+			"count_other": "{{count}} PR-a",
+			"closed": "Zatvoreno",
+			"count_few": "{{count}} PR-a"
+		},
+		"assignee": {
+			"label": "Izvršitelj",
+			"unassigned": "Neodređeno"
+		},
+		"dueDate": {
+			"label": "Rok",
+			"clear": "Ukloni datum",
+			"updateError": "Neuspjelo ažuriranje roka zadatka",
+			"clearError": "Neuspjelo uklanjanje roka"
+		},
+		"labels": {
+			"empty": "Nema dostupnih oznaka"
+		},
+		"update": {
+			"error": "Neuspjelo ažuriranje zadatka"
+		},
+		"contextMenu": {
+			"copyLink": "Kopiraj poveznicu",
+			"copyLinkSuccess": "Poveznica zadatka kopirana!"
+		},
+		"actions": {
+			"duplicate": "Dupliciraj",
+			"archive": "Arhiviraj",
+			"markAsPlanned": "Označi kao planirano",
+			"delete": "Izbriši..."
+		},
+		"bulk": {
+			"selectedCount": "{{count}} odabrano",
+			"moveToBacklog": "Premjesti u backlog",
+			"moveToBacklogSuccess": "{{count}} zadataka premješteno u backlog",
+			"moveToBacklogError": "Neuspjelo premještanje zadataka u backlog",
+			"moveToBoard": "Premjesti na ploču",
+			"moveToBoardSuccess": "{{count}} zadataka premješteno na ploču",
+			"moveToBoardError": "Neuspjelo premještanje zadataka na ploču",
+			"delete": "Obriši zadatke",
+			"deleteConfirmTitle_one": "Obrisati {{count}} zadatak?",
+			"deleteConfirmTitle_other": "Obrisati {{count}} zadataka?",
+			"deleteConfirmDescription": "Ovo će trajno ukloniti odabrane zadatke i sve njihove podatke. Ne možete poništiti ovu radnju.",
+			"deleteSuccess": "{{count}} zadataka obrisano",
+			"deleteError": "Neuspjelo brisanje zadataka",
+			"archive": "Arhiviraj zadatke",
+			"archiveSuccess": "{{count}} zadataka arhivirano",
+			"archiveError": "Neuspjelo arhiviranje zadataka",
+			"updateSuccess": "{{count}} zadataka ažurirano",
+			"updateError": "Neuspjelo ažuriranje zadataka",
+			"assignTo": "Dodijeli",
+			"assignSuccess": "{{count}} zadataka dodijeljeno",
+			"assignError": "Neuspjelo dodjeljivanje zadataka",
+			"setPriority": "Postavi prioritet",
+			"updatePriorityError": "Neuspjelo ažuriranje prioriteta",
+			"addLabel": "Dodaj oznaku",
+			"addLabelSuccess": "Oznaka dodana na {{count}} zadataka",
+			"addLabelError": "Neuspjelo dodavanje oznake",
+			"updateDueDateError": "Neuspjelo ažuriranje roka",
+			"actions": "Radnje",
+			"searchActions": "Traži radnje...",
+			"noActionsFound": "Nema pronađenih radnji.",
+			"changeStatus": "Promijeni status",
+			"clearSelection": "Poništi odabir",
+			"selectAll": "Odaberi sve",
+			"moreActions": "Više radnji",
+			"statusPlaceholder": "Promijeni status…",
+			"priorityPlaceholder": "Postavi prioritet…",
+			"assigneePlaceholder": "Dodijeli…",
+			"labelPlaceholder": "Dodaj oznaku…",
+			"columnPlaceholder": "Premjesti u stupac…",
+			"deleteConfirmTitle_few": "Obrisati {{count}} zadataka?"
+		},
+		"editor": {
+			"table": {
+				"addColumnBefore": "Umetni stupac s lijeve",
+				"addColumnAfter": "Umetni stupac s desne",
+				"deleteColumn": "Obriši stupac",
+				"addRowBefore": "Umetni red iznad",
+				"addRowAfter": "Umetni red ispod",
+				"deleteRow": "Obriši red",
+				"deleteTable": "Obriši tablicu"
+			}
+		},
+		"customFields": {
+			"fields": "Polja",
+			"empty": "Prazno",
+			"required": "Obavezno",
+			"enterKey": "Enter",
+			"toSave": "za spremanje",
+			"clear": "Očisti",
+			"setValue": "Postavi {{field}}…",
+			"noMatches": "Nema podudaranja",
+			"missingRequired_one": "{{count}} obavezno polje je prazno",
+			"missingRequired_other": "{{count}} obavezna polja su prazna",
+			"saveError": "Nije moguće spremiti {{field}}",
+			"moreFields_one": "još {{count}} polje",
+			"moreFields_other": "još {{count}} polja",
+			"manage": "Upravljaj poljima",
+			"missingRequired_few": "{{count}} obavezna polja su prazna",
+			"moreFields_few": "još {{count}} polja"
+		},
+		"descriptionSearchLoading": "Pretražujem pune opise…",
+		"descriptionSearchError": "Pretraživanje opisa nije uspjelo. Rezultati mogu biti nepotpuni.",
+		"descriptionRetry": "Pokušajte ponovno",
+		"descriptionLoading": "Učitavam opis…",
+		"descriptionLoadError": "Opis se nije mogao učitati. Pokušajte ponovo učitati trenutnu verziju.",
+		"board": {
+			"reorderFailed": "Nije moguće premjestiti zadatak. Pokušajte ponovno.",
+			"keyboardInstructions": "Pritisnite Space za pregled i Enter za otvaranje zadatka. Koristite Alt ili Option s tipkama sa strelicama za pomicanje."
+		},
+		"toolbar": {
+			"search": "Pretraži zadatke",
+			"clearSearch": "Očisti pretragu",
+			"taskCount_one": "{{count}} zadatak",
+			"taskCount_other": "{{count}} zadataka",
+			"shownCount_one": "{{shown}} od {{count}} zadatka",
+			"shownCount_other": "{{shown}} od {{count}} zadataka",
+			"shownCount_few": "{{shown}} od {{count}} zadataka",
+			"taskCount_few": "{{count}} zadataka"
+		},
+		"display": {
+			"title": "Prikaz",
+			"sortBy": "Sortiraj po",
+			"showOnCards": "Prikaži na karticama",
+			"showOnRows": "Prikaži u redovima",
+			"checklistProgress": "Napredak kontrolne liste",
+			"projectBackground": "Pozadina projekta",
+			"layout": "Raspored"
+		},
+		"filterBar": {
+			"label": "Aktivni filteri",
+			"removeFilter": "Ukloni filter {{name}}",
+			"noMatches": "Nijedan zadatak ne odgovara vašoj pretrazi ili filterima."
+		},
+		"filterMenu": {
+			"addFilter": "Dodaj filter…",
+			"searchSubject": "{{name}}…",
+			"noResults": "Nema rezultata"
+		},
+		"shortcuts": {
+			"assignedToMe": "Dodijeljeno vama",
+			"idCopied": "ID zadatka kopiran",
+			"titleCopied": "Naslov zadatka kopiran",
+			"markdownCopied": "Kopirano u Markdown formatu",
+			"copyFailed": "Nije moguće kopirati u međuspremnik.",
+			"pageUrlCopied": "URL stranice kopiran"
+		},
+		"due": {
+			"overdueDays_one": "{{count}}d zakašnjelo",
+			"overdueDays_other": "{{count}}d zakašnjelo",
+			"overdueWeeks_one": "{{count}}t zakašnjelo",
+			"overdueWeeks_other": "{{count}}t zakašnjelo",
+			"today": "Danas",
+			"tomorrow": "Sutra",
+			"inDays_one": "Za {{count}} dan",
+			"inDays_other": "Za {{count}} dana",
+			"fullDate": "Rok {{date}}",
+			"inDays_few": "Za {{count}} dana",
+			"overdueDays_few": "{{count}}d zakašnjelo",
+			"overdueWeeks_few": "{{count}}t zakašnjelo"
+		},
+		"datePicker": {
+			"dueDatePlaceholder": "Postavi rok…",
+			"startDatePlaceholder": "Postavi datum početka…",
+			"datePlaceholder": "Postavi datum…",
+			"thisWeekend": "Ovaj vikend",
+			"nextWeek": "Sljedeći tjedan",
+			"pickDate": "Odaberi datum",
+			"startsOn": "Počinje {{date}}",
+			"beforeStart": "{{date}} je prije datuma početka",
+			"afterDue": "{{date}} je nakon roka"
+		}
+	},
+	"invitations": {
+		"email": {
+			"subject": "{{inviterName}} vas je pozvao/la da se pridružite {{workspaceName}} na Kaneo",
+			"preview": "Pozvani ste u {{workspaceName}} na Kaneo",
+			"title": "Pridružite se {{workspaceName}}",
+			"subtitle": "{{inviterName}} ({{inviterEmail}}) pozvao/la vas je na suradnju u Kaneo.",
+			"cta": "Prihvati poziv",
+			"sameEmail": "Možete prihvatiti s istom adresom e-pošte koja je primila ovu poruku.",
+			"ignore": "Ako to niste očekivali, ovu poruku možete sigurno zanemariti.",
+			"footer": "Pozivnica za workspace u Kaneo",
+			"details": {
+				"title": "Detalji pozivnice",
+				"sentTo": "Poslano na",
+				"instance": "Instanca",
+				"role": "Uloga",
+				"expires": "Istječe"
+			}
+		},
+		"pageTitle": "Pozivnice",
+		"pendingInvitations": "Neobrađene pozivnice",
+		"acceptSubtitle": "Prihvatite pozivnice za pridruživanje workspaceima",
+		"noPendingTitle": "Nema neobrađenih pozivnica",
+		"noPendingDescription": "Trenutno nemate neobrađenih pozivnica za workspace.",
+		"continueToSetup": "Nastavi na postavljanje",
+		"skipForNow": "Preskoči za sada",
+		"table": {
+			"workspace": "Workspace",
+			"invitedBy": "Pozvao/la",
+			"expires": "Istječe"
+		},
+		"toast": {
+			"acceptError": "Neuspješno prihvaćanje pozivnice",
+			"acceptSuccess": "Pozivnica prihvaćena! Dobrodošli u tim.",
+			"rejectError": "Neuspješno odbijanje pozivnice",
+			"rejectSuccess": "Pozivnica odbijena"
+		}
+	},
+	"workspace": {
+		"projects": {
+			"pageTitle": "Projekti",
+			"createProject": "Kreiraj projekt",
+			"title": "Naslov",
+			"progress": "Napredak",
+			"targetDate": "Ciljani datum",
+			"dueDate": "Rok",
+			"status": "Status",
+			"emptyTitle": "Još nema projekata",
+			"emptyDescription": "Započnite stvaranjem prvog projekta.",
+			"emptyDescriptionReadOnly": "U ovom workspaceu još nema projekata. Zamolite administratora da stvori projekt.",
+			"projectStatus": {
+				"notStarted": "Nije započeto",
+				"complete": "Dovršeno",
+				"inProgress": "U tijeku"
+			},
+			"noDueDate": "Nema roka",
+			"reorderHandle": "Promijeni redoslijed projekata",
+			"reorderError": "Poništavanje redoslijeda projekata nije uspjelo",
+			"unavailable": {
+				"noAccessTitle": "Nemate pristup ovom projektu",
+				"noAccessDescription": "Zamolite administratora workspacea da vam omogući pristup.",
+				"notFoundTitle": "Projekt nije pronađen",
+				"notFoundDescription": "Ovaj projekt ne postoji ili je izbrisan.",
+				"backToWorkspace": "Natrag na workspace"
+			}
+		},
+		"search": {
+			"pageTitle": "Pretraživanje",
+			"backToDashboard": "Natrag na nadzornu ploču",
+			"placeholder": "Pretraži zadatke po naslovu ili kratkom ID-u (npr. DEP-23)...",
+			"hint": "Pretražujte kroz sve projekte u ovom workspaceu. Koristite kratke ID-eve poput DEP-23 za pronalazak određenih zadataka.",
+			"searching": "Pretraživanje...",
+			"resultsFound_one": "Pronađen je {{count}} rezultat",
+			"resultsFound_other": "Pronađeno je {{count}} rezultata",
+			"noResultsTitle": "Nema rezultata",
+			"noResultsDescription": "Pokušajte prilagoditi pojmove za pretragu ili pretražite nešto drugo",
+			"startTitle": "Započni pretraživanje",
+			"startDescription": "Unesite pojam za pretragu kako biste pronašli zadatke u svim projektima",
+			"quickSearchesLabel": "Brze pretrage:",
+			"suggestionHighPriority": "Visoki prioritet",
+			"suggestionBug": "Buba",
+			"suggestionFeature": "Značajka",
+			"suggestionInProgress": "U tijeku",
+			"suggestionCompleted": "Dovršeno",
+			"resultsFound_few": "Pronađeno je {{count}} rezultata"
+		},
+		"create": {
+			"pageTitle": "Kreiraj radni prostor",
+			"heading": "Kreiraj novi radni prostor",
+			"subtitle": "Radni prostori su zajednička okruženja u kojima timovi rade na projektima, ciklusima i zadacima.",
+			"nameLabel": "Naziv radnog prostora",
+			"namePlaceholder": "Unesite naziv radnog prostora",
+			"descriptionLabel": "Opis (opcionalno)",
+			"descriptionPlaceholder": "Dodajte opis radnog prostora",
+			"required": "Obavezno",
+			"creating": "Kreiranje...",
+			"submit": "Kreiraj radni prostor",
+			"success": "Radni prostor je uspješno kreiran",
+			"error": "Nije uspjelo kreiranje radnog prostora"
+		},
+		"home": {
+			"pageTitle": "Početna",
+			"greeting": {
+				"morning": "Dobro jutro",
+				"afternoon": "Dobar dan",
+				"evening": "Dobra večer"
+			},
+			"newTask": "Novi zadatak",
+			"week": {
+				"truncated": "Pregled tjedna uključuje samo prvih {{shown}} od {{total}} dodijeljenih zadataka.",
+				"more_one": "+{{count}} više",
+				"more_other": "+{{count}} više",
+				"more_few": "+{{count}} više"
+			},
+			"upNext": {
+				"title": "Sljedeće",
+				"assigned_one": "{{count}} dodijeljeno vama",
+				"assigned_other": "{{count}} dodijeljeno vama",
+				"viewAll": "Prikaži sve",
+				"assigned_few": "{{count}} dodijeljeno vama"
+			},
+			"projects": {
+				"title": "Vaši projekti",
+				"all": "Svi projekti",
+				"loadError": "Nije moguće učitati projekte.",
+				"tasks_one": "{{count}} zadatak",
+				"tasks_other": "{{count}} zadataka",
+				"tasks_few": "{{count}} zadataka"
+			},
+			"activity": {
+				"title": "Aktivnost",
+				"commented": "komentirao",
+				"updated": "ažurirao zadatak",
+				"empty": "Nije se dogodilo ništa u posljednjih 30 dana.",
+				"loadError": "Nije moguće učitati aktivnost."
+			}
+		},
+		"myWork": {
+			"empty": "Nema vam dodijeljenih zadataka",
+			"loadError": "Nije moguće učitati vaše zadatke.",
+			"due": {
+				"overdue": "Isteklo",
+				"today": "Danas",
+				"tomorrow": "Sutra",
+				"thisWeek": "Ovaj tjedan",
+				"later": "Kasnije",
+				"noDueDate": "Nema roka"
+			}
+		},
+		"myTasks": {
+			"pageTitle": "Moji zadaci",
+			"emptyDescription": "Zadaci dodijeljeni vama u ovom radnom prostoru prikazat će se ovdje.",
+			"groupBy": {
+				"label": "Grupiraj po",
+				"dueDate": "Rok",
+				"project": "Projekt"
+			},
+			"truncated": "Prikazuje se prvih {{shown}} od {{total}} zadataka."
+		}
+	},
+	"team": {
+		"roles": {
+			"owner": "Vlasnik",
+			"admin": "Administrator",
+			"member": "Član",
+			"viewer": "Gledatelj"
+		},
+		"members": {
+			"pageTitle": "Članovi",
+			"inviteMember": "Pozovi člana",
+			"you": "Vi"
+		},
+		"invitations": {
+			"pendingBadge": "na čekanju",
+			"expires": "Istječe {{date}}",
+			"linkLabel": "Poveznica pozivnice",
+			"copyLink": "Kopiraj poveznicu",
+			"linkCopied": "Poveznica pozivnice kopirana",
+			"copyFailed": "Automatsko kopiranje nije uspjelo. Označite poveznicu i pritisnite Ctrl+C."
+		},
+		"inviteModal": {
+			"title": "Pozovi člana tima",
+			"emailLabel": "E-pošta",
+			"emailPlaceholder": "kolega@tvrtka.com",
+			"sendInvitation": "Pošalji pozivnicu",
+			"success": "Pozivnica je uspješno poslana",
+			"error": "Nije uspjelo pozivanje člana tima",
+			"createdTitle": "Pozivnica je kreirana",
+			"shareLinkDescription": "Podijelite ovu poveznicu s {{email}} da se može pridružiti radnom prostoru.",
+			"done": "Gotovo"
+		},
+		"membersTable": {
+			"emptyTitle": "Još nema članova tima",
+			"emptyDescription": "Pozovite svog prvog člana tima da započnete.",
+			"columns": {
+				"name": "Ime",
+				"role": "Uloga",
+				"joined": "Pridružio se",
+				"actions": "Radnje",
+				"projects": "Projekti"
+			},
+			"memberRolePending": "{{role}} (Na čekanju)",
+			"ariaCancelInvitation": "Otkaži pozivnicu",
+			"ariaInvitationActions": "Radnje pozivnice",
+			"ariaRemoveMember": "Ukloni člana",
+			"removeDialogTitle": "Ukloniti člana tima?",
+			"removeDialogDescription": "Jeste li sigurni da želite ukloniti {{name}} iz radnog prostora? Ovu radnju nije moguće poništiti.",
+			"cancelDialogTitle": "Otkaži pozivnicu?",
+			"cancelDialogDescription": "Jeste li sigurni da želite otkazati pozivnicu za {{email}}? Ovu radnju nije moguće poništiti.",
+			"removeMember": "Ukloni člana",
+			"cancelInvitation": "Otkaži pozivnicu",
+			"removeSuccess": "Član tima je uspješno uklonjen",
+			"removeError": "Nije uspjelo uklanjanje člana tima",
+			"cancelInviteSuccess": "Pozivnica je uspješno otkazana",
+			"cancelInviteError": "Nije uspjelo otkazivanje pozivnice",
+			"roleUpdateSuccess": "Uloga je ažurirana",
+			"roleUpdateError": "Nije uspjelo ažuriranje uloge"
+		},
+		"projectAccess": {
+			"label": "Pristup projektima",
+			"description": "Odaberite koje projekte ta osoba može vidjeti.",
+			"allProjects": "Svi projekti",
+			"allProjectsDescription": "Pristupite svim projektima u ovom radnom prostoru, uključujući nove.",
+			"allProjectsUnavailable": "Vaš vlastiti pristup je ograničen, pa možete dati pristup samo odabranim projektima.",
+			"selectedProjects": "Odabrani projekti",
+			"selectedProjectsDescription": "Pristup samo projektima koje odaberete.",
+			"projectsLabel": "Projekti",
+			"noProjects": "Još nema projekata u ovom radnom prostoru.",
+			"archived": "Arhivirano",
+			"selectAtLeastOne": "Odaberite barem jedan projekt.",
+			"projectCount_one": "{{count}} projekt",
+			"projectCount_other": "{{count}} projekata",
+			"editAria": "Promijeni pristup projektima za {{name}} ({{access}})",
+			"dialogTitle": "Pristup projektima",
+			"dialogDescription": "Odaberite koje projekte {{name}} može pristupiti.",
+			"save": "Spremi",
+			"updateSuccess": "Pristup projektima ažuriran",
+			"updateError": "Nije uspjelo ažuriranje pristupa projektima",
+			"projectCount_few": "{{count}} projekata"
+		}
+	},
+	"publicProject": {
+		"pageTitle": "Javni pregled",
+		"badge": "Javno",
+		"readOnly": "Samo za čitanje",
+		"error": {
+			"title": "Projekt nije pronađen",
+			"description": "Ovaj projekt ne postoji ili nije javno dostupan."
+		},
+		"taskCard": {
+			"viewDetailsAria": "Prikaži detalje zadatka {{title}}"
+		},
+		"taskDetail": {
+			"labels": "Oznake",
+			"externalLinks": "Vanjske poveznice",
+			"pullRequestFallback": "Pull Request",
+			"issueFallback": "Issue",
+			"prStatusMerged": "Spojeno",
+			"prStatusDraft": "Nacrt",
+			"prStatusOpen": "Otvoreno",
+			"dueWithDate": "Rok {{date}}",
+			"created": "Stvoreno",
+			"dueDateLabel": "Rok"
+		},
+		"theme": {
+			"switchToLight": "Prebaci na svijetli način",
+			"switchToDark": "Prebaci na tamni način"
+		},
+		"copyUrl": {
+			"successToast": "URL kopiran",
+			"errorToast": "Kopiranje URL-a nije uspjelo",
+			"copied": "Kopirano",
+			"share": "Dijeli"
+		},
+		"branding": {
+			"poweredBy": "Pokreće"
+		}
+	},
+	"press": {
+		"title": "Press kit",
+		"headline": "Kaneo press kit",
+		"intro": "Kaneo logotipi i snimke zaslona proizvoda za članke, videozapise i druge medije.",
+		"description": "Kaneo press materijali: informacije o proizvodu, logotipi, snimke zaslona i kontakt podaci za novinare i tvorce sadržaja.",
+		"downloadKit": "Preuzmi sve materijale",
+		"boilerplateTitle": "O Kaneu",
+		"boilerplate": "Kaneo je open-source platforma za upravljanje projektima koju je stvorio Andrej Acevski. Timovi mogu organizirati zadatke u prikazu ploče i popisa, dodijeliti zadatke, postaviti prioritete i rokove te povezati GitHub. Kaneo je dostupan pod MIT licencom za samostalno hostanje, ili kao upravljana usluga putem Kaneo Clouda.",
+		"logosTitle": "Logotipi",
+		"darkLogo": "Tamni natpis",
+		"darkLogoAlt": "Tamni Kaneo logotip na svijetloj pozadini",
+		"darkLogoDetail": "SVG",
+		"lightLogo": "Svijetli natpis",
+		"lightLogoAlt": "Svijetli Kaneo logotip na tamnoj pozadini",
+		"lightLogoDetail": "SVG",
+		"icon": "Ikona aplikacije",
+		"iconAlt": "Kaneo ikona aplikacije",
+		"iconDetail": "PNG, 512 × 512",
+		"download": "Preuzmi",
+		"screenshotsTitle": "Snimke zaslona",
+		"lightScreenshot": "Ploča (svijetlo)",
+		"lightScreenshotAlt": "Kaneo ploča u svijetloj temi, sa zadacima raspoređenim prema statusu",
+		"darkScreenshot": "Ploča (tamno)",
+		"darkScreenshotAlt": "Kaneo ploča u tamnoj temi, sa zadacima raspoređenim prema statusu",
+		"lightListScreenshot": "Popis (svijetlo)",
+		"lightListScreenshotAlt": "Kaneo popis zadataka u svijetloj temi, grupiran po statusu s izvršiteljima, prioritetima, oznakama i rokovima",
+		"darkListScreenshot": "Popis (tamno)",
+		"darkListScreenshotAlt": "Kaneo popis zadataka u tamnoj temi, grupiran po statusu s izvršiteljima, prioritetima, oznakama i rokovima",
+		"lightTimelineScreenshot": "Vremenska crta (svijetlo)",
+		"lightTimelineScreenshotAlt": "Kaneo Gantt vremenska crta u svijetloj temi, prikazuje planirane zadatke i njihove trajanje",
+		"darkTimelineScreenshot": "Vremenska crta (tamno)",
+		"darkTimelineScreenshotAlt": "Kaneo Gantt vremenska crta u tamnoj temi, prikazuje planirane zadatke i njihove trajanje",
+		"lightTaskScreenshot": "Detalji zadatka (svijetlo)",
+		"lightTaskScreenshotAlt": "Kaneo detalji zadatka u svijetloj temi, s opisom, kontrolnim popisom, timskim komentarom i svojstvima zadatka",
+		"darkTaskScreenshot": "Detalji zadatka (tamno)",
+		"darkTaskScreenshotAlt": "Kaneo detalji zadatka u tamnoj temi, s opisom, kontrolnim popisom, timskim komentarom i svojstvima zadatka",
+		"contactTitle": "Upiti za medije",
+		"contactBody": "Kontaktirajte Kaneo tim za pitanja o proizvodu, intervjue ili dodatne materijale.",
+		"usageContrast": "Koristite svijetli natpis za tamne pozadine i tamni natpis za svijetle pozadine.",
+		"usageProportions": "Zadržite originalne proporcije i boje, bez rastezanja ili dodavanja efekata.",
+		"usageSpace": "Ostavite dovoljno prostora oko logotipa kako bi bio jasan i čitljiv."
+	},
+	"landing": {
+		"sponsors": {
+			"ciSponsor": "Partneri"
+		},
+		"founder": {
+			"title": "Zašto Kaneo postoji",
+			"intro": "Ja sam Andrej i stvorio sam Kaneo jer sam bio umoran od alata za upravljanje projektima koji više smetaju nego pomažu. Nakon godina korištenja prekompliciranih platformi koje odvlače pažnju od stvarnog rada, znao sam da mora postojati bolji način.",
+			"problem": "Problem nije bio u nedostatku značajki — bio je u tome što ih je bilo previše. Svaka obavijest, svaki suvišan gumb, svaki složeni tijek rada udaljavao je moj tim od onoga što je važno: izrade izvrsnih proizvoda.",
+			"principle": "Vjerujem da su najbolji alati nevidljivi. Trebali bi pojačavati prirodni tijek rada vašeg tima, a ne prisiljavati vas da se prilagođavate njima. Kaneo je izgrađen na principu da je manje više — svaka značajka postoji jer rješava stvarni problem, a ne zato što izgleda impresivno u demonstraciji."
+		},
+		"hero": {
+			"cloudCta": "Isprobaj Kaneo Cloud",
+			"selfHostCta": "Samostalno hostaj Kaneo",
+			"trialNote": "14-dnevno probno razdoblje na Cloudu. Nije potrebna kreditna kartica.",
+			"github": "GitHub",
+			"productHunt": "Product Hunt",
+			"title": "Upravljanje projektima",
+			"titleAccent": "koje ne postane projekt.",
+			"description": "Open-source upravljanje projektima s pločama, Gantt kartama i integracijom s GitHubom. Samostalno hostajte besplatno uz uključeni SSO, ili prepustite hosting Kaneo Cloudu."
+		},
+		"navigation": {
+			"product": "Proizvod",
+			"pricing": "Cijene",
+			"resources": "Resursi",
+			"docs": "Dokumentacija",
+			"blog": "Blog",
+			"guides": "Vodiči",
+			"comparisons": "Usporedba alata",
+			"roadmap": "Cestovna karta",
+			"community": "Zajednica",
+			"menu": "Meni",
+			"closeMenu": "Zatvori izbornik",
+			"home": "Kaneo početna",
+			"signIn": "Prijava",
+			"getStarted": "Započni"
+		},
+		"showcase": {
+			"label": "Prikazi proizvoda Kaneo",
+			"controls": "Odaberi prikaz proizvoda",
+			"play": "Pokreni prikaze proizvoda",
+			"pause": "Pauziraj prikaze proizvoda",
+			"board": "Ploča",
+			"list": "Backlog",
+			"gantt": "Gantt"
+		},
+		"features": {
+			"tasks": {
+				"label": "Podzadaci i kontekst",
+				"title": "Veliki zadaci. Jasni sljedeći koraci.",
+				"description": "Razbijte rad na podzadatke, dodijelite svaki i pratite napredak bez gubitka izvornog zadatka. Svaki detalj ostaje uz rad."
+			},
+			"github": {
+				"label": "Integracija s GitHubom",
+				"title": "Od pull requesta do gotovog.",
+				"description": "Issuevi i oznake sinkroniziraju se u oba smjera. Povezani pull requesti pomiču zadatke kroz pregled do dovršetka dok se kod otvara i spaja.",
+				"link": "Poveži GitHub"
+			},
+			"hosting": {
+				"title": "Pokreni ga na svom poslužitelju.",
+				"description": "Postavite s Dockerom i zadržite radni prostor na infrastrukturi koju kontrolirate.",
+				"link": "Samostalno hostaj Kaneo"
+			},
+			"source": {
+				"title": "Kod je također otvoren.",
+				"description": "Pročitajte izvorni kod, prijavite problem ili doprinesite promjenom. Razvoj se odvija na GitHubu.",
+				"link": "Pogledaj izvor"
+			},
+			"preview": {
+				"taskAlt": "Interaktivni pregled zadatka i podzadatka u Kaneu.",
+				"githubAlt": "Interaktivni pregled GitHub spajanja koje ažurira Kaneo zadatak.",
+				"taskTitle": "Objavi novu početnu stranicu",
+				"taskDescription": "Ažuriraj tekst i provjeri izgled prije sljedećeg izdanja.",
+				"checklistDone": "Pregledaj tekst",
+				"checklistOpen": "Provjeri izgled za mobilne uređaje",
+				"inProgress": "U tijeku",
+				"high": "Visoko",
+				"date": "12. okt",
+				"design": "dizajn",
+				"done": "Dovršeno",
+				"relationsAlt": "Interaktivni pregled ovisnosti zadataka u Kaneu.",
+				"inReview": "Na pregledu",
+				"trySubtasks": "Isprobaj označiti podzadatak kao dovršen.",
+				"tryGithub": "Pregledaj spajanje da vidiš ažuriranje zadatka.",
+				"tryRelations": "Otvori povezani zadatak da slijediš vezu.",
+				"mergeAction": "Pregled spoja",
+				"resetAction": "Ponovno postavi pretpregled",
+				"mergedHint": "Pull request spojen. Zadatak premješten u Završeno.",
+				"progress": "{{completed}} od {{total}} podzadataka dovršeno",
+				"backToTask": "Povratak na zadatak početne stranice",
+				"releaseNotes": "Napiši bilješke izdanja",
+				"dependencyDescription": "Početna stranica čeka mobilnu recenziju. Zadrži poveznicu na bilješke za pokretanje radi konteksta.",
+				"mobileDescription": "Provjeri novu početnu stranicu na uskim zaslonima prije objave.",
+				"notesDescription": "Zabilježi što se promijenilo za objavu."
+			},
+			"relations": {
+				"label": "Povezani zadaci i ovisnosti",
+				"title": "Pogledaj što usporava rad.",
+				"description": "Poveži blokatore, prati ovisnosti i drži povezani rad pri ruci. Otvori povezani zadatak da vidiš kontekst sljedećeg koraka."
+			}
+		},
+		"seo": {
+			"title": "Kaneo — Open-source, self-hosted project management",
+			"description": "Open-source upravljanje projektima s pločama, Gantt prikazima i GitHub integracijom. Samostalno hostaj besplatno s uključenim SSO-om ili koristi Kaneo Cloud."
+		},
+		"resources": {
+			"eyebrow": "Prilagodi svom načinu rada",
+			"title": "Jasan put od isprobavanja do uporabe.",
+			"description": "Postavi svoj server, poveži alate ili usporedi Kaneo s trenutnim trackerom.",
+			"docker": {
+				"title": "Samostalno hostanje s Dockerom",
+				"description": "Instalacija, izrade sigurnosnih kopija i ažuriranja za postavku kojom upravljate."
+			},
+			"sso": {
+				"title": "Upotrijebi vlastitog pružatelja identiteta",
+				"description": "Konfiguriraj OIDC single sign-on u besplatnoj samostalnoj verziji."
+			},
+			"mcp": {
+				"title": "Poveži svoje AI alate",
+				"description": "Koristi MCP za rad sa zadacima i projektima putem AI klijenta."
+			},
+			"linear": {
+				"title": "Usporedi Kaneo i Linear",
+				"description": "Pogledaj razlike u hostanju, licenciranju i tijeku rada."
+			}
+		},
+		"product": {
+			"title": "Prije nego počneš",
+			"description": "Praktični detalji o hostanju, planiranju i povezivanju tima.",
+			"overview": "Kaneo je open-source platforma za upravljanje projektima licencirana pod MIT-om, s pločama, backlogom, Gantt i kalendarskim prikazima, prilagođenim poljima, praćenjem vremena i GitHub integracijom. Samostalno je hostaj na vlastitoj infrastrukturi ili koristi Kaneo Cloud.",
+			"hosting": {
+				"question": "Je li Kaneo besplatan za samostalno hostanje?",
+				"answer": "Da. Kaneo je pod MIT licencom i besplatan za samostalno hostanje, s uključenim single sign-onom. Pokreni aplikaciju uz PostgreSQL koristeći Docker Compose ili implementiraj službeni Helm chart. Ti upravljaš infrastrukturom, ažuriranjima i sigurnosnim kopijama.",
+				"link": "Pročitaj vodič za instalaciju"
+			},
+			"planning": {
+				"question": "Ima li Kaneo Gantt grafikone?",
+				"answer": "Da. Kaneo uključuje Gantt i kalendarske prikaze uz ploče, liste i planiranje backlog-a. Koristi datume početka i dospijeća zadataka za planiranje radova na vremenskoj crti. Budžetiranje, usporedbe sa baseline-om i izvještaji o sprint burndownu trenutačno nisu obuhvaćeni.",
+				"link": "Usporedi značajke planiranja"
+			},
+			"sso": {
+				"question": "Je li single sign-on uključen?",
+				"answer": "Da. Besplatna samostalna verzija podržava Google, GitHub, Discord i prilagođene OAuth/OIDC pružatelje. Konfiguriraj svog pružatelja na instanci bez kupnje dodatne Kaneo edicije.",
+				"link": "Konfiguriraj OIDC"
+			},
+			"agents": {
+				"question": "Mogu li AI klijenti raditi s Kaneo?",
+				"answer": "Da. Kaneo pruža MCP server putem @kaneo/mcp paketa i HTTP endpointa. Kompatibilni AI klijenti mogu čitati i ažurirati zadatke koristeći API ključ povezan s korisnikom, uz poštivanje dopuštenja radnog prostora.",
+				"link": "Pročitaj MCP vodič"
+			}
+		},
+		"comparison": {
+			"feature": "Značajka",
+			"yes": "Da",
+			"no": "Ne"
+		},
+		"selfHostingGuide": {
+			"summary": "Što uključuje samostalno hostanje, s poveznicama na održavanu Docker Compose konfiguraciju i korake instalacije.",
+			"answer": "Za samostalno hostanje Kaneo pokreni aplikaciju i PostgreSQL s Docker Composeom, konfiguriraj javni URL i tajne te stavi TLS reverse proxy ispred. Vodič za instalaciju navodi najmanje 2 GB RAM-a i 10 GB prostora na disku. Planiraj kontinuirana ažuriranja, sigurnosne kopije baze podataka i pohranu za prenesene datoteke.",
+			"requirements": "Dokumentirano minimalno je 2 GB RAM-a i 10 GB prostora na disku, s Dockerom 20.10 ili novijim i Docker Compose V2. Predvidi veću kapacitet za svoj workload, rast baze i prenesene datoteke.",
+			"compose": "Upotrijebi održavanu compose.yml u Docker Compose vodiču. Definira PostgreSQL, trajni volumen baze, Kaneo aplikaciju i health checkove. Konfiguriraj environment file prije pokretanja servisa; za produkciju zabilježi verziju slike kako bi ažuriranja bila svjesna.",
+			"backups": "Izradi sigurnosne kopije i PostgreSQL-a i bilo kojeg object storagea za prijenose. Odaberi raspored prema tome koliko posla tim može izgubiti, pohrani kopije izvan aplikacijskog servera i testiraj vraćanje prije nego zatreba.",
+			"worth": "Samostalno hostanje ima smisla kada trebaš kontrolu nad infrastrukturom i podacima, i netko može preuzeti održavanje. Usporedi troškove s upravljanom uslugom uključujući kapacitet servera, pohranu, backupove i vrijeme održavanja.",
+			"minimum": "Vodič za instalaciju navodi Docker 20.10 ili noviji, Docker Compose V2, najmanje 2 GB RAM-a i 10 GB prostora na disku. Compose postavka uključuje PostgreSQL. Redis je opcionalan za jednu API instancu.",
+			"composeLink": "Docker Compose konfiguracija",
+			"composeLinkDescription": "Održavana compose.yml s trajnom pohranom i health checkovima.",
+			"startLink": "Pokreni i provjeri servise",
+			"startLinkDescription": "Pokreni stack, provjeri status i uvjeri se da je aplikacija dostupna."
+		}
+	}
+}

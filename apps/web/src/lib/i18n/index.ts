@@ -124,7 +124,7 @@ export function preloadNamespaces(locale: AppLocale): Promise<void> {
   );
 }
 
-const initialLocale = resolveLocale(null, getBrowserLocale());
+const initialLocale = resolveLocale("hr-HR", getBrowserLocale());
 
 void i18n
   .use(
