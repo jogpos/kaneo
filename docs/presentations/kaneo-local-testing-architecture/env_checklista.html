@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #161618; 
+      display: flex; 
+      flex-direction: column; 
+      padding: 64px;
+      font-family: 'Inter', sans-serif;
+      color: #EAE9E4;
+    }
+    .motif {
+      position: absolute;
+      top: 64px;
+      right: 64px;
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: #9C9CA5;
+    }
+    h2 { font-size: 32px; font-weight: 600; margin-bottom: 32px; display: flex; align-items: center; gap: 16px; }
+    h2 i { color: #D65D2E; font-size: 24px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
+    th { text-align: left; padding: 12px 16px; border-bottom: 2px solid #3A3A3F; color: #D65D2E; font-size: 14px; text-transform: uppercase; }
+    td { padding: 12px 16px; border-bottom: 1px solid #3A3A3F; font-size: 14px; }
+    .mono { font-family: 'Fira Code', monospace; color: #EAE9E4; }
+    .trouble-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .trouble-card {
+      background: #0A0A0B;
+      border: 1px solid #3A3A3F;
+      border-radius: 4px;
+      padding: 20px;
+    }
+    .trouble-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: #D65D2E; }
+    .trouble-card p { font-size: 14px; color: #9C9CA5; line-height: 1.4; }
+    .footer { font-family: 'Fira Code', monospace; font-size: 16px; color: #9C9CA5; text-align: right; margin-top: auto; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">> kaneo_env :: active</div>
+    <h2><i class="fas fa-list-check"></i> Varijable okoline i troubleshooting</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Varijabla</th>
+          <th>Zadana vrijednost (Dev)</th>
+          <th>Opis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono">KANEO_API_URL</td>
+          <td class="mono">http://localhost:1337</td>
+          <td>Osnovni URL API servera</td>
+        </tr>
+        <tr>
+          <td class="mono">DATABASE_URL</td>
+          <td class="mono">postgresql://...</td>
+          <td>Veza s DB (koristiti localhost za host-native)</td>
+        </tr>
+        <tr>
+          <td class="mono">AUTH_SECRET</td>
+          <td class="mono">REPLACE_ME</td>
+          <td>openssl rand -hex 32 (čuva sesiju)</td>
+        </tr>
+        <tr>
+          <td class="mono">VITE_API_URL</td>
+          <td class="mono">http://localhost:1337</td>
+          <td>Javni URL API-ja koji vidi klijent</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="trouble-grid">
+      <div class="trouble-card">
+        <h3>API ne vidi 'postgres'</h3>
+        <p>Hostname <code>postgres</code> radi samo unutar Docker mreže. Za host-native API koristite <code>localhost</code>.</p>
+      </div>
+      <div class="trouble-card">
+        <h3>Failed to fetch</h3>
+        <p>Provjerite <code>VITE_API_URL</code> u <code>apps/web/.env.local</code>. Mora točno odgovarati API-ju.</p>
+      </div>
+      <div class="trouble-card">
+        <h3>CORS / WebSocket greška</h3>
+        <p><code>KANEO_CLIENT_URL</code> mora točno odgovarati protokolu i portu frontenda.</p>
+      </div>
+      <div class="trouble-card">
+        <h3>Baza nije spremna</h3>
+        <p>Compose <code>--wait</code> osigurava pg_isready. Ručno provjerite ss -ltnp | grep 5432.</p>
+      </div>
+    </div>
+    <div class="footer">08</div>
+  </div>
+</body>
+</html>

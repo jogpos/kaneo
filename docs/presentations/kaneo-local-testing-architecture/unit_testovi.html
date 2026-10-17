@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #161618; 
+      display: flex; 
+      flex-direction: column; 
+      padding: 64px;
+      font-family: 'Inter', sans-serif;
+      color: #EAE9E4;
+    }
+    .motif {
+      position: absolute;
+      top: 64px;
+      right: 64px;
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: #9C9CA5;
+    }
+    h2 { font-size: 32px; font-weight: 600; margin-bottom: 48px; display: flex; align-items: center; gap: 16px; }
+    h2 i { color: #D65D2E; font-size: 24px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 24px; flex: 1; }
+    .card {
+      background: #222225;
+      border: 1px solid #3A3A3F;
+      border-radius: 4px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: #D65D2E; }
+    .code {
+      background: #0A0A0B;
+      padding: 12px;
+      border-radius: 4px;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      color: #EAE9E4;
+      margin-top: auto;
+    }
+    .desc { font-size: 15px; color: #9C9CA5; line-height: 1.4; margin-bottom: 16px; }
+    .footer { font-family: 'Fira Code', monospace; font-size: 16px; color: #9C9CA5; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">> kaneo_env :: active</div>
+    <h2><i class="fas fa-vial"></i> Unit i paketni testovi</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Frontend (Web)</h3>
+        <p class="desc">Vitest + Testing Library. Provjerava UI komponente, kuke i lokalizaciju.</p>
+        <div class="code">pnpm --filter @kaneo/web test -- --run</div>
+      </div>
+      <div class="card">
+        <h3>Paketi (Permissions/Libs)</h3>
+        <p class="desc">Testira poslovnu logiku, dozvole i zajedničke uslužne funkcije.</p>
+        <div class="code">pnpm --filter @kaneo/permissions test</div>
+      </div>
+      <div class="card">
+        <h3>Lokalizacija (i18n)</h3>
+        <p class="desc">Validira usklađenost ključeva između jezika i provjerava pluralne oblike.</p>
+        <div class="code">node ./scripts/i18n/check.mjs hr-HR</div>
+      </div>
+      <div class="card">
+        <h3>Kvaliteta koda</h3>
+        <p class="desc">Pokreće TypeScript provjeru tipova i Biome lint/format provjeru cijelog monorepa.</p>
+        <div class="code">pnpm typecheck && pnpm lint</div>
+      </div>
+    </div>
+    <div class="footer">06</div>
+  </div>
+</body>
+</html>

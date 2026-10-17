@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #161618; 
+      display: flex; 
+      flex-direction: column; 
+      padding: 64px;
+      font-family: 'Inter', sans-serif;
+      color: #EAE9E4;
+    }
+    .motif {
+      position: absolute;
+      top: 64px;
+      right: 64px;
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: #9C9CA5;
+    }
+    h2 { font-size: 32px; font-weight: 600; margin-bottom: 48px; display: flex; align-items: center; gap: 16px; }
+    h2 i { color: #D65D2E; font-size: 24px; }
+    .e2e-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; flex: 1; }
+    .overview-card {
+      background: #222225;
+      border: 1px solid #3A3A3F;
+      border-radius: 4px;
+      padding: 32px;
+    }
+    .overview-card h3 { font-size: 20px; font-weight: 600; color: #D65D2E; margin-bottom: 24px; }
+    .features-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+    .feature-item { display: flex; gap: 16px; }
+    .feature-item i { color: #D65D2E; margin-top: 4px; }
+    .feature-item div p { font-size: 16px; line-height: 1.4; }
+    .feature-item div span { font-size: 14px; color: #9C9CA5; }
+    .cleanup-flow { display: flex; flex-direction: column; gap: 16px; }
+    .code-step {
+      background: #0A0A0B;
+      border: 1px solid #3A3A3F;
+      border-radius: 4px;
+      padding: 16px;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      position: relative;
+    }
+    .code-step span { color: #9C9CA5; font-size: 12px; display: block; margin-bottom: 4px; }
+    .footer { font-family: 'Fira Code', monospace; font-size: 16px; color: #9C9CA5; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">> kaneo_env :: active</div>
+    <h2><i class="fas fa-eye"></i> Browser smoke i E2E</h2>
+    <div class="e2e-layout">
+      <div class="overview-card">
+        <h3>Izolirani Playwright Stack</h3>
+        <div class="features-list">
+          <div class="feature-item">
+            <i class="fas fa-cube"></i>
+            <div>
+              <p>Zaseban Docker Compose</p>
+              <span>tests/e2e/compose.yml (port 18173)</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-trash-alt"></i>
+            <div>
+              <p>Privremena baza podataka</p>
+              <span>Disposable DB unutar stacka, ne dira .env</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-tasks"></i>
+            <div>
+              <p>Stvarni scenariji</p>
+              <span>Auth, izrada projekta, task edits, WebSockets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cleanup-flow">
+        <div class="code-step">
+          <span># Priprema preglednika</span>
+          pnpm exec playwright install chromium
+        </div>
+        <div class="code-step">
+          <span># Podizanje stacka</span>
+          docker compose -f tests/e2e/compose.yml up --build --wait
+        </div>
+        <div class="code-step">
+          <span># Izvođenje testova</span>
+          pnpm test:e2e
+        </div>
+        <div class="code-step">
+          <span># Obavezno čišćenje</span>
+          docker compose -f tests/e2e/compose.yml down --volumes
+        </div>
+      </div>
+    </div>
+    <div class="footer">07</div>
+  </div>
+</body>
+</html>

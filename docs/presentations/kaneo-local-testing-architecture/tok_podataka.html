@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #161618; 
+      display: flex; 
+      flex-direction: column; 
+      padding: 64px;
+      font-family: 'Inter', sans-serif;
+      color: #EAE9E4;
+    }
+    .motif {
+      position: absolute;
+      top: 64px;
+      right: 64px;
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: #9C9CA5;
+    }
+    h2 { font-size: 32px; font-weight: 600; margin-bottom: 48px; display: flex; align-items: center; gap: 16px; }
+    h2 i { color: #D65D2E; font-size: 24px; }
+    .flow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; }
+    .flow-card {
+      background: #222225;
+      border: 1px solid #3A3A3F;
+      border-radius: 4px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .flow-card h3 { font-size: 20px; font-weight: 600; color: #D65D2E; display: flex; align-items: center; gap: 12px; }
+    .flow-item {
+      display: flex;
+      gap: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #3A3A3F;
+    }
+    .flow-item:last-child { border-bottom: none; }
+    .flow-step {
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      color: #D65D2E;
+      background: #0A0A0B;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .flow-content p { font-size: 16px; line-height: 1.5; color: #EAE9E4; }
+    .flow-content span { font-size: 14px; color: #9C9CA5; font-family: 'Fira Code', monospace; display: block; margin-top: 4px; }
+    .footer { font-family: 'Fira Code', monospace; font-size: 16px; color: #9C9CA5; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">> kaneo_env :: active</div>
+    <h2><i class="fas fa-exchange-alt"></i> Tok zahtjeva i sesije</h2>
+    <div class="flow-grid">
+      <div class="flow-card">
+        <h3><i class="fas fa-shield-alt"></i> Autentifikacija</h3>
+        <div class="flow-item">
+          <div class="flow-step">1</div>
+          <div class="flow-content">
+            <p>Prijava putem e-pošte ili OAuth-a</p>
+            <span>BETTER_AUTH + SMTP/GitHub</span>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-step">2</div>
+          <div class="flow-content">
+            <p>API izdaje Session Cookie / Token</p>
+            <span>SameSite: Lax | Secure: True</span>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-step">3</div>
+          <div class="flow-content">
+            <p>Middleware provjerava pristup radnom prostoru</p>
+            <span>workspace-access-middleware.ts</span>
+          </div>
+        </div>
+      </div>
+      <div class="flow-card">
+        <h3><i class="fas fa-sync"></i> Reali-time ažuriranja</h3>
+        <div class="flow-item">
+          <div class="flow-step">1</div>
+          <div class="flow-content">
+            <p>Klijent otvara WebSocket vezu</p>
+            <span>Hono Node-WS adapter</span>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-step">2</div>
+          <div class="flow-content">
+            <p>Promjena podataka okida emitiranje</p>
+            <span>eventContext + ws/index.ts</span>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-step">3</div>
+          <div class="flow-content">
+            <p>Ostali članovi primaju ažuriranu ploču</p>
+            <span>TanStack Query cache invalidation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">05</div>
+  </div>
+</body>
+</html>
