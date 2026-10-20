@@ -34,18 +34,6 @@
 			"label": "面包屑",
 			"more": "更多"
 		},
-		"language": {
-			"english": "英语",
-			"german": "德语",
-			"greek": "希腊语",
-			"macedonian": "马其顿语",
-			"french": "法语",
-			"spanish": "西班牙语",
-			"dutch": "荷兰语",
-			"korean": "韩语",
-			"chinese": "中文",
-			"italian": "意大利语"
-		},
 		"people": {
 			"someone": "某人",
 			"unknown": "未知"
@@ -115,10 +103,8 @@
 				"chooseProjectForImages": "上传图片前请先选择项目。",
 				"prepareTaskError": "任务准备失败",
 				"successCreated": "任务创建成功",
-				"successUpdated": "任务更新成功",
 				"createError": "任务创建失败",
 				"priority": "优先级",
-				"statusFallback": "进行中",
 				"startDate": "开始日期",
 				"dueDate": "截止日期",
 				"clearStartDate": "清除开始日期",
@@ -138,7 +124,6 @@
 				"discardTitle": "放弃任务？",
 				"discardDescription": "未保存的任务详情将会丢失。",
 				"discardButton": "放弃任务",
-				"untitledTask": "未命名任务",
 				"labelColors": {
 					"stone": "石板灰",
 					"slate": "石板蓝",
@@ -558,7 +543,6 @@
 	"settings": {
 		"advancedSettings": "高级设置",
 		"account": "账户",
-		"developer": "开发者",
 		"information": "个人资料",
 		"notifications": "通知",
 		"preferences": "偏好设置",
@@ -647,26 +631,9 @@
 			"eventDueDateReminders": "截止日期提醒",
 			"reminderLeadTimeLabel": "在截止日期前提醒我",
 			"reminderLeadTimeInvalid": "请输入 1 到 {{max}} 之间的整数。",
-			"saveEventPreferences": "保存通知类型",
 			"allProjects": "所有项目",
 			"noProjectsInWorkspace": "该工作区暂无项目。",
-			"toastEmailSaved": "邮件通知设置已保存",
-			"toastEmailSaveFailed": "保存邮件设置失败",
-			"toastNtfySaved": "ntfy 设置已保存",
-			"toastNtfySaveFailed": "保存 ntfy 设置失败",
-			"toastNtfyDisconnected": "ntfy 已断开",
-			"toastNtfyDisconnectFailed": "断开 ntfy 失败",
-			"toastGotifySaved": "Gotify 设置已保存",
-			"toastGotifySaveFailed": "保存 Gotify 设置失败",
-			"toastGotifyDisconnected": "Gotify 已断开",
-			"toastGotifyDisconnectFailed": "断开 Gotify 失败",
-			"toastWebhookSaved": "Webhook 设置已保存",
-			"toastWebhookSaveFailed": "保存 Webhook 设置失败",
-			"toastWebhookDisconnected": "Webhook 已断开",
-			"toastWebhookDisconnectFailed": "断开 Webhook 失败",
-			"toastRuleSaved": "已保存 {{workspaceName}} 的通知规则",
 			"toastRuleSaveFailed": "保存工作区通知规则失败",
-			"toastRuleRemoved": "已移除 {{workspaceName}} 的通知规则",
 			"toastRuleRemoveFailed": "移除工作区通知规则失败",
 			"toastPreferencesSaved": "通知偏好已保存",
 			"toastPreferencesSaveFailed": "保存通知偏好失败",
@@ -723,7 +690,6 @@
 			"subtitle": "自定义 Kaneo 的外观和使用方式。",
 			"appearanceTitle": "常规",
 			"theme": "主题",
-			"selectTheme": "选择主题",
 			"themeLight": "浅色",
 			"themeDark": "深色",
 			"themeSystem": "跟随系统",
@@ -737,10 +703,8 @@
 			"weekStartsOnSaturday": "周六",
 			"defaultView": "默认视图",
 			"defaultViewDescription": "打开项目时使用的视图。",
-			"selectViewMode": "选择视图模式",
 			"board": "看板",
 			"list": "列表",
-			"gantt": "甘特图",
 			"sidebarDefault": "保持侧边栏展开",
 			"sidebarDefaultDescription": "启动时展开侧边栏。",
 			"displayOptions": "任务详情",
@@ -1155,22 +1119,15 @@
 			"pageTitle": "集成",
 			"title": "集成",
 			"subtitle": "将此项目连接到你的代码托管平台和团队聊天工具。",
-			"githubSectionTitle": "GitHub 集成",
 			"githubSectionSubtitle": "与 GitHub Issues 同步任务并启用双向同步。",
-			"giteaSectionTitle": "Gitea 集成",
 			"giteaSectionSubtitle": "与自托管的 Gitea 实例同步任务（Issues、PR、Webhook）。",
-			"discordSectionTitle": "Discord 集成",
 			"discordSectionSubtitle": "通过 Webhook 将项目任务更新发送到 Discord 频道。",
 			"genericWebhookSectionTitle": "Webhook",
 			"genericWebhookSectionSubtitle": "将项目任务事件以 JSON 形式发送到任意 HTTP 端点。",
-			"slackSectionTitle": "Slack 集成",
 			"slackSectionSubtitle": "通过 Incoming Webhook 将项目任务更新发送到 Slack 频道。",
-			"mattermostSectionTitle": "Mattermost 集成",
 			"mattermostSectionSubtitle": "借助 Incoming Webhook，把项目任务动态推送到 Mattermost 频道。",
-			"telegramSectionTitle": "Telegram 集成",
 			"telegramSectionSubtitle": "通过 Bot 将项目任务更新发送到 Telegram 聊天或话题。",
 			"gitlabSectionSubtitle": "与 GitLab.com 或自建实例同步任务。",
-			"gitlabSectionTitle": "GitLab 集成",
 			"codeHostingTitle": "代码托管",
 			"chatTitle": "聊天与 Webhook",
 			"statusConnected": "已连接",
@@ -1319,8 +1276,7 @@
 			},
 			"webhookPlaceholder": "https://hooks.slack.com/services/...",
 			"webhookHint": "在 Slack 中创建 Incoming Webhook，然后粘贴到这里。",
-			"connect": "连接 Slack",
-			"update": "更新 Slack"
+			"connect": "连接 Slack"
 		},
 		"discordIntegration": {
 			"validation": {
@@ -1337,8 +1293,7 @@
 			},
 			"webhookPlaceholder": "https://discord.com/api/webhooks/...",
 			"webhookHint": "在 Discord 中创建频道 Webhook，然后粘贴到这里。",
-			"connect": "连接 Discord",
-			"update": "更新 Discord"
+			"connect": "连接 Discord"
 		},
 		"mattermostIntegration": {
 			"validation": {
@@ -1355,8 +1310,7 @@
 			},
 			"webhookPlaceholder": "https://your-mattermost-server.com/hooks/...",
 			"webhookHint": "在 Mattermost 中创建 Incoming Webhook，然后粘贴到这里。",
-			"connect": "连接 Mattermost",
-			"update": "更新 Mattermost"
+			"connect": "连接 Mattermost"
 		},
 		"genericWebhookIntegration": {
 			"validation": {
@@ -1511,7 +1465,6 @@
 			"defaultLabel": "默认",
 			"deleteError": "删除自定义字段失败。",
 			"deleteSuccess": "自定义字段已删除。",
-			"deleting": "正在删除…",
 			"namePlaceholder": "字段名称",
 			"required": "必填",
 			"types": {
@@ -1525,7 +1478,6 @@
 			"clearDefault": "清除默认值",
 			"moreOptions": "还有 {{hiddenCount}} 项",
 			"reorderError": "字段排序失败",
-			"selectPlaceholder": "选择选项",
 			"actionsAria": "{{name}} 的操作",
 			"addOption": "添加选项",
 			"allowSeveral": "允许多选",
@@ -1799,16 +1751,6 @@
 			"mostPopular": "最受欢迎",
 			"opening": "正在打开…",
 			"pageTitle": "账单",
-			"plans": {
-				"personal": {
-					"name": "个人版",
-					"tagline": "适合个人用户"
-				},
-				"team": {
-					"name": "团队版",
-					"tagline": "适合协作的团队"
-				}
-			},
 			"portalHint": "发票、支付方式和取消订阅均在 Creem 中处理。",
 			"price": {
 				"billedMonthly": "按月计费",
@@ -2374,8 +2316,7 @@
 			}
 		},
 		"settingsLayout": {
-			"toggleSidebar": "切换侧边栏",
-			"back": "返回"
+			"toggleSidebar": "切换侧边栏"
 		},
 		"userMenu": {
 			"signedOutSuccess": "已成功退出登录",
@@ -2396,9 +2337,6 @@
 			"settingsTitle": "设置",
 			"backToWorkspace": "返回工作区",
 			"settingsWorkspaceTab": "工作区"
-		},
-		"projectSettings": {
-			"projectLabel": "项目"
 		},
 		"shortcuts": {
 			"categories": {
@@ -2518,7 +2456,6 @@
 		}
 	},
 	"notifications": {
-		"newCount_other": "{{count}} 条新通知",
 		"emptyTitle": "暂无通知",
 		"emptySubtitle": "更新和活动将显示在这里。",
 		"clearAll": "清空所有通知",
@@ -2872,11 +2809,6 @@
 			"related": "关联",
 			"blocks": "阻塞",
 			"selectTask": "选择要关联的任务",
-			"types": {
-				"blocks": "阻塞",
-				"blocked_by": "被阻塞",
-				"related": "关联"
-			},
 			"blockedBy": "被阻塞于",
 			"parentPlaceholder": "设置父任务…"
 		},
@@ -2905,18 +2837,13 @@
 			"taskBranchCopied": "已复制分支名称",
 			"start": "开始",
 			"startDate": "开始日期",
-			"noDate": "无日期",
 			"dates": "日期",
 			"project": "项目"
 		},
 		"move": {
 			"title": "移动任务",
-			"projectLabel": "目标项目",
 			"projectPlaceholder": "选择项目",
 			"statusLabel": "目标状态",
-			"statusHintKeep": "该项目的工作流已支持当前状态。",
-			"statusHintAdjust": "选择在目标项目中使用的状态。",
-			"action": "移动任务",
 			"success": "任务移动成功",
 			"error": "移动任务失败"
 		},
@@ -2941,7 +2868,6 @@
 			},
 			"labels": {
 				"searchPlaceholder": "搜索标签…",
-				"empty": "未找到标签",
 				"create": "创建 \"{{name}}\"",
 				"chooseColor": "选择颜色",
 				"updateError": "更新标签失败",
@@ -3012,8 +2938,6 @@
 				"include": "包含",
 				"exclude": "不包含"
 			},
-			"allCustomFieldValues": "所有值",
-			"noCustomFieldValues": "没有自定义字段的值",
 			"noValuesUsedYet": "还没有使用过任何值"
 		},
 		"calendar": {
@@ -3031,7 +2955,6 @@
 			"noTasksThisMonth": "本月没有安排"
 		},
 		"gantt": {
-			"searchPlaceholder": "搜索已排期工单…",
 			"pageTitle": "{{name}} – 甘特图",
 			"title": "甘特图时间线",
 			"jumpToToday": "回到今天",
@@ -3091,8 +3014,7 @@
 		"dueDate": {
 			"label": "截止日期",
 			"clear": "清除日期",
-			"updateError": "更新任务截止日期失败",
-			"clearError": "清除截止日期失败"
+			"updateError": "更新任务截止日期失败"
 		},
 		"labels": {
 			"empty": "无可用标签"
@@ -3293,7 +3215,6 @@
 				"inProgress": "进行中"
 			},
 			"noDueDate": "无截止日期",
-			"reorderHandle": "重新排序项目",
 			"reorderError": "重新排序项目失败",
 			"unavailable": {
 				"backToWorkspace": "Back to workspace",
@@ -3427,11 +3348,8 @@
 				"name": "姓名",
 				"role": "角色",
 				"joined": "加入于",
-				"actions": "操作",
 				"projects": "Projects"
 			},
-			"memberRolePending": "{{role}}（待处理）",
-			"ariaCancelInvitation": "取消邀请",
 			"ariaInvitationActions": "邀请操作",
 			"ariaRemoveMember": "移除成员",
 			"removeDialogTitle": "移除团队成员？",
@@ -3482,7 +3400,6 @@
 		"taskDetail": {
 			"labels": "标签",
 			"externalLinks": "外部链接",
-			"pullRequestFallback": "Pull Request",
 			"issueFallback": "Issue",
 			"prStatusMerged": "已合并",
 			"prStatusDraft": "草稿",
@@ -3503,217 +3420,6 @@
 		},
 		"branding": {
 			"poweredBy": "由以下技术提供支持"
-		}
-	},
-	"press": {
-		"title": "媒体资源包",
-		"headline": "Kaneo 媒体资源包",
-		"intro": "供文章、视频等媒体使用的 Kaneo 标志和产品截图。",
-		"description": "Kaneo 媒体资源：产品介绍、标志、截图，以及面向记者和创作者的联络方式。",
-		"downloadKit": "下载全部素材",
-		"boilerplateTitle": "关于 Kaneo",
-		"boilerplate": "Kaneo 是由 Andrej Acevski 创建的开源项目管理平台。团队可以用看板和列表视图整理任务、指派工作、设置优先级和截止日期，并接入 GitHub。Kaneo 采用 MIT 许可，可自行托管，也可以通过 Kaneo Cloud 使用托管服务。",
-		"logosTitle": "标志",
-		"darkLogo": "深色字标",
-		"darkLogoAlt": "浅色背景上的深色 Kaneo 标志",
-		"darkLogoDetail": "SVG",
-		"lightLogo": "浅色字标",
-		"lightLogoAlt": "深色背景上的浅色 Kaneo 标志",
-		"lightLogoDetail": "SVG",
-		"icon": "应用图标",
-		"iconAlt": "Kaneo 应用图标",
-		"iconDetail": "PNG, 512 × 512",
-		"download": "下载",
-		"screenshotsTitle": "截图",
-		"lightScreenshot": "看板（浅色）",
-		"lightScreenshotAlt": "浅色主题下的 Kaneo 看板，任务卡片按状态排列",
-		"darkScreenshot": "看板（深色）",
-		"darkScreenshotAlt": "深色主题下的 Kaneo 看板，任务卡片按状态排列",
-		"contactTitle": "媒体联络",
-		"contactBody": "产品咨询、采访邀约或索取更多素材，请联系 Kaneo 团队。",
-		"usageContrast": "深色背景用浅色字标，浅色背景用深色字标。",
-		"usageProportions": "保持标志原有的比例和配色，不要拉伸或叠加特效。",
-		"usageSpace": "标志周围留出足够空间，保证清晰易读。",
-		"darkListScreenshot": "列表（深色）",
-		"darkListScreenshotAlt": "深色主题下的 Kaneo 任务列表，按状态分组，显示负责人、优先级、标签和截止日期",
-		"darkTaskScreenshot": "任务详情（深色）",
-		"darkTaskScreenshotAlt": "深色主题下的 Kaneo 任务详情，包含描述、清单、团队评论和任务属性",
-		"darkTimelineScreenshot": "时间线（深色）",
-		"darkTimelineScreenshotAlt": "深色主题下的 Kaneo 甘特时间线，展示已排期任务及其时长",
-		"lightListScreenshot": "列表（浅色）",
-		"lightListScreenshotAlt": "浅色主题下的 Kaneo 任务列表，按状态分组，显示负责人、优先级、标签和截止日期",
-		"lightTaskScreenshot": "任务详情（浅色）",
-		"lightTaskScreenshotAlt": "浅色主题下的 Kaneo 任务详情，包含描述、清单、团队评论和任务属性",
-		"lightTimelineScreenshot": "时间线（浅色）",
-		"lightTimelineScreenshotAlt": "浅色主题下的 Kaneo 甘特时间线，展示已排期任务及其时长"
-	},
-	"landing": {
-		"sponsors": {
-			"ciSponsor": "合作伙伴"
-		},
-		"founder": {
-			"title": "Kaneo 为什么存在",
-			"intro": "我是 Andrej，做 Kaneo 的原因很简单——我受够了那些帮倒忙的项目管理工具。用了好几年臃肿又复杂的平台，注意力全被它们抢走，反而没法专心干活，我就知道一定有更好的做法。",
-			"problem": "问题从来不在于这些工具功能太少，而在于功能太多。每一条通知、每一个多余的按钮、每一套复杂的流程，都在把团队拉离真正重要的事——把产品做好。",
-			"principle": "我始终觉得，最好的工具用起来是感觉不到它存在的。它应该顺着团队本来的工作方式放大效率，而不是逼着你去适应它。Kaneo 就是照着“少即是多”做的：每个功能都因为解决了真实的问题而存在，而不是为了在演示里显得厉害。"
-		},
-		"hero": {
-			"cloudCta": "试用 Kaneo Cloud",
-			"selfHostCta": "自托管 Kaneo",
-			"trialNote": "云端试用 14 天，无需信用卡。",
-			"github": "GitHub",
-			"productHunt": "Product Hunt",
-			"title": "项目管理",
-			"titleAccent": "不该变成另一个项目。",
-			"description": "开源项目管理工具，带看板、甘特图和 GitHub 集成。免费自托管，内置 SSO；也可以交给 Kaneo Cloud 托管。"
-		},
-		"navigation": {
-			"product": "产品",
-			"pricing": "价格",
-			"resources": "资源",
-			"docs": "文档",
-			"blog": "博客",
-			"guides": "指南",
-			"comparisons": "工具对比",
-			"roadmap": "路线图",
-			"community": "社区",
-			"menu": "菜单",
-			"closeMenu": "关闭菜单",
-			"home": "Kaneo 首页",
-			"signIn": "登录",
-			"getStarted": "快速开始"
-		},
-		"showcase": {
-			"label": "Kaneo 产品视图",
-			"controls": "切换产品视图",
-			"play": "播放产品视图轮播",
-			"pause": "暂停产品视图轮播",
-			"board": "看板",
-			"list": "待办",
-			"gantt": "甘特图"
-		},
-		"features": {
-			"tasks": {
-				"label": "子任务与上下文",
-				"title": "大任务，也能拆出清晰的下一步。",
-				"description": "把工作拆成子任务，逐项指派，进度随时可查，原始需求也不会丢。相关细节都留在任务里。"
-			},
-			"github": {
-				"label": "GitHub 集成",
-				"title": "从 Pull Request 一路到完成。",
-				"description": "Issue 和标签双向同步。代码提交、Pull Request 合并时，关联任务会自动从评审推进到完成。",
-				"link": "配置 GitHub"
-			},
-			"hosting": {
-				"title": "跑在你自己的服务器上。",
-				"description": "用 Docker 部署，工作区始终跑在你自己掌控的服务器上。",
-				"link": "自托管 Kaneo"
-			},
-			"source": {
-				"title": "代码同样开放。",
-				"description": "阅读源码、反馈问题，或者直接提交改动。开发都在 GitHub 上。",
-				"link": "查看源码"
-			},
-			"preview": {
-				"taskAlt": "Kaneo 任务和子任务的交互预览。",
-				"githubAlt": "用 GitHub 合并操作更新 Kaneo 任务的交互预览。",
-				"taskTitle": "发布新版首页",
-				"taskDescription": "下次发布前更新文案，并检查布局。",
-				"checklistDone": "校对文案",
-				"checklistOpen": "检查手机端布局",
-				"inProgress": "进行中",
-				"high": "高",
-				"date": "10月12日",
-				"design": "设计",
-				"done": "已完成",
-				"relationsAlt": "Kaneo 任务依赖关系的交互预览。",
-				"inReview": "评审中",
-				"trySubtasks": "试着勾掉一个子任务。",
-				"tryGithub": "预览一次合并，看看任务怎么更新。",
-				"tryRelations": "打开关联任务，顺着连接往下看。",
-				"mergeAction": "预览合并",
-				"resetAction": "重置预览",
-				"mergedHint": "Pull Request 已合并，任务已移到已完成。",
-				"progress": "已完成 {{completed}}/{{total}} 个子任务",
-				"backToTask": "返回首页任务",
-				"releaseNotes": "撰写发布说明",
-				"dependencyDescription": "首页还在等移动端的评审结果。把发布说明的链接挂在这里，方便随时查看上下文。",
-				"mobileDescription": "上线之前，先在窄屏上检查新版首页。",
-				"notesDescription": "把改动记下来，方便写发布公告。"
-			},
-			"relations": {
-				"label": "关联任务与依赖",
-				"title": "一眼看清卡在哪里。",
-				"description": "把阻塞关系连起来，依赖一目了然，相关工作也聚在一处。打开关联任务，就能看清下一步的来龙去脉。"
-			}
-		},
-		"seo": {
-			"title": "Kaneo — 开源、可自托管的项目管理工具",
-			"description": "开源项目管理工具，带看板、甘特图和 GitHub 集成。免费自托管，内置 SSO，也可以使用 Kaneo Cloud。"
-		},
-		"resources": {
-			"eyebrow": "按你的方式来",
-			"title": "从试用到上手，路径清清楚楚。",
-			"description": "搭好服务器、接上你的工具，或者把 Kaneo 和现在用的工具做个对比。",
-			"docker": {
-				"title": "用 Docker 自托管",
-				"description": "部署、备份和更新，一切都在自己的掌控之中。"
-			},
-			"sso": {
-				"title": "接入你自己的身份提供商",
-				"description": "在免费的自托管版本里配置 OIDC 单点登录。"
-			},
-			"mcp": {
-				"title": "接入你的 AI 工具",
-				"description": "通过 AI 客户端用 MCP 处理任务和项目。"
-			},
-			"linear": {
-				"title": "Kaneo 与 Linear 对比",
-				"description": "看看在托管方式、授权许可和工作流上的差别。"
-			}
-		},
-		"product": {
-			"title": "开始之前",
-			"description": "关于自托管、规划能力和团队协作的实用细节。",
-			"overview": "Kaneo 是一个开源、MIT 许可的项目管理平台，带看板、待办、甘特图和日历视图、自定义字段、工时记录和 GitHub 集成。可以自托管在自己的服务器上，也可以使用 Kaneo Cloud。",
-			"hosting": {
-				"question": "Kaneo 自托管免费吗？",
-				"answer": "是的。Kaneo 采用 MIT 许可，自托管免费，并内置单点登录。用 Docker Compose 把应用和 PostgreSQL 一起跑起来，或者用官方 Helm Chart 部署。服务器、更新和备份都由你自己掌控。",
-				"link": "阅读安装指南"
-			},
-			"planning": {
-				"question": "Kaneo 有甘特图吗？",
-				"answer": "有。除了看板、列表和待办规划，Kaneo 还提供甘特图和日历视图。用任务的开始日期和截止日期，就能在时间线上排期。预算管理、基线对比和冲刺燃尽图目前还不在范围内。",
-				"link": "对比规划功能"
-			},
-			"sso": {
-				"question": "包含单点登录吗？",
-				"answer": "有。免费的自托管版本支持 Google、GitHub、Discord 以及自定义 OAuth/OIDC 提供商。直接在自己的实例上配置就行，不需要另买其他版本。",
-				"link": "配置 OIDC"
-			},
-			"agents": {
-				"question": "AI 客户端可以操作 Kaneo 吗？",
-				"answer": "可以。Kaneo 通过 @kaneo/mcp 包提供 MCP 服务器，另外还有一个 HTTP 接口。兼容的 AI 客户端可以用绑定到某个用户的 API 密钥读取和更新任务，权限受工作区设置限制。",
-				"link": "阅读 MCP 指南"
-			}
-		},
-		"comparison": {
-			"feature": "功能",
-			"yes": "支持",
-			"no": "不支持"
-		},
-		"selfHostingGuide": {
-			"summary": "自托管要做哪些事，附上官方维护的 Docker Compose 配置和安装步骤。",
-			"answer": "自托管 Kaneo 的流程是：用 Docker Compose 把应用和 PostgreSQL 跑起来，配好公网地址和密钥，前面再挂一个 TLS 反向代理。安装指南要求至少 2 GB 内存和 10 GB 磁盘空间。另外还要考虑后续的版本更新、数据库备份，以及上传文件的存储。",
-			"requirements": "官方给出的最低配置是 2 GB 内存和 10 GB 磁盘空间，Docker 20.10 以上、Docker Compose V2。实际使用还要按业务量、数据库增长和上传文件量预留更多容量。",
-			"compose": "直接使用 Docker Compose 指南里维护好的 compose.yml。里面定义了 PostgreSQL、持久化的数据库卷、Kaneo 应用和健康检查。启动服务前先配好环境变量文件；生产环境建议固定镜像版本，升级节奏由你掌控。",
-			"backups": "PostgreSQL 和上传文件用的对象存储都要备份。备份频率取决于团队能承受丢失多少工作，副本要放到应用服务器之外，而且在真正用到之前先做一次恢复演练。",
-			"worth": "当你需要掌控服务器和数据，并且有人负责日常维护时，自托管才划算。和托管服务比总成本时，要把服务器、存储、备份的费用和维护时间一起算进去。",
-			"minimum": "安装指南要求 Docker 20.10 或更高版本、Docker Compose V2、至少 2 GB 内存和 10 GB 磁盘空间。这套 Compose 配置已经包含 PostgreSQL。只跑一个 API 实例时，Redis 是可选的。",
-			"composeLink": "Docker Compose 配置",
-			"composeLinkDescription": "官方维护的 compose.yml，含持久化存储和健康检查。",
-			"startLink": "启动并检查服务",
-			"startLinkDescription": "启动整套服务，查看运行状态，确认应用可以访问。"
 		}
 	}
 }

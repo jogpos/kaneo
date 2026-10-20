@@ -6,7 +6,7 @@
 
 ## Sažetak
 
-Hrvatski locale je sinkroniziran s engleskim referentnim localeom. Ključni frontend tekstovi visokog prioriteta koriste i18n ključeve umjesto hardkodiranih engleskih vrijednosti.
+Hrvatski locale je sinkroniziran s engleskim referentnim localeom. Ključni frontend tekstovi visokog prioriteta koriste i18n ključeve umjesto hardkodiranih engleskih vrijednosti. Prevedene su preostale prevodive vrijednosti; tehnički nazivi, brendovi, URL-ovi, placeholderi i nazivi programskih jezika ostavljeni su nepromijenjeni kada su već ispravni.
 
 Provjereni blokovi uključuju administraciju uloga i dozvola, izradu radnog prostora, tablični editor zadatka, tablicu članova, izradu projekta i fallback poruke korisničkih grešaka.
 
@@ -28,19 +28,13 @@ I18n report je ažuriran tako da testne datoteke (`*.test.ts` i `*.test.tsx`) ne
 
 ## Neiskorišteni ključevi
 
-Report i dalje prikazuje neiskorištene ključeve, ali oni nisu automatski obrisani jer pripadaju različitim legitimnim kategorijama:
+Početni report označio je 242 ključa kao neiskorištena. Nakon provjere uklonjeno je 229 ključeva. Preostalih 13 ključeva pripada API e-mail predlošku i zato su zaštićeni; završni report prikazuje nula neiskorištenih ključeva.
 
-- landing stranica i SEO sadržaj,
-- press/media sadržaj,
-- e-mail predlošci i pozivnice,
-- integracije i buduće postavke,
-- pluralni oblici i dinamički ključevi koje statički analizator ne može uvijek povezati.
-
-Masovno brisanje tih ključeva moglo bi ukloniti prijevode za rute, e-mail predloške ili funkcionalnosti koje nisu obuhvaćene analizom `apps/web/src`. Za sigurno čišćenje potrebno je zasebno potvrditi vlasništvo i lifecycle svake kategorije.
+Iznimka su `invitations:email.*` ključevi. Njih koristi API renderer e-maila kroz direktan pristup locale bundleu, a ne React `t()` poziv. Vraćeni su u sve locale datoteke i zaštićeni u report skripti kako ih buduće čišćenje ne bi ponovno uklonilo.
 
 ## Politika održavanja
 
 - Produkcijski report ignorira samo testne fixturee, ne stvarne frontend komponente.
 - `hr-HR` mora zadržati isti skup ključeva kao `en-US`, uz dodatne CLDR pluralne oblike gdje su potrebni.
-- Neiskorištene ključeve treba uklanjati po namespaceu i funkcionalnom području, a ne jednim globalnim `--fix` pozivom.
+- API-izravno korištene locale blokove treba zaštititi u report skripti ili uključiti u skeniranje izvora.
 - Nakon svake lokalizacijske izmjene treba pokrenuti sinkronizaciju localea, report, typecheck i web testove.

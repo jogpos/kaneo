@@ -34,18 +34,6 @@
 			"label": "ब्रेडक्रंब",
 			"more": "और"
 		},
-		"language": {
-			"english": "अंग्रेज़ी",
-			"german": "जर्मन",
-			"greek": "ग्रीक",
-			"macedonian": "मैसेडोनियन",
-			"french": "फ़्रेंच",
-			"spanish": "स्पेनिश",
-			"dutch": "डच",
-			"korean": "कोरियन",
-			"chinese": "चीनी",
-			"italian": "इतालवी"
-		},
 		"people": {
 			"someone": "कोई",
 			"unknown": "अज्ञात"
@@ -115,10 +103,8 @@
 				"chooseProjectForImages": "चित्र अपलोड करने से पहले प्रोजेक्ट चुनें।",
 				"prepareTaskError": "कार्य तैयार करने में विफल",
 				"successCreated": "कार्य सफलतापूर्वक बनाया गया",
-				"successUpdated": "कार्य सफलतापूर्वक अपडेट किया गया",
 				"createError": "कार्य बनाने में विफल",
 				"priority": "प्राथमिकता",
-				"statusFallback": "प्रगति में",
 				"startDate": "शुरू की तारीख",
 				"dueDate": "नियत तारीख",
 				"clearStartDate": "शुरू की तारीख साफ़ करें",
@@ -138,7 +124,6 @@
 				"discardTitle": "कार्य छोड़ें?",
 				"discardDescription": "आपके सहेजे नहीं गए कार्य विवरण खो जाएँगे।",
 				"discardButton": "कार्य छोड़ें",
-				"untitledTask": "बिना शीर्षक कार्य",
 				"labelColors": {
 					"stone": "पत्थर",
 					"slate": "स्लेट",
@@ -563,7 +548,6 @@
 	"settings": {
 		"advancedSettings": "उन्नत सेटिंग्स",
 		"account": "खाता",
-		"developer": "डेवलपर",
 		"information": "प्रोफ़ाइल",
 		"notifications": "सूचनाएँ",
 		"preferences": "प्राथमिकताएँ",
@@ -652,26 +636,9 @@
 			"eventDueDateReminders": "नियत तारीख अनुस्मारक",
 			"reminderLeadTimeLabel": "नियत तारीख से पहले मुझे याद दिलाएँ",
 			"reminderLeadTimeInvalid": "1 से {{max}} के बीच पूर्ण संख्या दर्ज करें।",
-			"saveEventPreferences": "सूचना प्रकार सहेजें",
 			"allProjects": "सभी प्रोजेक्ट",
 			"noProjectsInWorkspace": "इस वर्कस्पेस के लिए अभी तक कोई प्रोजेक्ट उपलब्ध नहीं।",
-			"toastEmailSaved": "ईमेल सूचना सेटिंग सहेजी गई",
-			"toastEmailSaveFailed": "ईमेल सेटिंग सहेजने में विफल",
-			"toastNtfySaved": "ntfy सेटिंग सहेजी गई",
-			"toastNtfySaveFailed": "ntfy सेटिंग सहेजने में विफल",
-			"toastNtfyDisconnected": "ntfy डिस्कनेक्ट किया गया",
-			"toastNtfyDisconnectFailed": "ntfy डिस्कनेक्ट करने में विफल",
-			"toastGotifySaved": "Gotify सेटिंग सहेजी गई",
-			"toastGotifySaveFailed": "Gotify सेटिंग सहेजने में विफल",
-			"toastGotifyDisconnected": "Gotify डिस्कनेक्ट किया गया",
-			"toastGotifyDisconnectFailed": "Gotify डिस्कनेक्ट करने में विफल",
-			"toastWebhookSaved": "वेबहुक सेटिंग सहेजी गई",
-			"toastWebhookSaveFailed": "वेबहुक सेटिंग सहेजने में विफल",
-			"toastWebhookDisconnected": "वेबहुक डिस्कनेक्ट किया गया",
-			"toastWebhookDisconnectFailed": "वेबहुक डिस्कनेक्ट करने में विफल",
-			"toastRuleSaved": "{{workspaceName}} के लिए सूचना नियम सहेजा गया",
 			"toastRuleSaveFailed": "वर्कस्पेस सूचना नियम सहेजने में विफल",
-			"toastRuleRemoved": "{{workspaceName}} के लिए सूचना नियम हटाया गया",
 			"toastRuleRemoveFailed": "वर्कस्पेस सूचना नियम हटाने में विफल",
 			"toastPreferencesSaved": "सूचना प्राथमिकताएँ सहेजी गईं",
 			"toastPreferencesSaveFailed": "सूचना प्राथमिकताएँ सहेजने में विफल",
@@ -731,7 +698,6 @@
 			"subtitle": "Kaneo आपके लिए कैसा दिखता और काम करता है।",
 			"appearanceTitle": "सामान्य",
 			"theme": "थीम",
-			"selectTheme": "थीम चुनें",
 			"themeLight": "लाइट",
 			"themeDark": "डार्क",
 			"themeSystem": "सिस्टम के अनुसार",
@@ -745,10 +711,8 @@
 			"weekStartsOnSaturday": "शनिवार",
 			"defaultView": "डिफ़ॉल्ट दृश्य",
 			"defaultViewDescription": "प्रोजेक्ट खुलने पर दिखने वाला दृश्य।",
-			"selectViewMode": "दृश्य मोड चुनें",
 			"board": "बोर्ड",
 			"list": "सूची",
-			"gantt": "गैंट",
 			"sidebarDefault": "साइडबार खुला रखें",
 			"sidebarDefaultDescription": "साइडबार को विस्तारित रखकर शुरू करें।",
 			"displayOptions": "कार्य विवरण",
@@ -1164,22 +1128,15 @@
 			"pageTitle": "एकीकरण",
 			"title": "एकीकरण",
 			"subtitle": "इस प्रोजेक्ट को अपने कोड होस्ट और अपनी टीम की चैट से जोड़ें।",
-			"githubSectionTitle": "GitHub एकीकरण",
 			"githubSectionSubtitle": "GitHub issues के साथ कार्यों को सिंक करें और दो-तरफ़ा सिंक सक्षम करें।",
-			"giteaSectionTitle": "Gitea एकीकरण",
 			"giteaSectionSubtitle": "स्व-होस्टेड Gitea इंस्टेंस के साथ कार्यों को सिंक करें (issues, PRs, webhooks)।",
-			"discordSectionTitle": "Discord एकीकरण",
 			"discordSectionSubtitle": "वेबहुक के साथ Discord चैनल में प्रोजेक्ट कार्य अपडेट भेजें।",
 			"genericWebhookSectionTitle": "वेबहुक",
 			"genericWebhookSectionSubtitle": "प्रोजेक्ट कार्य इवेंट किसी भी HTTP एंडपॉइंट पर JSON के रूप में भेजें।",
-			"slackSectionTitle": "Slack एकीकरण",
 			"slackSectionSubtitle": "इनकमिंग वेबहुक के साथ Slack चैनल में प्रोजेक्ट कार्य अपडेट भेजें।",
-			"telegramSectionTitle": "Telegram एकीकरण",
 			"telegramSectionSubtitle": "बॉट के साथ Telegram चैट या टॉपिक में प्रोजेक्ट कार्य अपडेट भेजें।",
 			"mattermostSectionSubtitle": "Send project task updates into a Mattermost channel with an incoming webhook.",
-			"mattermostSectionTitle": "Mattermost Integration",
 			"gitlabSectionSubtitle": "GitLab.com या स्व-प्रबंधित इंस्टेंस के साथ कार्य सिंक करें।",
-			"gitlabSectionTitle": "GitLab Integration",
 			"codeHostingTitle": "कोड होस्टिंग",
 			"chatTitle": "चैट और वेबहुक",
 			"statusConnected": "कनेक्टेड",
@@ -1328,8 +1285,7 @@
 			},
 			"webhookPlaceholder": "https://hooks.slack.com/services/...",
 			"webhookHint": "Slack में एक इनकमिंग वेबहुक बनाएँ और उसे यहाँ चिपकाएँ।",
-			"connect": "Slack कनेक्ट करें",
-			"update": "Slack अपडेट करें"
+			"connect": "Slack कनेक्ट करें"
 		},
 		"discordIntegration": {
 			"validation": {
@@ -1346,8 +1302,7 @@
 			},
 			"webhookPlaceholder": "https://discord.com/api/webhooks/...",
 			"webhookHint": "Discord में एक चैनल वेबहुक बनाएँ और उसे यहाँ चिपकाएँ।",
-			"connect": "Discord कनेक्ट करें",
-			"update": "Discord अपडेट करें"
+			"connect": "Discord कनेक्ट करें"
 		},
 		"genericWebhookIntegration": {
 			"validation": {
@@ -1506,7 +1461,6 @@
 				"saveError": "Failed to save Mattermost integration",
 				"updateError": "Failed to update Mattermost integration"
 			},
-			"update": "Update Mattermost",
 			"validation": {
 				"webhookInvalid": "Enter a valid Mattermost webhook URL"
 			},
@@ -1520,7 +1474,6 @@
 			"defaultLabel": "Default",
 			"deleteError": "Failed to delete custom field.",
 			"deleteSuccess": "Custom field deleted.",
-			"deleting": "Deleting...",
 			"namePlaceholder": "Field name",
 			"required": "Required",
 			"types": {
@@ -1534,7 +1487,6 @@
 			"clearDefault": "डिफ़ॉल्ट हटाएँ",
 			"moreOptions": "+{{hiddenCount}} more",
 			"reorderError": "Failed to reorder fields",
-			"selectPlaceholder": "Select option(s)",
 			"actionsAria": "{{name}} के लिए कार्रवाइयाँ",
 			"addOption": "विकल्प जोड़ें",
 			"allowSeveral": "कई की अनुमति दें",
@@ -1809,16 +1761,6 @@
 			"mostPopular": "Most popular",
 			"opening": "Opening...",
 			"pageTitle": "Billing",
-			"plans": {
-				"personal": {
-					"name": "Personal",
-					"tagline": "For individuals"
-				},
-				"team": {
-					"name": "Team",
-					"tagline": "For teams working together"
-				}
-			},
 			"portalHint": "इनवॉइस, भुगतान का तरीका और रद्द करना Creem में होता है।",
 			"price": {
 				"billedMonthly": "Billed monthly",
@@ -2416,8 +2358,7 @@
 			}
 		},
 		"settingsLayout": {
-			"toggleSidebar": "साइडबार टॉगल करें",
-			"back": "वापस"
+			"toggleSidebar": "साइडबार टॉगल करें"
 		},
 		"userMenu": {
 			"signedOutSuccess": "सफलतापूर्वक साइन आउट किया",
@@ -2438,9 +2379,6 @@
 			"settingsTitle": "सेटिंग",
 			"backToWorkspace": "वर्कस्पेस पर वापस जाएँ",
 			"settingsWorkspaceTab": "वर्कस्पेस"
-		},
-		"projectSettings": {
-			"projectLabel": "प्रोजेक्ट"
 		},
 		"shortcuts": {
 			"categories": {
@@ -2561,8 +2499,6 @@
 		}
 	},
 	"notifications": {
-		"newCount_one": "{{count}} नई",
-		"newCount_other": "{{count}} नई",
 		"emptyTitle": "अभी तक कोई सूचना नहीं",
 		"emptySubtitle": "आप यहाँ अपडेट और गतिविधि देखेंगे।",
 		"clearAll": "सभी सूचनाएँ साफ़ करें",
@@ -2919,11 +2855,6 @@
 			"related": "संबंधित",
 			"blocks": "ब्लॉक करता है",
 			"selectTask": "लिंक करने के लिए कार्य चुनें",
-			"types": {
-				"blocks": "ब्लॉक करता है",
-				"blocked_by": "ब्लॉक किया गया",
-				"related": "संबंधित है"
-			},
 			"blockedBy": "इसके द्वारा अवरुद्ध",
 			"parentPlaceholder": "मूल कार्य सेट करें…"
 		},
@@ -2952,18 +2883,13 @@
 			"taskBranchCopied": "ब्रांच का नाम कॉपी किया गया",
 			"start": "शुरू",
 			"startDate": "शुरू की तारीख",
-			"noDate": "कोई तारीख नहीं",
 			"dates": "तारीखें",
 			"project": "प्रोजेक्ट"
 		},
 		"move": {
 			"title": "कार्य ले जाएँ",
-			"projectLabel": "गंतव्य प्रोजेक्ट",
 			"projectPlaceholder": "प्रोजेक्ट चुनें",
 			"statusLabel": "गंतव्य स्थिति",
-			"statusHintKeep": "इस प्रोजेक्ट का वर्कफ़्लो पहले से वर्तमान स्थिति का समर्थन करता है।",
-			"statusHintAdjust": "गंतव्य प्रोजेक्ट में उपयोग करने के लिए स्थिति चुनें।",
-			"action": "कार्य ले जाएँ",
 			"success": "कार्य सफलतापूर्वक ले जाया गया",
 			"error": "कार्य ले जाने में विफल"
 		},
@@ -2988,7 +2914,6 @@
 			},
 			"labels": {
 				"searchPlaceholder": "लेबल खोजें...",
-				"empty": "कोई लेबल नहीं मिला",
 				"create": "\"{{name}}\" बनाएँ",
 				"chooseColor": "रंग चुनें",
 				"updateError": "लेबल अपडेट करने में विफल",
@@ -3059,12 +2984,9 @@
 				"include": "शामिल है",
 				"exclude": "शामिल नहीं है"
 			},
-			"allCustomFieldValues": "All values",
-			"noCustomFieldValues": "No custom field values",
 			"noValuesUsedYet": "No values used yet"
 		},
 		"gantt": {
-			"searchPlaceholder": "शेड्यूल किए गए टिकट खोजें...",
 			"pageTitle": "{{name}} – गैंट",
 			"title": "गैंट टाइमलाइन",
 			"hideTasks": "कार्य छिपाएँ",
@@ -3126,8 +3048,7 @@
 		"dueDate": {
 			"label": "नियत तारीख",
 			"clear": "तारीख साफ़ करें",
-			"updateError": "कार्य की नियत तारीख अपडेट करने में विफल",
-			"clearError": "नियत तारीख साफ़ करने में विफल"
+			"updateError": "कार्य की नियत तारीख अपडेट करने में विफल"
 		},
 		"labels": {
 			"empty": "कोई लेबल उपलब्ध नहीं"
@@ -3350,7 +3271,6 @@
 				"inProgress": "प्रगति में"
 			},
 			"noDueDate": "कोई नियत तारीख नहीं",
-			"reorderHandle": "प्रोजेक्ट का क्रम बदलें",
 			"reorderError": "प्रोजेक्ट का क्रम बदलने में विफल",
 			"unavailable": {
 				"backToWorkspace": "Back to workspace",
@@ -3488,11 +3408,8 @@
 				"name": "नाम",
 				"role": "भूमिका",
 				"joined": "शामिल हुए",
-				"actions": "कार्रवाइयाँ",
 				"projects": "Projects"
 			},
-			"memberRolePending": "{{role}} (लंबित)",
-			"ariaCancelInvitation": "निमंत्रण रद्द करें",
 			"ariaInvitationActions": "निमंत्रण कार्रवाइयाँ",
 			"ariaRemoveMember": "सदस्य हटाएँ",
 			"removeDialogTitle": "टीम सदस्य हटाएँ?",
@@ -3544,7 +3461,6 @@
 		"taskDetail": {
 			"labels": "लेबल",
 			"externalLinks": "बाहरी लिंक",
-			"pullRequestFallback": "पुल अनुरोध",
 			"issueFallback": "मुद्दा",
 			"prStatusMerged": "मर्ज किया गया",
 			"prStatusDraft": "ड्राफ़्ट",
@@ -3565,217 +3481,6 @@
 		},
 		"branding": {
 			"poweredBy": "द्वारा संचालित"
-		}
-	},
-	"press": {
-		"title": "Press kit",
-		"headline": "Kaneo press kit",
-		"intro": "Kaneo logos and product screenshots for articles, videos, and other media.",
-		"description": "Kaneo press resources: product information, logos, screenshots, and contact details for journalists and creators.",
-		"downloadKit": "Download all assets",
-		"boilerplateTitle": "About Kaneo",
-		"boilerplate": "Kaneo is an open-source project management platform created by Andrej Acevski. Teams can organize tasks in board and list views, assign work, set priorities and due dates, and connect GitHub. Kaneo is available under the MIT license for self-hosting, or as a managed service through Kaneo Cloud.",
-		"logosTitle": "Logos",
-		"darkLogo": "Dark wordmark",
-		"darkLogoAlt": "Dark Kaneo logo on a light background",
-		"darkLogoDetail": "SVG",
-		"lightLogo": "Light wordmark",
-		"lightLogoAlt": "Light Kaneo logo on a dark background",
-		"lightLogoDetail": "SVG",
-		"icon": "App icon",
-		"iconAlt": "Kaneo app icon",
-		"iconDetail": "PNG, 512 × 512",
-		"download": "Download",
-		"screenshotsTitle": "Screenshots",
-		"lightScreenshot": "Board (light)",
-		"lightScreenshotAlt": "Kaneo board in light theme, with task cards arranged by status",
-		"darkScreenshot": "Board (dark)",
-		"darkScreenshotAlt": "Kaneo board in dark theme, with task cards arranged by status",
-		"contactTitle": "Press enquiries",
-		"contactBody": "Contact the Kaneo team for product questions, interviews, or additional materials.",
-		"usageContrast": "Choose the light wordmark for dark backgrounds and the dark wordmark for light backgrounds.",
-		"usageProportions": "Keep the original proportions and colours, without stretching or adding effects.",
-		"usageSpace": "Leave enough space around the logo to keep it clear and readable.",
-		"darkListScreenshot": "List (dark)",
-		"darkListScreenshotAlt": "Kaneo task list in dark theme, grouped by status with assignees, priorities, labels, and due dates",
-		"darkTaskScreenshot": "Task details (dark)",
-		"darkTaskScreenshotAlt": "Kaneo task details in dark theme, with a description, checklist, team comment, and task properties",
-		"darkTimelineScreenshot": "Timeline (dark)",
-		"darkTimelineScreenshotAlt": "Kaneo Gantt timeline in dark theme, showing scheduled tasks and their durations",
-		"lightListScreenshot": "List (light)",
-		"lightListScreenshotAlt": "Kaneo task list in light theme, grouped by status with assignees, priorities, labels, and due dates",
-		"lightTaskScreenshot": "Task details (light)",
-		"lightTaskScreenshotAlt": "Kaneo task details in light theme, with a description, checklist, team comment, and task properties",
-		"lightTimelineScreenshot": "Timeline (light)",
-		"lightTimelineScreenshotAlt": "Kaneo Gantt timeline in light theme, showing scheduled tasks and their durations"
-	},
-	"landing": {
-		"sponsors": {
-			"ciSponsor": "साझेदार"
-		},
-		"founder": {
-			"title": "Why Kaneo exists",
-			"intro": "I'm Andrej, and I created Kaneo because I was tired of project management tools that got in the way more than they helped. After years of using bloated, overcomplicated platforms that distracted from actual work, I knew there had to be a better way.",
-			"problem": "The problem wasn't that these tools lacked features - it was that they had too many. Every notification, every unnecessary button, every complex workflow was pulling my team away from what mattered: building great products.",
-			"principle": "I believe the best tools are invisible. They should amplify your team's natural workflow, not force you to adapt to theirs. Kaneo is built on the principle that less is more - every feature exists because it solves a real problem, not because it looks impressive in a demo."
-		},
-		"hero": {
-			"cloudCta": "Try Kaneo Cloud",
-			"selfHostCta": "Self-host Kaneo",
-			"trialNote": "14-day cloud trial. No credit card required.",
-			"github": "GitHub",
-			"productHunt": "Product Hunt",
-			"title": "Project management",
-			"titleAccent": "that doesn't become the project.",
-			"description": "Open-source project management with boards, Gantt charts, and GitHub integration. Self-host for free with SSO included, or let Kaneo Cloud handle the hosting."
-		},
-		"navigation": {
-			"product": "Product",
-			"pricing": "Pricing",
-			"resources": "Resources",
-			"docs": "Documentation",
-			"blog": "Blog",
-			"guides": "Guides",
-			"comparisons": "Compare tools",
-			"roadmap": "Roadmap",
-			"community": "समुदाय",
-			"menu": "Menu",
-			"closeMenu": "Close menu",
-			"home": "Kaneo home",
-			"signIn": "Sign In",
-			"getStarted": "Get Started"
-		},
-		"showcase": {
-			"label": "Kaneo product views",
-			"controls": "Choose a product view",
-			"play": "Play product views",
-			"pause": "Pause product views",
-			"board": "Board",
-			"list": "Backlog",
-			"gantt": "Gantt"
-		},
-		"features": {
-			"tasks": {
-				"label": "Subtasks & context",
-				"title": "Big tasks. Clear next steps.",
-				"description": "Break work into subtasks, assign each one, and track progress without losing the original brief. Every detail stays with the work."
-			},
-			"github": {
-				"label": "GitHub integration",
-				"title": "From pull request to done.",
-				"description": "Issues and labels sync both ways. Linked pull requests move tasks through review to done as your code is opened and merged.",
-				"link": "Set up GitHub"
-			},
-			"hosting": {
-				"title": "Run it on your own server.",
-				"description": "Deploy with Docker and keep your workspace on infrastructure you control.",
-				"link": "Self-host Kaneo"
-			},
-			"source": {
-				"title": "The code is open, too.",
-				"description": "Read the source, report an issue, or contribute a change. Development happens on GitHub.",
-				"link": "View the source"
-			},
-			"preview": {
-				"taskAlt": "Interactive Kaneo task and subtask preview.",
-				"githubAlt": "Interactive preview of a GitHub merge updating a Kaneo task.",
-				"taskTitle": "Publish the new homepage",
-				"taskDescription": "Update the copy and check the layout before the next release.",
-				"checklistDone": "Review the copy",
-				"checklistOpen": "Check the mobile layout",
-				"inProgress": "In Progress",
-				"high": "High",
-				"date": "Oct 12",
-				"design": "design",
-				"done": "Done",
-				"relationsAlt": "Interactive Kaneo task dependencies preview.",
-				"inReview": "In Review",
-				"trySubtasks": "Try checking off a subtask.",
-				"tryGithub": "Preview a merge to see the task update.",
-				"tryRelations": "Open a linked task to follow the connection.",
-				"mergeAction": "Preview merge",
-				"resetAction": "Reset preview",
-				"mergedHint": "Pull request merged. Task moved to Done.",
-				"progress": "{{completed}} of {{total}} subtasks complete",
-				"backToTask": "Back to the homepage task",
-				"releaseNotes": "Write the release notes",
-				"dependencyDescription": "The homepage is waiting on the mobile review. Keep the launch notes linked for context.",
-				"mobileDescription": "Check the new homepage on narrow screens before it goes live.",
-				"notesDescription": "Capture what changed for the launch announcement."
-			},
-			"relations": {
-				"label": "Linked tasks & dependencies",
-				"title": "See what’s holding things up.",
-				"description": "Connect blockers, follow dependencies, and keep related work close. Open a linked task to see the context behind the next step."
-			}
-		},
-		"seo": {
-			"title": "Kaneo — Open-source, self-hosted project management",
-			"description": "Open-source project management with boards, Gantt charts, and GitHub integration. Self-host for free with SSO included, or use Kaneo Cloud."
-		},
-		"resources": {
-			"eyebrow": "Make it your own",
-			"title": "A clear path from trying it to using it.",
-			"description": "Set up your server, connect your tools, or compare Kaneo with your current tracker.",
-			"docker": {
-				"title": "Self-host with Docker",
-				"description": "Installation, backups, and updates for a setup you control."
-			},
-			"sso": {
-				"title": "Bring your own identity provider",
-				"description": "Configure OIDC single sign-on in the free self-hosted build."
-			},
-			"mcp": {
-				"title": "Connect your AI tools",
-				"description": "Use MCP to work with tasks and projects through an AI client."
-			},
-			"linear": {
-				"title": "Compare Kaneo and Linear",
-				"description": "See the differences in hosting, licensing, and workflow."
-			}
-		},
-		"product": {
-			"title": "Before you get started",
-			"description": "The practical details about hosting, planning, and connecting your team.",
-			"overview": "Kaneo is an open-source, MIT-licensed project management platform with boards, backlog, Gantt and calendar views, custom fields, time tracking, and GitHub integration. Self-host it on your own infrastructure or use Kaneo Cloud.",
-			"hosting": {
-				"question": "Is Kaneo free to self-host?",
-				"answer": "Yes. Kaneo is MIT licensed and free to self-host, with single sign-on included. Run the application alongside PostgreSQL using Docker Compose, or deploy with the official Helm chart. You manage infrastructure, updates, and backups.",
-				"link": "Read the installation guide"
-			},
-			"planning": {
-				"question": "Does Kaneo have Gantt charts?",
-				"answer": "Yes. Kaneo includes Gantt and calendar views alongside boards, lists, and backlog planning. Use task start dates and due dates to plan work on a timeline. Budgeting, baseline comparisons, and sprint burndown reports are outside its current scope.",
-				"link": "Compare planning features"
-			},
-			"sso": {
-				"question": "Is single sign-on included?",
-				"answer": "Yes. The free self-hosted build supports Google, GitHub, Discord, and custom OAuth/OIDC providers. Configure your provider on your instance without purchasing a separate Kaneo edition.",
-				"link": "Configure OIDC"
-			},
-			"agents": {
-				"question": "Can AI clients work with Kaneo?",
-				"answer": "Yes. Kaneo provides an MCP server through the @kaneo/mcp package and an HTTP endpoint. Compatible AI clients can read and update tasks using an API key tied to a user, subject to workspace permissions.",
-				"link": "Read the MCP guide"
-			}
-		},
-		"comparison": {
-			"feature": "Feature",
-			"yes": "Yes",
-			"no": "No"
-		},
-		"selfHostingGuide": {
-			"summary": "What self-hosting involves, with links to the maintained Docker Compose configuration and installation steps.",
-			"answer": "To self-host Kaneo, run the application and PostgreSQL with Docker Compose, configure your public URL and secrets, and put a TLS reverse proxy in front. The installation guide specifies at least 2 GB of RAM and 10 GB of disk space. Plan for ongoing updates, database backups, and storage for uploaded files.",
-			"requirements": "The documented minimum is 2 GB of RAM and 10 GB of disk space, with Docker 20.10 or newer and Docker Compose V2. Allow more capacity for your workload, database growth, and uploaded files.",
-			"compose": "Use the maintained compose.yml in the Docker Compose guide. It defines PostgreSQL, a persistent database volume, the Kaneo application, and health checks. Configure the environment file before starting the services; for production, pin an image version so updates are deliberate.",
-			"backups": "Back up both PostgreSQL and any object storage used for uploads. Choose a schedule based on how much work your team can afford to lose, store copies off the application server, and test restoring them before you need them.",
-			"worth": "Self-hosting makes sense when you need control over infrastructure and data, and someone can own maintenance. Include server capacity, storage, backups, and that maintenance time when comparing costs with a managed service.",
-			"minimum": "The installation guide specifies Docker 20.10 or newer, Docker Compose V2, at least 2 GB of RAM, and 10 GB of disk space. The Compose setup includes PostgreSQL. Redis is optional for a single API instance.",
-			"composeLink": "Docker Compose configuration",
-			"composeLinkDescription": "The maintained compose.yml with persistent storage and health checks.",
-			"startLink": "Start and verify the services",
-			"startLinkDescription": "Start the stack, inspect its status, and check that the application is available."
 		}
 	}
 }

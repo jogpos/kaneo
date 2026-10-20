@@ -43,18 +43,6 @@
 			"label": "Putanja",
 			"more": "Više"
 		},
-		"language": {
-			"english": "English",
-			"german": "German",
-			"greek": "Greek",
-			"macedonian": "Macedonian",
-			"french": "French",
-			"spanish": "Spanish",
-			"dutch": "Dutch",
-			"korean": "Korean",
-			"chinese": "Chinese",
-			"italian": "Italian"
-		},
 		"people": {
 			"someone": "Netko",
 			"unknown": "Nepoznato"
@@ -93,7 +81,7 @@
 			"createProject": {
 				"title": "Stvori novi projekt",
 				"breadcrumbNew": "Stvori novi projekt",
-				"workspaceFallback": "WORKSPACE",
+				"workspaceFallback": "RADNI PROSTOR",
 				"description": "Stvorite novi projekt u svom workspaceu unosom imena, ključa i odabirom ikone.",
 				"pickIcon": "Odaberi ikonu",
 				"searchIcons": "Pretraži ikone...",
@@ -115,7 +103,7 @@
 				"errorToast": "Neuspjelo stvaranje workspacea"
 			},
 			"createTask": {
-				"breadcrumbTask": "TASK",
+				"breadcrumbTask": "ZADATAK",
 				"selectProject": "Odaberi projekt",
 				"title": "Novi zadatak",
 				"description": "Stvorite novi zadatak unosom naslova, opisa i ostalih detalja.",
@@ -125,10 +113,8 @@
 				"chooseProjectForImages": "Prije učitavanja slika odaberite projekt.",
 				"prepareTaskError": "Neuspjelo pripremanje zadatka",
 				"successCreated": "Zadatak je uspješno stvoren",
-				"successUpdated": "Zadatak je uspješno ažuriran",
 				"createError": "Neuspjelo stvaranje zadatka",
 				"priority": "Prioritet",
-				"statusFallback": "U tijeku",
 				"startDate": "Datum početka",
 				"dueDate": "Rok",
 				"clearStartDate": "Očisti datum početka",
@@ -148,17 +134,16 @@
 				"discardTitle": "Odbaciti zadatak?",
 				"discardDescription": "Vaši nespremljeni podaci zadatka bit će izgubljeni.",
 				"discardButton": "Odbaci zadatak",
-				"untitledTask": "Zadatak bez naslova",
 				"labelColors": {
-					"stone": "Stone",
-					"slate": "Slate",
-					"lavender": "Lavender",
-					"sage": "Sage",
-					"forest": "Forest",
-					"amber": "Amber",
-					"terracotta": "Terracotta",
-					"rose": "Rose",
-					"crimson": "Crimson"
+					"stone": "Kamena siva",
+					"slate": "Škriljasto siva",
+					"lavender": "Ljubičasta lavande",
+					"sage": "Zelena kadulje",
+					"forest": "Šumska zelena",
+					"amber": "Jantarna",
+					"terracotta": "Terakota",
+					"rose": "Ružičasta",
+					"crimson": "Grimizna"
 				}
 			}
 		},
@@ -646,7 +631,6 @@
 		},
 		"account": "Račun",
 		"administration": "Administracija",
-		"developer": "Razvojni programer",
 		"information": "Profil",
 		"notifications": "Obavijesti",
 		"preferences": "Postavke",
@@ -869,9 +853,9 @@
 			"connectNtfy": "Poveži ntfy",
 			"gotifyTitle": "Gotify",
 			"gotifyDescription": "Šaljite obavijesti na svoj Gotify poslužitelj.",
-			"gotifyTokenLabel": "App token",
+			"gotifyTokenLabel": "Token aplikacije",
 			"gotifyServerPlaceholder": "https://gotify.example.com",
-			"gotifyTokenPlaceholder": "Gotify app token",
+			"gotifyTokenPlaceholder": "Token aplikacije Gotify",
 			"gotifyTokenHintConfigured": "App token je već konfiguriran ({{masked}}). Unesite novi token za zamjenu.",
 			"gotifyTokenHintRequired": "Obvezno. Koristite aplikacijski token sa svog Gotify poslužitelja.",
 			"connectGotify": "Poveži Gotify",
@@ -893,26 +877,9 @@
 			"eventDueDateReminders": "Podsjetnici za rok",
 			"reminderLeadTimeLabel": "Podsjeti me prije roka",
 			"reminderLeadTimeInvalid": "Unesite cijeli broj između 1 i {{max}}.",
-			"saveEventPreferences": "Spremi vrste obavijesti",
 			"allProjects": "Svi projekti",
 			"noProjectsInWorkspace": "Još nema dostupnih projekata u ovom radnom prostoru.",
-			"toastEmailSaved": "Postavke obavijesti e-poštom spremljene",
-			"toastEmailSaveFailed": "Neuspjelo spremanje postavki e-pošte",
-			"toastNtfySaved": "Postavke ntfy spremljene",
-			"toastNtfySaveFailed": "Neuspjelo spremanje ntfy postavki",
-			"toastNtfyDisconnected": "ntfy prekinut",
-			"toastNtfyDisconnectFailed": "Neuspjelo prekidanje veze s ntfy",
-			"toastGotifySaved": "Postavke Gotify spremljene",
-			"toastGotifySaveFailed": "Neuspjelo spremanje Gotify postavki",
-			"toastGotifyDisconnected": "Gotify prekinut",
-			"toastGotifyDisconnectFailed": "Neuspjelo prekidanje veze s Gotify",
-			"toastWebhookSaved": "Postavke webhooka spremljene",
-			"toastWebhookSaveFailed": "Neuspjelo spremanje postavki webhooka",
-			"toastWebhookDisconnected": "Webhook prekinut",
-			"toastWebhookDisconnectFailed": "Neuspjelo prekidanje veze s webhookom",
-			"toastRuleSaved": "Spremljeno pravilo obavijesti za {{workspaceName}}",
 			"toastRuleSaveFailed": "Neuspjelo spremanje pravila obavijesti radnog prostora",
-			"toastRuleRemoved": "Uklonjeno pravilo obavijesti za {{workspaceName}}",
 			"toastRuleRemoveFailed": "Neuspjelo uklanjanje pravila obavijesti radnog prostora",
 			"toastPreferencesSaved": "Postavke obavijesti spremljene",
 			"toastPreferencesSaveFailed": "Neuspjelo spremanje postavki obavijesti",
@@ -975,7 +942,6 @@
 			"subtitle": "Kako Kaneo izgleda i radi za vas.",
 			"appearanceTitle": "Općenito",
 			"theme": "Tema",
-			"selectTheme": "Odaberi temu",
 			"themeLight": "Svijetla",
 			"themeDark": "Tamna",
 			"themeSystem": "Prati sustav",
@@ -989,10 +955,8 @@
 			"weekStartsOnSaturday": "Subota",
 			"defaultView": "Zadani prikaz",
 			"defaultViewDescription": "Prikaz u kojem se otvaraju projekti.",
-			"selectViewMode": "Odaberi način prikaza",
 			"board": "Tablica",
 			"list": "Lista",
-			"gantt": "Gantt",
 			"sidebarDefault": "Drži bočnu traku otvorenom",
 			"sidebarDefaultDescription": "Započni s proširenom bočnom trakom.",
 			"displayOptions": "Detalji zadatka",
@@ -1439,7 +1403,7 @@
 				"urlLabel": "Jira URL stranice",
 				"urlDescription": "Kopirajte ga iz preglednika. Data Center također radi.",
 				"urlPlaceholder": "https://your-site.atlassian.net",
-				"emailLabel": "Email",
+				"emailLabel": "E-pošta",
 				"emailDescription": "Email vašeg Atlassian računa. Ostavite prazno za Jira Data Center.",
 				"tokenLabel": "API token",
 				"tokenDescription": "Cloud: stvorite ga na id.atlassian.com. Data Center: koristite personal access token.",
@@ -1466,7 +1430,7 @@
 				"urlLabel": "URL radnog prostora",
 				"urlDescription": "Kopirajte ga iz preglednika dok ste u Planeu. Self-hosted također radi.",
 				"urlPlaceholder": "https://app.plane.so/your-workspace",
-				"tokenLabel": "Personal access token",
+				"tokenLabel": "Osobni pristupni token",
 				"tokenDescription": "Profile settings, Developer, pa Personal Access Tokens."
 			},
 			"planka": {
@@ -1690,7 +1654,7 @@
 			"toastMovedWithUnassigned": "Projekt je uspješno premješten. {{taskCount}} zadatak(a) je ostalo neodređeno.",
 			"toastMoveError": "Neuspjelo premještanje projekta",
 			"tasksTitle": "Zadaci",
-			"moveTargetLabel": "Workspace",
+			"moveTargetLabel": "Radni prostor",
 			"moveDialogTitle": "Premjestiti u drugi workspace?",
 			"moveDialogDescription": "Zadaci dodijeljeni osobama izvan novog workspacea postaju neodređeni, a pretplate na obavijesti za ovaj projekt se brišu.",
 			"moving": "Premještanje..."
@@ -1699,21 +1663,14 @@
 			"pageTitle": "Integracije",
 			"title": "Integracije",
 			"subtitle": "Povežite ovaj projekt s vašim kodnim repozitorijem i timskim chatom.",
-			"githubSectionTitle": "GitHub integracija",
 			"githubSectionSubtitle": "Sinkronizirajte zadatke s GitHub issueima i omogućite dvosmjernu sinkronizaciju.",
-			"giteaSectionTitle": "Gitea integracija",
 			"giteaSectionSubtitle": "Sinkronizirajte zadatke s vlastitom Gitea instancom (issues, PR-ovi, webhooks).",
-			"gitlabSectionTitle": "GitLab integracija",
 			"gitlabSectionSubtitle": "Sinkronizirajte zadatke s GitLab.com ili samostalno upravljanom instancom.",
-			"discordSectionTitle": "Discord integracija",
 			"discordSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Discord kanal putem webhooka.",
-			"genericWebhookSectionTitle": "Webhooks",
+			"genericWebhookSectionTitle": "Web-dojave",
 			"genericWebhookSectionSubtitle": "Šaljite događaje zadataka projekta na bilo koju HTTP adresu kao JSON.",
-			"slackSectionTitle": "Slack integracija",
 			"slackSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Slack kanal putem incoming webhooka.",
-			"mattermostSectionTitle": "Mattermost integracija",
 			"mattermostSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Mattermost kanal putem incoming webhooka.",
-			"telegramSectionTitle": "Telegram integracija",
 			"telegramSectionSubtitle": "Šaljite ažuriranja zadataka projekta u Telegram chat ili temu pomoću bota.",
 			"codeHostingTitle": "Hostanje koda",
 			"chatTitle": "Chat i webhooks",
@@ -1779,13 +1736,11 @@
 		},
 		"customFields": {
 			"namePlaceholder": "Naziv polja",
-			"selectPlaceholder": "Odaberi opciju(e)",
 			"required": "Obavezno",
 			"creating": "Stvaranje...",
 			"defaultLabel": "Zadano",
 			"createSuccess": "Prilagođeno polje je stvoreno.",
 			"createError": "Neuspjelo stvaranje prilagođenog polja.",
-			"deleting": "Brisanje...",
 			"deleteSuccess": "Prilagođeno polje izbrisano.",
 			"deleteError": "Neuspjelo brisanje prilagođenog polja.",
 			"reorderError": "Neuspjelo promicanje redoslijeda polja",
@@ -1939,7 +1894,7 @@
 			"tokenTypeLabel": "Vrsta tokena",
 			"tokenTypePrivate": "Osobni, projektni ili grupni access token",
 			"tokenTypeBearer": "OAuth2 token",
-			"tokenLabel": "Access token",
+			"tokenLabel": "Pristupni token",
 			"tokenPlaceholder": "Zalijepite token",
 			"tokenPlaceholderUpdate": "Zalijepite novi token za rotaciju",
 			"projectPathLabel": "Put projekta",
@@ -1971,8 +1926,7 @@
 			},
 			"webhookPlaceholder": "https://hooks.slack.com/services/...",
 			"webhookHint": "Napravite incoming webhook u Slacku i zalijepite ga ovdje.",
-			"connect": "Poveži Slack",
-			"update": "Ažuriraj Slack"
+			"connect": "Poveži Slack"
 		},
 		"discordIntegration": {
 			"validation": {
@@ -1989,8 +1943,7 @@
 			},
 			"webhookPlaceholder": "https://discord.com/api/webhooks/...",
 			"webhookHint": "Napravite channel webhook u Discordu i zalijepite ga ovdje.",
-			"connect": "Poveži Discord",
-			"update": "Ažuriraj Discord"
+			"connect": "Poveži Discord"
 		},
 		"mattermostIntegration": {
 			"validation": {
@@ -2007,8 +1960,7 @@
 			},
 			"webhookPlaceholder": "https://your-mattermost-server.com/hooks/...",
 			"webhookHint": "Napravite incoming webhook u Mattermostu i zalijepite ga ovdje.",
-			"connect": "Poveži Mattermost",
-			"update": "Ažuriraj Mattermost"
+			"connect": "Poveži Mattermost"
 		},
 		"genericWebhookIntegration": {
 			"validation": {
@@ -2024,7 +1976,7 @@
 				"removed": "Generička webhook integracija uspješno uklonjena",
 				"removeError": "Nije uspjelo uklanjanje generičke webhook integracije"
 			},
-			"webhookLabel": "Endpoint URL",
+			"webhookLabel": "URL krajnje točke",
 			"webhookPlaceholder": "https://example.com/webhooks/kaneo",
 			"webhookHint": "Kaneo šalje POST zahtjeve s JSON payloadom za svaki omogućeni događaj.",
 			"secretLabel": "Potpisni tajni ključ",
@@ -2078,7 +2030,7 @@
 			"threadIdLabel": "ID teme",
 			"threadIdPlaceholder": "Za forum teme",
 			"chatLabelLabel": "Naziv chata",
-			"chatLabelPlaceholder": "Engineering Updates",
+			"chatLabelPlaceholder": "Novosti razvojnog tima",
 			"connect": "Poveži Telegram",
 			"loadError": "Nije moguće učitati Telegram postavke.",
 			"botTokenSavedPlaceholder": "Spremljeno. Zalijepite novi token za zamjenu."
@@ -2142,8 +2094,8 @@
 		},
 		"externalLinks": {
 			"resources": "Resursi",
-			"issue": "Issue",
-			"branch": "Branch",
+			"issue": "Prijava problema",
+			"branch": "Grana",
 			"merged": "Spojeno",
 			"draft": "Skica",
 			"open": "Otvori",
@@ -2277,16 +2229,6 @@
 				"billedYearly": "{{price}} / mj., fakturirano godišnje",
 				"billedYearlyPerUser": "{{price}} / korisnik / mj., fakturirano godišnje"
 			},
-			"plans": {
-				"personal": {
-					"name": "Personalno",
-					"tagline": "Za pojedince"
-				},
-				"team": {
-					"name": "Tim",
-					"tagline": "Za timove koji surađuju"
-				}
-			},
 			"features": {
 				"singleUser": "Jedan korisnik",
 				"unlimitedMembers": "Neograničeno članova tima",
@@ -2332,7 +2274,7 @@
 		},
 		"chatIntegrations": {
 			"optional": "Opcionalno",
-			"webhookUrlLabel": "Webhook URL",
+			"webhookUrlLabel": "URL web-dojave",
 			"savedUrlPlaceholder": "Spremljeno. Zalijepite novi URL za zamjenu.",
 			"channelLabel": "Kanal",
 			"channelPlaceholder": "#team-updates",
@@ -2393,7 +2335,7 @@
 			"tokenStored": "Pohranjeni token",
 			"tokenTitle": "Pristupni token",
 			"webhookSecret": "Tajna",
-			"webhookSection": "Webhook",
+			"webhookSection": "Web-dojava",
 			"webhookUrl": "URL"
 		},
 		"shared": {
@@ -2438,7 +2380,7 @@
 			"more": "Više",
 			"backToBoard": "Natrag na ploču",
 			"home": "Početna",
-			"inbox": "Inbox",
+			"inbox": "Ulazna pošta",
 			"myTasks": "Moji zadaci",
 			"invitePeople": "Pozovi ljude"
 		},
@@ -2467,8 +2409,7 @@
 			}
 		},
 		"settingsLayout": {
-			"toggleSidebar": "Prebaci bočnu traku",
-			"back": "Natrag"
+			"toggleSidebar": "Prebaci bočnu traku"
 		},
 		"userMenu": {
 			"signedOutSuccess": "Uspješno odjavljeni",
@@ -2490,9 +2431,6 @@
 			"backToWorkspace": "Natrag na radni prostor",
 			"settingsWorkspaceTab": "Radni prostor"
 		},
-		"projectSettings": {
-			"projectLabel": "Projekt"
-		},
 		"shortcuts": {
 			"categories": {
 				"general": "Općenito",
@@ -2501,7 +2439,7 @@
 				"views": "Prikazi",
 				"tasks": "Zadaci",
 				"list": "Ploča i lista",
-				"inbox": "Inbox",
+				"inbox": "Ulazna pošta",
 				"filters": "Filtri",
 				"editor": "Uređivač"
 			},
@@ -2613,8 +2551,6 @@
 		}
 	},
 	"notifications": {
-		"newCount_one": "{{count}} novo",
-		"newCount_other": "{{count}} novih",
 		"emptyTitle": "Još nema obavijesti",
 		"emptySubtitle": "Ovdje će se prikazivati ažuriranja i aktivnosti.",
 		"clearAll": "Očisti sve obavijesti",
@@ -2671,7 +2607,7 @@
 			}
 		},
 		"inbox": {
-			"pageTitle": "Inbox",
+			"pageTitle": "Ulazna pošta",
 			"unread": "Neprečito",
 			"today": "Danas",
 			"earlier": "Ranije",
@@ -2684,15 +2620,14 @@
 			"emptyFilter": "Prazno ovdje",
 			"loadError": "Obavijesti se nisu mogle učitati.",
 			"selectPrompt": "Odaberite obavijest za čitanje",
-			"back": "Inbox",
+			"back": "Ulazna pošta",
 			"openTask": "Otvori zadatak",
 			"recentActivity": "Nedavna aktivnost",
 			"taskUnavailable": "Ovaj zadatak više nije dostupan.",
 			"taskLoadError": "Ovaj zadatak se nije mogao učitati.",
 			"actionError": "Nije moguće ažurirati inbox. Pokušajte ponovo.",
 			"readCleared": "Obrisane pročitane obavijesti"
-		},
-		"newCount_few": "{{count}} novih"
+		}
 	},
 	"activity": {
 		"assignedToSelf": "dodijelio zadatak sebi",
@@ -2707,7 +2642,7 @@
 		"moved": "premjestio zadatak iz \"{{from}}\" u \"{{to}}\"",
 		"movedFromOtherProject": "premjestio zadatak iz drugog projekta u \"{{to}}\"",
 		"created": "kreirao ovaj zadatak",
-		"githubUser": "GitHub User",
+		"githubUser": "Korisnik GitHuba",
 		"comment": {
 			"viewGithubProfile": "Pogledaj GitHub profil",
 			"commentedOnForge": "komentirao na {{forge}}",
@@ -2829,9 +2764,9 @@
 			"urgent": "Hitno"
 		},
 		"view": {
-			"board": "Board",
+			"board": "Ploča",
 			"list": "Popis",
-			"backlog": "Backlog",
+			"backlog": "Zaostatak",
 			"gantt": "Gantt",
 			"heading": "Prikaz"
 		},
@@ -2916,7 +2851,7 @@
 					"ocaml": "OCaml",
 					"php": "PHP",
 					"perl": "Perl",
-					"plaintext": "Plaintext",
+					"plaintext": "Običan tekst",
 					"python": "Python",
 					"r": "R",
 					"reasonml": "ReasonML",
@@ -2976,11 +2911,6 @@
 			"related": "Povezano",
 			"blocks": "Blokira",
 			"selectTask": "Odaberite zadatak za povezivanje",
-			"types": {
-				"blocks": "blokira",
-				"blocked_by": "blokiran od",
-				"related": "povezano s"
-			},
 			"blockedBy": "Blokiran od",
 			"parentPlaceholder": "Postavi roditeljski zadatak…"
 		},
@@ -3009,18 +2939,13 @@
 			"taskBranchCopied": "Naziv grane kopiran",
 			"start": "Početak",
 			"startDate": "Datum početka",
-			"noDate": "Bez datuma",
 			"dates": "Datumi",
 			"project": "Projekt"
 		},
 		"move": {
 			"title": "Premjesti zadatak",
-			"projectLabel": "Odredišni projekt",
 			"projectPlaceholder": "Odaberite projekt",
 			"statusLabel": "Odredišni status",
-			"statusHintKeep": "Radni tijek ovog projekta već podržava trenutni status.",
-			"statusHintAdjust": "Odaberite status koji će se koristiti u odredišnom projektu.",
-			"action": "Premjesti zadatak",
 			"success": "Zadatak je uspješno premješten",
 			"error": "Nije uspjelo premještanje zadatka"
 		},
@@ -3045,28 +2970,27 @@
 			},
 			"labels": {
 				"searchPlaceholder": "Pretraži oznake...",
-				"empty": "Nema pronađenih oznaka",
 				"create": "Stvori \"{{name}}\"",
 				"chooseColor": "Odaberite boju",
 				"updateError": "Nije uspjelo ažuriranje oznake",
 				"createSuccess": "Oznaka stvorena i dodana",
 				"createError": "Nije uspjelo stvaranje oznake",
 				"colors": {
-					"stone": "Stone",
-					"slate": "Slate",
-					"lavender": "Lavender",
-					"sage": "Sage",
-					"forest": "Forest",
-					"amber": "Amber",
-					"terracotta": "Terracotta",
-					"rose": "Rose",
-					"crimson": "Crimson"
+					"stone": "Kamena siva",
+					"slate": "Škriljasto siva",
+					"lavender": "Ljubičasta lavande",
+					"sage": "Zelena kadulje",
+					"forest": "Šumska zelena",
+					"amber": "Jantarna",
+					"terracotta": "Terakota",
+					"rose": "Ružičasta",
+					"crimson": "Grimizna"
 				},
 				"editLabels": "Uredi oznake"
 			}
 		},
 		"backlog": {
-			"pageTitle": "{{name}}'s backlog",
+			"pageTitle": "{{name}} – zaostatak",
 			"noTasksToMove": "Nema planiranih zadataka za premještanje",
 			"moveAllConfirm": "Premjestiti svih {{count}} planiranih zadataka u To Do?",
 			"moveAllSuccess": "Premješteno {{count}} zadataka u To Do",
@@ -3100,8 +3024,6 @@
 		},
 		"boardFilters": {
 			"noValuesUsedYet": "Još nisu korištene vrijednosti",
-			"noCustomFieldValues": "Nema vrijednosti prilagođenih polja",
-			"allCustomFieldValues": "Sve vrijednosti",
 			"selectedCount": "{{count}} odabrano",
 			"subjects": {
 				"status": "Status",
@@ -3135,7 +3057,6 @@
 			"noTasksThisMonth": "Ovaj mjesec nema ništa zakazano"
 		},
 		"gantt": {
-			"searchPlaceholder": "Traži zakazane tikete...",
 			"pageTitle": "{{name}} – Gantt",
 			"title": "Gantt vremenska crta",
 			"jumpToToday": "Idi na danas",
@@ -3186,7 +3107,7 @@
 			"merged": "Spojeno",
 			"draft": "Skeč",
 			"open": "Otvoreno",
-			"label": "Pull Request",
+			"label": "Pull request",
 			"count_one": "{{count}} PR",
 			"count_other": "{{count}} PR-a",
 			"closed": "Zatvoreno",
@@ -3199,8 +3120,7 @@
 		"dueDate": {
 			"label": "Rok",
 			"clear": "Ukloni datum",
-			"updateError": "Neuspjelo ažuriranje roka zadatka",
-			"clearError": "Neuspjelo uklanjanje roka"
+			"updateError": "Neuspjelo ažuriranje roka zadatka"
 		},
 		"labels": {
 			"empty": "Nema dostupnih oznaka"
@@ -3387,7 +3307,7 @@
 		"continueToSetup": "Nastavi na postavljanje",
 		"skipForNow": "Preskoči za sada",
 		"table": {
-			"workspace": "Workspace",
+			"workspace": "Radni prostor",
 			"invitedBy": "Pozvao/la",
 			"expires": "Istječe"
 		},
@@ -3416,7 +3336,6 @@
 				"inProgress": "U tijeku"
 			},
 			"noDueDate": "Nema roka",
-			"reorderHandle": "Promijeni redoslijed projekata",
 			"reorderError": "Poništavanje redoslijeda projekata nije uspjelo",
 			"unavailable": {
 				"noAccessTitle": "Nemate pristup ovom projektu",
@@ -3558,11 +3477,8 @@
 				"name": "Ime",
 				"role": "Uloga",
 				"joined": "Pridružio se",
-				"actions": "Radnje",
 				"projects": "Projekti"
 			},
-			"memberRolePending": "{{role}} (Na čekanju)",
-			"ariaCancelInvitation": "Otkaži pozivnicu",
 			"ariaInvitationActions": "Radnje pozivnice",
 			"ariaRemoveMember": "Ukloni člana",
 			"removeDialogTitle": "Ukloniti člana tima?",
@@ -3616,8 +3532,7 @@
 		"taskDetail": {
 			"labels": "Oznake",
 			"externalLinks": "Vanjske poveznice",
-			"pullRequestFallback": "Pull Request",
-			"issueFallback": "Issue",
+			"issueFallback": "Prijava problema",
 			"prStatusMerged": "Spojeno",
 			"prStatusDraft": "Nacrt",
 			"prStatusOpen": "Otvoreno",
@@ -3637,217 +3552,6 @@
 		},
 		"branding": {
 			"poweredBy": "Pokreće"
-		}
-	},
-	"press": {
-		"title": "Press kit",
-		"headline": "Kaneo press kit",
-		"intro": "Kaneo logotipi i snimke zaslona proizvoda za članke, videozapise i druge medije.",
-		"description": "Kaneo press materijali: informacije o proizvodu, logotipi, snimke zaslona i kontakt podaci za novinare i tvorce sadržaja.",
-		"downloadKit": "Preuzmi sve materijale",
-		"boilerplateTitle": "O Kaneu",
-		"boilerplate": "Kaneo je open-source platforma za upravljanje projektima koju je stvorio Andrej Acevski. Timovi mogu organizirati zadatke u prikazu ploče i popisa, dodijeliti zadatke, postaviti prioritete i rokove te povezati GitHub. Kaneo je dostupan pod MIT licencom za samostalno hostanje, ili kao upravljana usluga putem Kaneo Clouda.",
-		"logosTitle": "Logotipi",
-		"darkLogo": "Tamni natpis",
-		"darkLogoAlt": "Tamni Kaneo logotip na svijetloj pozadini",
-		"darkLogoDetail": "SVG",
-		"lightLogo": "Svijetli natpis",
-		"lightLogoAlt": "Svijetli Kaneo logotip na tamnoj pozadini",
-		"lightLogoDetail": "SVG",
-		"icon": "Ikona aplikacije",
-		"iconAlt": "Kaneo ikona aplikacije",
-		"iconDetail": "PNG, 512 × 512",
-		"download": "Preuzmi",
-		"screenshotsTitle": "Snimke zaslona",
-		"lightScreenshot": "Ploča (svijetlo)",
-		"lightScreenshotAlt": "Kaneo ploča u svijetloj temi, sa zadacima raspoređenim prema statusu",
-		"darkScreenshot": "Ploča (tamno)",
-		"darkScreenshotAlt": "Kaneo ploča u tamnoj temi, sa zadacima raspoređenim prema statusu",
-		"lightListScreenshot": "Popis (svijetlo)",
-		"lightListScreenshotAlt": "Kaneo popis zadataka u svijetloj temi, grupiran po statusu s izvršiteljima, prioritetima, oznakama i rokovima",
-		"darkListScreenshot": "Popis (tamno)",
-		"darkListScreenshotAlt": "Kaneo popis zadataka u tamnoj temi, grupiran po statusu s izvršiteljima, prioritetima, oznakama i rokovima",
-		"lightTimelineScreenshot": "Vremenska crta (svijetlo)",
-		"lightTimelineScreenshotAlt": "Kaneo Gantt vremenska crta u svijetloj temi, prikazuje planirane zadatke i njihove trajanje",
-		"darkTimelineScreenshot": "Vremenska crta (tamno)",
-		"darkTimelineScreenshotAlt": "Kaneo Gantt vremenska crta u tamnoj temi, prikazuje planirane zadatke i njihove trajanje",
-		"lightTaskScreenshot": "Detalji zadatka (svijetlo)",
-		"lightTaskScreenshotAlt": "Kaneo detalji zadatka u svijetloj temi, s opisom, kontrolnim popisom, timskim komentarom i svojstvima zadatka",
-		"darkTaskScreenshot": "Detalji zadatka (tamno)",
-		"darkTaskScreenshotAlt": "Kaneo detalji zadatka u tamnoj temi, s opisom, kontrolnim popisom, timskim komentarom i svojstvima zadatka",
-		"contactTitle": "Upiti za medije",
-		"contactBody": "Kontaktirajte Kaneo tim za pitanja o proizvodu, intervjue ili dodatne materijale.",
-		"usageContrast": "Koristite svijetli natpis za tamne pozadine i tamni natpis za svijetle pozadine.",
-		"usageProportions": "Zadržite originalne proporcije i boje, bez rastezanja ili dodavanja efekata.",
-		"usageSpace": "Ostavite dovoljno prostora oko logotipa kako bi bio jasan i čitljiv."
-	},
-	"landing": {
-		"sponsors": {
-			"ciSponsor": "Partneri"
-		},
-		"founder": {
-			"title": "Zašto Kaneo postoji",
-			"intro": "Ja sam Andrej i stvorio sam Kaneo jer sam bio umoran od alata za upravljanje projektima koji više smetaju nego pomažu. Nakon godina korištenja prekompliciranih platformi koje odvlače pažnju od stvarnog rada, znao sam da mora postojati bolji način.",
-			"problem": "Problem nije bio u nedostatku značajki — bio je u tome što ih je bilo previše. Svaka obavijest, svaki suvišan gumb, svaki složeni tijek rada udaljavao je moj tim od onoga što je važno: izrade izvrsnih proizvoda.",
-			"principle": "Vjerujem da su najbolji alati nevidljivi. Trebali bi pojačavati prirodni tijek rada vašeg tima, a ne prisiljavati vas da se prilagođavate njima. Kaneo je izgrađen na principu da je manje više — svaka značajka postoji jer rješava stvarni problem, a ne zato što izgleda impresivno u demonstraciji."
-		},
-		"hero": {
-			"cloudCta": "Isprobaj Kaneo Cloud",
-			"selfHostCta": "Samostalno hostaj Kaneo",
-			"trialNote": "14-dnevno probno razdoblje na Cloudu. Nije potrebna kreditna kartica.",
-			"github": "GitHub",
-			"productHunt": "Product Hunt",
-			"title": "Upravljanje projektima",
-			"titleAccent": "koje ne postane projekt.",
-			"description": "Open-source upravljanje projektima s pločama, Gantt kartama i integracijom s GitHubom. Samostalno hostajte besplatno uz uključeni SSO, ili prepustite hosting Kaneo Cloudu."
-		},
-		"navigation": {
-			"product": "Proizvod",
-			"pricing": "Cijene",
-			"resources": "Resursi",
-			"docs": "Dokumentacija",
-			"blog": "Blog",
-			"guides": "Vodiči",
-			"comparisons": "Usporedba alata",
-			"roadmap": "Cestovna karta",
-			"community": "Zajednica",
-			"menu": "Meni",
-			"closeMenu": "Zatvori izbornik",
-			"home": "Kaneo početna",
-			"signIn": "Prijava",
-			"getStarted": "Započni"
-		},
-		"showcase": {
-			"label": "Prikazi proizvoda Kaneo",
-			"controls": "Odaberi prikaz proizvoda",
-			"play": "Pokreni prikaze proizvoda",
-			"pause": "Pauziraj prikaze proizvoda",
-			"board": "Ploča",
-			"list": "Backlog",
-			"gantt": "Gantt"
-		},
-		"features": {
-			"tasks": {
-				"label": "Podzadaci i kontekst",
-				"title": "Veliki zadaci. Jasni sljedeći koraci.",
-				"description": "Razbijte rad na podzadatke, dodijelite svaki i pratite napredak bez gubitka izvornog zadatka. Svaki detalj ostaje uz rad."
-			},
-			"github": {
-				"label": "Integracija s GitHubom",
-				"title": "Od pull requesta do gotovog.",
-				"description": "Issuevi i oznake sinkroniziraju se u oba smjera. Povezani pull requesti pomiču zadatke kroz pregled do dovršetka dok se kod otvara i spaja.",
-				"link": "Poveži GitHub"
-			},
-			"hosting": {
-				"title": "Pokreni ga na svom poslužitelju.",
-				"description": "Postavite s Dockerom i zadržite radni prostor na infrastrukturi koju kontrolirate.",
-				"link": "Samostalno hostaj Kaneo"
-			},
-			"source": {
-				"title": "Kod je također otvoren.",
-				"description": "Pročitajte izvorni kod, prijavite problem ili doprinesite promjenom. Razvoj se odvija na GitHubu.",
-				"link": "Pogledaj izvor"
-			},
-			"preview": {
-				"taskAlt": "Interaktivni pregled zadatka i podzadatka u Kaneu.",
-				"githubAlt": "Interaktivni pregled GitHub spajanja koje ažurira Kaneo zadatak.",
-				"taskTitle": "Objavi novu početnu stranicu",
-				"taskDescription": "Ažuriraj tekst i provjeri izgled prije sljedećeg izdanja.",
-				"checklistDone": "Pregledaj tekst",
-				"checklistOpen": "Provjeri izgled za mobilne uređaje",
-				"inProgress": "U tijeku",
-				"high": "Visoko",
-				"date": "12. okt",
-				"design": "dizajn",
-				"done": "Dovršeno",
-				"relationsAlt": "Interaktivni pregled ovisnosti zadataka u Kaneu.",
-				"inReview": "Na pregledu",
-				"trySubtasks": "Isprobaj označiti podzadatak kao dovršen.",
-				"tryGithub": "Pregledaj spajanje da vidiš ažuriranje zadatka.",
-				"tryRelations": "Otvori povezani zadatak da slijediš vezu.",
-				"mergeAction": "Pregled spoja",
-				"resetAction": "Ponovno postavi pretpregled",
-				"mergedHint": "Pull request spojen. Zadatak premješten u Završeno.",
-				"progress": "{{completed}} od {{total}} podzadataka dovršeno",
-				"backToTask": "Povratak na zadatak početne stranice",
-				"releaseNotes": "Napiši bilješke izdanja",
-				"dependencyDescription": "Početna stranica čeka mobilnu recenziju. Zadrži poveznicu na bilješke za pokretanje radi konteksta.",
-				"mobileDescription": "Provjeri novu početnu stranicu na uskim zaslonima prije objave.",
-				"notesDescription": "Zabilježi što se promijenilo za objavu."
-			},
-			"relations": {
-				"label": "Povezani zadaci i ovisnosti",
-				"title": "Pogledaj što usporava rad.",
-				"description": "Poveži blokatore, prati ovisnosti i drži povezani rad pri ruci. Otvori povezani zadatak da vidiš kontekst sljedećeg koraka."
-			}
-		},
-		"seo": {
-			"title": "Kaneo — Open-source, self-hosted project management",
-			"description": "Open-source upravljanje projektima s pločama, Gantt prikazima i GitHub integracijom. Samostalno hostaj besplatno s uključenim SSO-om ili koristi Kaneo Cloud."
-		},
-		"resources": {
-			"eyebrow": "Prilagodi svom načinu rada",
-			"title": "Jasan put od isprobavanja do uporabe.",
-			"description": "Postavi svoj server, poveži alate ili usporedi Kaneo s trenutnim trackerom.",
-			"docker": {
-				"title": "Samostalno hostanje s Dockerom",
-				"description": "Instalacija, izrade sigurnosnih kopija i ažuriranja za postavku kojom upravljate."
-			},
-			"sso": {
-				"title": "Upotrijebi vlastitog pružatelja identiteta",
-				"description": "Konfiguriraj OIDC single sign-on u besplatnoj samostalnoj verziji."
-			},
-			"mcp": {
-				"title": "Poveži svoje AI alate",
-				"description": "Koristi MCP za rad sa zadacima i projektima putem AI klijenta."
-			},
-			"linear": {
-				"title": "Usporedi Kaneo i Linear",
-				"description": "Pogledaj razlike u hostanju, licenciranju i tijeku rada."
-			}
-		},
-		"product": {
-			"title": "Prije nego počneš",
-			"description": "Praktični detalji o hostanju, planiranju i povezivanju tima.",
-			"overview": "Kaneo je open-source platforma za upravljanje projektima licencirana pod MIT-om, s pločama, backlogom, Gantt i kalendarskim prikazima, prilagođenim poljima, praćenjem vremena i GitHub integracijom. Samostalno je hostaj na vlastitoj infrastrukturi ili koristi Kaneo Cloud.",
-			"hosting": {
-				"question": "Je li Kaneo besplatan za samostalno hostanje?",
-				"answer": "Da. Kaneo je pod MIT licencom i besplatan za samostalno hostanje, s uključenim single sign-onom. Pokreni aplikaciju uz PostgreSQL koristeći Docker Compose ili implementiraj službeni Helm chart. Ti upravljaš infrastrukturom, ažuriranjima i sigurnosnim kopijama.",
-				"link": "Pročitaj vodič za instalaciju"
-			},
-			"planning": {
-				"question": "Ima li Kaneo Gantt grafikone?",
-				"answer": "Da. Kaneo uključuje Gantt i kalendarske prikaze uz ploče, liste i planiranje backlog-a. Koristi datume početka i dospijeća zadataka za planiranje radova na vremenskoj crti. Budžetiranje, usporedbe sa baseline-om i izvještaji o sprint burndownu trenutačno nisu obuhvaćeni.",
-				"link": "Usporedi značajke planiranja"
-			},
-			"sso": {
-				"question": "Je li single sign-on uključen?",
-				"answer": "Da. Besplatna samostalna verzija podržava Google, GitHub, Discord i prilagođene OAuth/OIDC pružatelje. Konfiguriraj svog pružatelja na instanci bez kupnje dodatne Kaneo edicije.",
-				"link": "Konfiguriraj OIDC"
-			},
-			"agents": {
-				"question": "Mogu li AI klijenti raditi s Kaneo?",
-				"answer": "Da. Kaneo pruža MCP server putem @kaneo/mcp paketa i HTTP endpointa. Kompatibilni AI klijenti mogu čitati i ažurirati zadatke koristeći API ključ povezan s korisnikom, uz poštivanje dopuštenja radnog prostora.",
-				"link": "Pročitaj MCP vodič"
-			}
-		},
-		"comparison": {
-			"feature": "Značajka",
-			"yes": "Da",
-			"no": "Ne"
-		},
-		"selfHostingGuide": {
-			"summary": "Što uključuje samostalno hostanje, s poveznicama na održavanu Docker Compose konfiguraciju i korake instalacije.",
-			"answer": "Za samostalno hostanje Kaneo pokreni aplikaciju i PostgreSQL s Docker Composeom, konfiguriraj javni URL i tajne te stavi TLS reverse proxy ispred. Vodič za instalaciju navodi najmanje 2 GB RAM-a i 10 GB prostora na disku. Planiraj kontinuirana ažuriranja, sigurnosne kopije baze podataka i pohranu za prenesene datoteke.",
-			"requirements": "Dokumentirano minimalno je 2 GB RAM-a i 10 GB prostora na disku, s Dockerom 20.10 ili novijim i Docker Compose V2. Predvidi veću kapacitet za svoj workload, rast baze i prenesene datoteke.",
-			"compose": "Upotrijebi održavanu compose.yml u Docker Compose vodiču. Definira PostgreSQL, trajni volumen baze, Kaneo aplikaciju i health checkove. Konfiguriraj environment file prije pokretanja servisa; za produkciju zabilježi verziju slike kako bi ažuriranja bila svjesna.",
-			"backups": "Izradi sigurnosne kopije i PostgreSQL-a i bilo kojeg object storagea za prijenose. Odaberi raspored prema tome koliko posla tim može izgubiti, pohrani kopije izvan aplikacijskog servera i testiraj vraćanje prije nego zatreba.",
-			"worth": "Samostalno hostanje ima smisla kada trebaš kontrolu nad infrastrukturom i podacima, i netko može preuzeti održavanje. Usporedi troškove s upravljanom uslugom uključujući kapacitet servera, pohranu, backupove i vrijeme održavanja.",
-			"minimum": "Vodič za instalaciju navodi Docker 20.10 ili noviji, Docker Compose V2, najmanje 2 GB RAM-a i 10 GB prostora na disku. Compose postavka uključuje PostgreSQL. Redis je opcionalan za jednu API instancu.",
-			"composeLink": "Docker Compose konfiguracija",
-			"composeLinkDescription": "Održavana compose.yml s trajnom pohranom i health checkovima.",
-			"startLink": "Pokreni i provjeri servise",
-			"startLinkDescription": "Pokreni stack, provjeri status i uvjeri se da je aplikacija dostupna."
 		}
 	}
 }

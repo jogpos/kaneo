@@ -13,6 +13,8 @@ import {
 } from "./shared.mjs";
 
 const pluralForms = ["_zero", "_one", "_two", "_few", "_many", "_other"];
+// These strings are consumed by the API email renderer, not React t() calls.
+const protectedPrefixes = ["invitations:email."];
 
 const args = process.argv.slice(2);
 const shouldFix = args.includes("--fix");
@@ -35,7 +37,8 @@ const unused = new Set(
   [...localeKeys].filter(
     (key) =>
       !isLocaleKeyUsed(key, staticKeys) &&
-      !dynamicPrefixes.some((prefix) => key.startsWith(prefix)),
+      !dynamicPrefixes.some((prefix) => key.startsWith(prefix)) &&
+      !protectedPrefixes.some((prefix) => key.startsWith(prefix)),
   ),
 );
 
