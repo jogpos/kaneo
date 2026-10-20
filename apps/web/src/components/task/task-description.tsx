@@ -1572,27 +1572,13 @@ export default function TaskDescription({ taskId }: TaskDescriptionProps) {
             editor={editor}
             className="kaneo-tiptap-bubble-btn"
             labels={{
-              addColumnBefore: t("tasks:editor.table.addColumnBefore", {
-                defaultValue: "Insert column left",
-              }),
-              addColumnAfter: t("tasks:editor.table.addColumnAfter", {
-                defaultValue: "Insert column right",
-              }),
-              deleteColumn: t("tasks:editor.table.deleteColumn", {
-                defaultValue: "Delete column",
-              }),
-              addRowBefore: t("tasks:editor.table.addRowBefore", {
-                defaultValue: "Insert row above",
-              }),
-              addRowAfter: t("tasks:editor.table.addRowAfter", {
-                defaultValue: "Insert row below",
-              }),
-              deleteRow: t("tasks:editor.table.deleteRow", {
-                defaultValue: "Delete row",
-              }),
-              deleteTable: t("tasks:editor.table.deleteTable", {
-                defaultValue: "Delete table",
-              }),
+              addColumnBefore: t("tasks:editor.table.addColumnBefore"),
+              addColumnAfter: t("tasks:editor.table.addColumnAfter"),
+              deleteColumn: t("tasks:editor.table.deleteColumn"),
+              addRowBefore: t("tasks:editor.table.addRowBefore"),
+              addRowAfter: t("tasks:editor.table.addRowAfter"),
+              deleteRow: t("tasks:editor.table.deleteRow"),
+              deleteTable: t("tasks:editor.table.deleteTable"),
             }}
           />
         </BubbleMenu>

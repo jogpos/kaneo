@@ -161,6 +161,12 @@ async function collectSourceFiles(rootDir) {
         return [];
       }
 
+      // Test fixtures intentionally use synthetic keys to verify loading and
+      // fallback behavior; they are not production locale references.
+      if (/\.test\.(ts|tsx)$/u.test(entry.name)) {
+        return [];
+      }
+
       return [fullPath];
     }),
   );
@@ -179,7 +185,9 @@ async function collectUsedKeys(files, knownNamespaces) {
     for (const match of source.matchAll(
       /\b(?:[\w$]+\.)?t\(\s*(['"])([^'"\\]+)\1/gu,
     )) {
-      staticKeys.add(match[2]);
+      if (match[2] !== "ns:key") {
+        staticKeys.add(match[2]);
+      }
     }
 
     for (const match of source.matchAll(

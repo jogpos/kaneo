@@ -75,7 +75,7 @@ function CreateProjectModal({ open, onClose }: CreateProjectModalProps) {
 
     try {
       const { id } = await mutateAsync();
-      toast.success("Project created successfully", { icon: SquarePlusIcon });
+      toast.success(t("common:modals.createProject.successToast"), { icon: SquarePlusIcon });
       await queryClient.invalidateQueries({ queryKey: ["projects"] });
 
       navigate({

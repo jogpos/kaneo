@@ -61,15 +61,15 @@ export const Route = createFileRoute(
 // Every permission that can be saved must also be visible and removable.
 // Include provider-owned resources and persisted unknown entries in the editor.
 const RESOURCE_LABELS: Record<string, string> = {
-  organization: "Workspace administration",
-  member: "Members",
-  invitation: "Invitations",
-  team: "Teams",
-  ac: "Roles and permissions",
-  project: "Projects",
-  task: "Tasks",
-  label: "Labels",
-  workspace: "Workspace",
+  organization: "organization",
+  member: "member",
+  invitation: "invitation",
+  team: "team",
+  ac: "ac",
+  project: "project",
+  task: "task",
+  label: "label",
+  workspace: "workspace",
 };
 
 const PERMISSION_LABELS: Record<
@@ -77,134 +77,134 @@ const PERMISSION_LABELS: Record<
   { label: string; description: string }
 > = {
   "organization:update": {
-    label: "Edit workspace administration",
-    description: "Change workspace settings through the account service.",
+    label: "organization.update.label",
+    description: "organization.update.description",
   },
   "organization:delete": {
-    label: "Delete workspace",
+    label: "organization.delete.label",
     description:
-      "Permanently delete the workspace through the account service.",
+      "organization.delete.description",
   },
   "member:create": {
-    label: "Add members",
-    description: "Add users to this workspace.",
+    label: "member.create.label",
+    description: "member.create.description",
   },
   "member:update": {
-    label: "Change member roles",
-    description: "Change the roles assigned to workspace members.",
+    label: "member.update.label",
+    description: "member.update.description",
   },
   "member:delete": {
-    label: "Remove members",
-    description: "Remove users from this workspace.",
+    label: "member.delete.label",
+    description: "member.delete.description",
   },
   "invitation:create": {
-    label: "Invite members",
-    description: "Send workspace invitations.",
+    label: "invitation.create.label",
+    description: "invitation.create.description",
   },
   "invitation:cancel": {
-    label: "Cancel invitations",
-    description: "Revoke pending workspace invitations.",
+    label: "invitation.cancel.label",
+    description: "invitation.cancel.description",
   },
   "team:create": {
-    label: "Create teams",
-    description: "Create teams in this workspace.",
+    label: "team.create.label",
+    description: "team.create.description",
   },
   "team:update": {
-    label: "Edit teams",
-    description: "Change teams and team membership.",
+    label: "team.update.label",
+    description: "team.update.description",
   },
   "team:delete": {
-    label: "Delete teams",
-    description: "Delete teams in this workspace.",
+    label: "team.delete.label",
+    description: "team.delete.description",
   },
   "ac:create": {
-    label: "Create roles",
-    description: "Create workspace roles and assign their permissions.",
+    label: "ac.create.label",
+    description: "ac.create.description",
   },
   "ac:read": {
-    label: "View roles",
-    description: "Read the workspace roles and their permissions.",
+    label: "ac.read.label",
+    description: "ac.read.description",
   },
   "ac:update": {
-    label: "Change role permissions",
-    description: "Change role permissions, including administrative access.",
+    label: "ac.update.label",
+    description: "ac.update.description",
   },
   "ac:delete": {
-    label: "Delete roles",
-    description: "Delete custom workspace roles.",
+    label: "ac.delete.label",
+    description: "ac.delete.description",
   },
   "project:create": {
-    label: "Create projects",
-    description: "Create new projects in this workspace.",
+    label: "project.create.label",
+    description: "project.create.description",
   },
   "project:read": {
-    label: "View projects",
-    description: "View projects and their details.",
+    label: "project.read.label",
+    description: "project.read.description",
   },
   "project:update": {
-    label: "Edit projects",
-    description: "Update project name, icon, description, and settings.",
+    label: "project.update.label",
+    description: "project.update.description",
   },
   "project:delete": {
-    label: "Delete projects",
-    description: "Permanently delete projects in this workspace.",
+    label: "project.delete.label",
+    description: "project.delete.description",
   },
   "project:share": {
-    label: "Share projects",
-    description: "Make projects publicly accessible via share links.",
+    label: "project.share.label",
+    description: "project.share.description",
   },
   "task:create": {
-    label: "Create tasks",
-    description: "Create new tasks in any project.",
+    label: "task.create.label",
+    description: "task.create.description",
   },
   "task:read": {
-    label: "View tasks",
-    description: "View tasks across projects.",
+    label: "task.read.label",
+    description: "task.read.description",
   },
   "task:update": {
-    label: "Edit tasks",
-    description: "Edit task content, status, priority, due date, and labels.",
+    label: "task.update.label",
+    description: "task.update.description",
   },
   "task:delete": {
-    label: "Delete tasks",
-    description: "Permanently delete tasks.",
+    label: "task.delete.label",
+    description: "task.delete.description",
   },
   "task:assign": {
-    label: "Assign tasks",
-    description: "Assign tasks to other workspace members.",
+    label: "task.assign.label",
+    description: "task.assign.description",
   },
   "label:create": {
-    label: "Create labels",
-    description: "Add new labels to tasks in this workspace.",
+    label: "label.create.label",
+    description: "label.create.description",
   },
   "label:read": {
-    label: "View labels",
-    description: "View labels attached to tasks.",
+    label: "label.read.label",
+    description: "label.read.description",
   },
   "label:update": {
-    label: "Edit labels",
-    description: "Rename, recolor, and reassign labels.",
+    label: "label.update.label",
+    description: "label.update.description",
   },
   "label:delete": {
-    label: "Delete labels",
-    description: "Permanently delete labels from this workspace.",
+    label: "label.delete.label",
+    description: "label.delete.description",
   },
   "workspace:read": {
-    label: "Access workspace",
-    description: "Read workspace metadata and members.",
+    label: "workspace.read.label",
+    description: "workspace.read.description",
   },
   "workspace:update": {
     label: "Edit workspace",
-    description: "Edit workspace name and description.",
+    description: "workspace.update.description",
   },
   "workspace:delete": {
-    label: "Delete workspace",
-    description: "Permanently delete this workspace.",
+    label: "organization.delete.label",
+    description: "workspace.delete.description",
   },
   "workspace:manage_settings": {
-    label: "Manage settings",
+    label: "workspace.manage_settings.label",
     description:
-      "Configure integrations, notification rules, and workspace preferences.",
+      "workspace.manage_settings.description",
   },
 };
 
@@ -216,12 +216,6 @@ const PERMISSION_LABELS: Record<
 // name is still reserved here.
 const DEFAULT_ROLE_NAME_SET = new Set<string>(DEFAULT_ROLE_NAMES);
 const RESERVED_ROLE_NAMES = [...DEFAULT_ROLE_NAMES, "owner"];
-
-const DEFAULT_ROLE_DESCRIPTIONS: Record<string, string> = {
-  viewer: "Read-only access to projects, tasks, and workspace.",
-  member: "Can create and update projects and tasks.",
-  admin: "Full project and task management plus workspace settings.",
-};
 
 function isDefaultRole(name: string) {
   return DEFAULT_ROLE_NAME_SET.has(name);
@@ -406,10 +400,6 @@ function RouteComponent() {
                   const description = isDefault
                     ? t(
                         `settings:workspaceRoles.defaultRoleDescriptions.${role.role}`,
-                        {
-                          defaultValue:
-                            DEFAULT_ROLE_DESCRIPTIONS[role.role] ?? "",
-                        },
                       )
                     : undefined;
                   return (
@@ -545,11 +535,9 @@ export function PermissionList({
           {groupIndex > 0 && <Separator />}
           <div className="space-y-4 p-4">
             <p className="text-sm font-medium capitalize">
-              {t(`settings:workspaceRoles.resources.${resource}`, {
-                defaultValue: Object.hasOwn(RESOURCE_LABELS, resource)
-                  ? RESOURCE_LABELS[resource]
-                  : resource.charAt(0).toUpperCase() + resource.slice(1),
-              })}
+              {Object.hasOwn(RESOURCE_LABELS, resource)
+                ? t(`settings:workspaceRoles.resources.${RESOURCE_LABELS[resource]}`)
+                : resource.charAt(0).toUpperCase() + resource.slice(1)}
             </p>
             <div className="space-y-4">
               {actions.map((action, idx) => {
@@ -557,8 +545,6 @@ export function PermissionList({
                   label: `${action} ${resource}`,
                   description: "",
                 };
-                const labelKey = `${resource}.${action}.label`;
-                const descriptionKey = `${resource}.${action}.description`;
                 return (
                   <div key={`${resource}:${action}`}>
                     {idx > 0 && <Separator className="mb-4" />}
@@ -568,21 +554,15 @@ export function PermissionList({
                           className="text-sm font-medium"
                           htmlFor={`${id}-${resource}-${action}`}
                         >
-                          {t(
-                            `settings:workspaceRoles.permissions.${labelKey}`,
-                            {
-                              defaultValue: meta.label,
-                            },
-                          )}
+                          {Object.hasOwn(PERMISSION_LABELS, `${resource}:${action}`)
+                            ? t(`settings:workspaceRoles.permissions.${meta.label}`)
+                            : meta.label}
                         </Label>
                         {meta.description && (
                           <p className="text-xs text-muted-foreground">
-                            {t(
-                              `settings:workspaceRoles.permissions.${descriptionKey}`,
-                              {
-                                defaultValue: meta.description,
-                              },
-                            )}
+                            {Object.hasOwn(PERMISSION_LABELS, `${resource}:${action}`)
+                              ? t(`settings:workspaceRoles.permissions.${meta.description}`)
+                              : meta.description}
                           </p>
                         )}
                       </div>

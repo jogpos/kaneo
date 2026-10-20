@@ -53,10 +53,10 @@ describe("workspace role permission editing", () => {
   it("shows role administration, membership and invitations in read-only role details", () => {
     render(<PermissionList permissions={defaultRolePayloads.admin} readOnly />);
     for (const label of [
-      "Change role permissions",
-      "Change member roles",
-      "Invite members",
-      "Edit teams",
+      "settings:workspaceRoles.permissions.ac.update.label",
+      "settings:workspaceRoles.permissions.member.update.label",
+      "settings:workspaceRoles.permissions.invitation.create.label",
+      "settings:workspaceRoles.permissions.team.update.label",
     ]) {
       expect(screen.getByRole("switch", { name: label })).toBeChecked();
       expect(screen.getByRole("switch", { name: label })).toHaveAttribute(

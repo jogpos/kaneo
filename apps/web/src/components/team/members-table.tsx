@@ -230,12 +230,10 @@ function MembersTable({ workspaceId, invitations, users }: Props) {
         <TableHeader>
           <TableRow>
             <TableHead className="ps-6 text-foreground font-medium">
-              {t("team:membersTable.columns.name", {
-                defaultValue: "Member",
-              })}
+              {t("team:membersTable.columns.name")}
             </TableHead>
             <TableHead className="text-foreground font-medium">
-              {t("team:membersTable.columns.role", { defaultValue: "Role" })}
+              {t("team:membersTable.columns.role")}
             </TableHead>
             {canManageProjectAccess ? (
               <TableHead className="text-foreground font-medium">
@@ -243,9 +241,7 @@ function MembersTable({ workspaceId, invitations, users }: Props) {
               </TableHead>
             ) : null}
             <TableHead className="text-foreground font-medium">
-              {t("team:membersTable.columns.joined", {
-                defaultValue: "Joined",
-              })}
+              {t("team:membersTable.columns.joined")}
             </TableHead>
             <TableHead className="w-px pe-6" />
           </TableRow>
@@ -289,7 +285,7 @@ function MembersTable({ workspaceId, invitations, users }: Props) {
                         </span>
                         {isSelf ? (
                           <span className="text-xs text-muted-foreground">
-                            ({t("team:members.you", { defaultValue: "You" })})
+                            ({t("team:members.you")})
                           </span>
                         ) : null}
                       </div>
@@ -303,7 +299,7 @@ function MembersTable({ workspaceId, invitations, users }: Props) {
                   {member.role === "owner" ? (
                     <Badge variant="outline" className="gap-1">
                       <ShieldIcon className="size-3" />
-                      {t("team:roles.owner", { defaultValue: "Owner" })}
+                      {t("team:roles.owner")}
                     </Badge>
                   ) : showRoleSelect ? (
                     <Select
@@ -323,13 +319,13 @@ function MembersTable({ workspaceId, invitations, users }: Props) {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="viewer">
-                          {t("team:roles.viewer", { defaultValue: "Viewer" })}
+                          {t("team:roles.viewer")}
                         </SelectItem>
                         <SelectItem value="member">
-                          {t("team:roles.member", { defaultValue: "Member" })}
+                          {t("team:roles.member")}
                         </SelectItem>
                         <SelectItem value="admin">
-                          {t("team:roles.admin", { defaultValue: "Admin" })}
+                          {t("team:roles.admin")}
                         </SelectItem>
                         {/* Owner is intentionally NOT offered here: the better-auth
                             organization plugin requires an explicit ownership
